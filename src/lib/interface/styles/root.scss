@@ -1,0 +1,30 @@
+@font-face {
+	font-display: swap;
+	font-family: 'figtree';
+	src: url('/asset/font/figtree.ttf');
+}
+@font-face {
+	font-display: swap;
+	font-family: 'outfit';
+	src: url('/asset/font/outfit.ttf');
+}
+
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--color-secondary: #b16981;
+	--color-secondary-hover: #d48aa4;
+}
+
+body {
+	background: hsl(0 0% 95%);
+	color: #fff;
+	font-family: 'figtree', sans-serif;
+	height: 100vh;
+	margin: 0;
+	max-height: 100vh;
+	overflow: hidden auto;
+	width: 100%;
+}

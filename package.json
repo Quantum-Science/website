@@ -1,0 +1,37 @@
+{
+	"name": "qs_website",
+	"author": "katsumi143",
+	"type": "module",
+	"repository": "https://github.com/katsumi143/qs_website.git",
+	"license": "AGPL-3.0-only",
+	"private": true,
+	"version": "1.0.0",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"deploy": "vercel deploy --prod",
+		"deploy:preview": "vercel deploy",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync",
+		"pull-env": "vercel env pull .env.local"
+	},
+	"devDependencies": {
+		"@iconify-json/bi": "^1.2.7",
+		"@sveltejs/adapter-vercel": "^6.3.3",
+		"@sveltejs/kit": "^2.59.1",
+		"@sveltejs/vite-plugin-svelte": "^7.1.0",
+		"sass": "^1.99.0",
+		"svelte": "^5.55.5",
+		"svelte-preprocess": "^6.0.3",
+		"typescript": "^6.0.3",
+		"unplugin-icons": "^23.0.1",
+		"vercel": "^53.1.1",
+		"vite": "^8.0.10"
+	},
+	"dependencies": {
+		"@vercel/analytics": "^2.0.1",
+		"@vercel/speed-insights": "^2.0.0",
+		"mdsvex": "^0.12.7"
+	},
+	"packageManager": "pnpm@10.33.3+sha512.a19744364a7e248b92657a4ca5973f9354d21caf982579674b1c539f32c7420c47138ad8b1254df07aba9bc782d9b3029e3db34d5dbff974326eb74dac8ff489"
+}

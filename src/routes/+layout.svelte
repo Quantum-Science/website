@@ -196,7 +196,7 @@
 				}
 			}
 			.legal {
-				font-family: 'Outfit', sans-serif;
+				font-family: var(--font-secondary);
 				font-size: .9em;
 				font-weight: 500;
 				margin-top: 96px;

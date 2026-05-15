@@ -114,7 +114,7 @@
 				color: transparent;
 				background: radial-gradient(at 50% 60%, #fff, #edafa1);
 				background-clip: text;
-				font-family: 'Outfit', sans-serif;
+				font-family: var(--font-secondary);
 				font-size: 56px;
 				font-weight: 500;
 				line-height: 1.1;
@@ -164,7 +164,7 @@
 		color: hsl(0 0% 10%);
 		margin-top: 128px;
 		h1 {
-			font-family: 'Outfit', sans-serif;
+			font-family: var(--font-secondary);
 			font-size: 48px;
 			font-weight: 500;
 			margin: 0;
@@ -226,7 +226,7 @@
 		}
 		h1 {
 			color: hsl(0 0% 10%);
-			font-family: 'Outfit', sans-serif;
+			font-family: var(--font-secondary);
 			font-size: 48px;
 			font-weight: 500;
 			line-height: 1.1;

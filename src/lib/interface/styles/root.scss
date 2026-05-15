@@ -20,14 +20,14 @@
 }
 
 :root {
-	--color-secondary: #b16981;
-	--color-secondary-hover: #d48aa4;
+	--font-primary: 'figtree', sans-serif;
+	--font-secondary: 'outfit', sans-serif;
 }
 
 body {
 	background: hsl(0 0% 95%);
 	color: #fff;
-	font-family: 'figtree', sans-serif;
+	font-family: var(--font-primary);
 	height: 100vh;
 	margin: 0;
 	max-height: 100vh;

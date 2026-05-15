@@ -8,13 +8,14 @@
 </script>
 
 <script module>
-	export const last_updated_at = '2025-04-23';
+	export const last_updated_at = '2026-05-05';
 </script>
 
 <div class="landing">
 	<div class="thumbnail_container">
 		<img
 			class="thumbnail_image"
+			fetchpriority="high"
 			srcset={optimise_image('/asset/image/landing_background.png', [960, 1920], 80)}
 			alt="Library Landing Thumbnail"
 		/>
@@ -60,7 +61,7 @@
 </div>
 <div class="divider"></div>
 <div class="next_generation">
-	<img srcset={optimise_image('/asset/image/next_gen_render.png', [600, 1200], 90)} alt=""/>
+	<img fetchpriority="low" srcset={optimise_image('/asset/image/next_gen_render.png', [600, 1200], 90)} alt=""/>
 	<div>
 		<h1>We're helping pioneer next-generation Sci-Fi.</h1>
 		<p>Since 2014, we've been creating immersive worlds with rich environments and storytelling that have deeply inspired the community, paving the way for future generations of the genre. And we're not stopping there.</p>

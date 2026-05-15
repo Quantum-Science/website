@@ -1,7 +1,6 @@
 <!-- based off materials from https://discord.com/branding -->
 <script lang="ts">
-	export let size = 16;
-	export let coloured = false;
+	let { coloured = false, size = 16 } = $props();
 </script>
 
 <svg width={size} height={size} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">

@@ -87,14 +87,40 @@
 		min-height: inherit;
 		width: 100%;
 		.thumbnail_container {
-			height: calc(100vh + 64px);
+			height: calc(100vh + 96px);
 			left: 0;
-			mask: linear-gradient(to bottom, #fff calc(100% - 64px), transparent);
 			overflow: hidden;
 			position: absolute;
 			top: 0;
 			width: 100%;
 			z-index: -1;
+			&:after {
+				background: linear-gradient(to bottom,
+					color-mix(in srgb, var(--background-primary) 0%, transparent) 0%,
+					color-mix(in srgb, var(--background-primary) 11.29%, transparent) 8.1%,
+					color-mix(in srgb, var(--background-primary) 22.04%, transparent) 15.5%,
+					color-mix(in srgb, var(--background-primary) 32.25%, transparent) 22.5%,
+					color-mix(in srgb, var(--background-primary) 41.88%, transparent) 29%,
+					color-mix(in srgb, var(--background-primary) 50.92%, transparent) 35.3%,
+					color-mix(in srgb, var(--background-primary) 59.33%, transparent) 41.2%,
+					color-mix(in srgb, var(--background-primary) 67.09%, transparent) 47.1%,
+					color-mix(in srgb, var(--background-primary) 74.16%, transparent) 52.9%,
+					color-mix(in srgb, var(--background-primary) 80.5%, transparent) 58.8%,
+					color-mix(in srgb, var(--background-primary) 86.07%, transparent) 64.7%,
+					color-mix(in srgb, var(--background-primary) 90.81%, transparent) 71%,
+					color-mix(in srgb, var(--background-primary) 94.66%, transparent) 77.5%,
+					color-mix(in srgb, var(--background-primary) 97.54%, transparent) 84.5%,
+					color-mix(in srgb, var(--background-primary) 99.36%, transparent) 91.9%,
+					var(--background-primary) 100%
+				);
+				bottom: 0;
+				content: '';
+				height: 96px;
+				left: 0;
+				position: absolute;
+				width: 100%;
+				z-index: 2;
+			}
 			.thumbnail_image {
 				height: 100%;
 				object-fit: cover;
@@ -162,7 +188,7 @@
 	
 	.statistics {
 		color: hsl(0 0% 10%);
-		margin-top: 128px;
+		margin-top: 96px;
 		h1 {
 			font-family: var(--font-secondary);
 			font-size: 48px;

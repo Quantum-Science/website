@@ -20,12 +20,13 @@
 }
 
 :root {
+	--background-primary: hsl(0 0% 95%);
 	--font-primary: 'figtree', sans-serif;
 	--font-secondary: 'outfit', sans-serif;
 }
 
 body {
-	background: hsl(0 0% 95%);
+	background: var(--background-primary);
 	color: #fff;
 	font-family: var(--font-primary);
 	height: 100vh;

@@ -1,5 +1,4 @@
 import adapter from '@sveltejs/adapter-vercel';
-import { mdsvex } from 'mdsvex';
 import { sveltePreprocess } from 'svelte-preprocess';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
@@ -8,7 +7,6 @@ export default {
 	compilerOptions: {
 		runes: true
 	},
-	extensions: ['.md', '.svelte'],
 	kit: {
 		adapter: adapter({
 			images: {
@@ -20,10 +18,6 @@ export default {
 		})
 	},
 	preprocess: [
-		mdsvex({
-			extension: '.md',
-			layout: 'src/lib/interface/layouts/markdown.svelte'
-		}),
 		sveltePreprocess({}),
 		vitePreprocess()
 	]

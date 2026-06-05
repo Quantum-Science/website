@@ -84,7 +84,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		min-height: inherit;
+		min-height: calc(100vh - 80px);
 		width: 100%;
 		.thumbnail_container {
 			height: calc(100vh + 96px);

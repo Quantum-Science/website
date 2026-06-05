@@ -135,7 +135,7 @@
 		}
 	}
 	main {
-		min-height: calc(100vh - 80px);
+		min-height: 100vh;
 		margin: 0 auto;
 		max-width: 1200px;
 		overflow: hidden;
@@ -146,7 +146,6 @@
 		background: linear-gradient(to bottom, hsl(0, 0%, 85%), hsl(0, 0%, 80%));
 		border-radius: 24px 24px 0 0;
 		border-top: 1px solid hsl(0, 0%, 70%);
-		color: hsl(0 0% 10%);
 		overflow: hidden;
 		position: relative;
 		.footer_contents {

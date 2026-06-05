@@ -15,7 +15,15 @@ export default {
 				minimumCacheTTL: 300,
 				sizes: [600, 960, 1200, 1920]
 			}
-		})
+		}),
+		prerender: {
+			handleHttpError: ({ message, path }) => {
+				if (path.startsWith('/_vercel/'))
+					return;
+				
+				throw new Error(message);
+			}
+		}
 	},
 	preprocess: [
 		sveltePreprocess({}),

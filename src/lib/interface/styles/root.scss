@@ -35,4 +35,7 @@ body {
 	max-height: 100vh;
 	overflow: hidden auto;
 	width: 100%;
+	&:has(.error_page) {
+		background: #000;
+	}
 }

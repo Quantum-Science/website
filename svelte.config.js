@@ -13,7 +13,7 @@ export default {
 				domains: ['quantum-science.net'],
 				formats: ['image/avif', 'image/webp'],
 				minimumCacheTTL: 300,
-				sizes: [600, 960, 1200, 1920]
+				sizes: [600, 960, 1200, 1920, 2400]
 			}
 		}),
 		prerender: {

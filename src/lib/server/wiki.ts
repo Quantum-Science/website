@@ -1,6 +1,8 @@
 import { read } from '$app/server';
 
 import { extract_frontmatter } from './markdown';
+import wiki_index from './generated/wiki_index.json';
+
 const raw_documents = import.meta.glob<string>('./**/*.md', {
 	eager: true,
 	query: '?url',
@@ -10,7 +12,9 @@ const raw_documents = import.meta.glob<string>('./**/*.md', {
 
 export interface Document {
 	title: string,
-	body: string
+	body: string,
+	
+	last_updated_at: string
 }
 
 async function create_documents() {
@@ -23,7 +27,9 @@ async function create_documents() {
 		const { metadata, body } = extract_frontmatter(content);
 		documents[slug] = {
 			title: metadata.title,
-			body
+			body,
+			
+			last_updated_at: (wiki_index as Record<string, string>)[slug]
 		};
 	}
 	

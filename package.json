@@ -7,12 +7,12 @@
 	"private": true,
 	"version": "1.0.0",
 	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
+		"dev": "node scripts/update_wiki.js && vite dev",
+		"build": "node scripts/update_wiki.js && vite build",
 		"deploy": "vercel deploy --prod",
 		"deploy:preview": "vercel deploy",
 		"preview": "vite preview",
-		"prepare": "svelte-kit sync",
+		"prepare": "node scripts/update_wiki.js && svelte-kit sync",
 		"pull-env": "vercel env pull .env.local"
 	},
 	"devDependencies": {

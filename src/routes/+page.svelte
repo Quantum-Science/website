@@ -32,6 +32,9 @@
 			<DiscordIcon size={20}/>Join us on Discord
 		</a>
 	</div>
+	<a class="wiki" href="/wiki">
+		Learn about us on our official wiki! →
+	</a>
 </div>
 
 <div class="statistics">
@@ -130,7 +133,7 @@
 		}
 		.content {
 			background: radial-gradient(at 50% 50%, #00000080 20%, #00000000 70%);
-			margin-top: -64px;
+			margin-top: auto;
 			padding: 64px 64px;
 			@media (max-width: 480px) {
 				background: radial-gradient(at 50% 50%, #00000080 20%, #00000000 80%);
@@ -182,6 +185,20 @@
 					backdrop-filter: blur(8px);
 					background: #ffffff0a;
 				}
+			}
+		}
+		.wiki {
+			color: #ffffff;
+			font-size: 14px;
+			font-weight: 500;
+			margin: auto auto 24px;
+			mix-blend-mode: soft-light;
+			padding: 16px 32px;
+			text-decoration: none;
+			transition: filter .3s;
+			&:hover {
+				filter: brightness(150%);
+				transform: translate3d(0, 0, 0);
 			}
 		}
 	}

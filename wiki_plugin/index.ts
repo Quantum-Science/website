@@ -161,7 +161,7 @@ export default function wiki_plugin(): Plugin {
 	return {
 		enforce: 'pre',
 		name: 'wiki-plugin',
-		buildStart() {
+		configResolved() {
 			const files = (readdirSync(wiki_path, { recursive: true }) as string[])
 				.filter(entry => entry.endsWith('.md'));
 			console.log(`[Wiki]: Prebuilding ${files.length} files...`);

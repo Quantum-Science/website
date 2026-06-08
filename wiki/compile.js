@@ -1,17 +1,16 @@
 import { execSync } from 'node:child_process';
 import { marked } from 'marked';
-import { copyFileSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { copyFileSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { basename, dirname, extname, resolve } from 'node:path';
-import type { Plugin } from 'vite';
 
-function extract_frontmatter(markdown: string) {
+function extract_frontmatter(markdown) {
 	const match = /---\r?\n([\s\S]+?)\r?\n---/.exec(markdown);
 	if (!match)
 		return { metadata: {}, body: markdown };
 
 	const frontmatter = match[1];
 	const body = markdown.slice(match[0].length).trim();
-	const metadata: Record<string, string> = {};
+	const metadata = {};
 
 	let key = '', value = '';
 	for (const line of frontmatter.split('\n')) {
@@ -33,7 +32,7 @@ function extract_frontmatter(markdown: string) {
 	return { metadata, body };
 }
 
-function compile_route(slug: string, wiki_path: string, routes_path: string, base_page: string) {
+export function compile_route(slug, wiki_path, routes_path, base_page) {
 	const markdown_path = `${wiki_path}/${slug}`;
 	const timestamp = execSync(`git log -1 --format=%cd --date=iso-strict ${markdown_path}`)
 		.toString()
@@ -60,18 +59,7 @@ function compile_route(slug: string, wiki_path: string, routes_path: string, bas
 	writeFileSync(path, compiled_page);
 }
 
-interface InfoboxToken {
-	type: 'infobox',
-	raw: string,
-	[index: string]: string
-}
-interface GalleryToken {
-	type: 'gallery',
-	raw: string,
-	images: { path: string, text?: string }[]
-}
-
-export default function wiki_plugin(): Plugin {
+export function setup() {
 	const layout_path = resolve('wiki_plugin/layout.svelte');
 	const routes_path = resolve('src/routes/wiki/(generated)');
 	const wiki_path = resolve('wiki');
@@ -86,9 +74,7 @@ export default function wiki_plugin(): Plugin {
 			start(src) {
 				return src.match(/{{infobox/)?.index;
 			},
-			renderer(token) {
-				const infobox = token as InfoboxToken;
-				
+			renderer(infobox) {
 				let html = `<div class="infobox${infobox.infotype ? ` ${infobox.infotype}` : ''}">`;
 				if (infobox.image)
 					html += `<enhanced:img alt="${infobox.image.split('/').at(-1)}" src="/static/${infobox.image}" width="${infobox.infotype === 'character' ? 384 : 640}"/>`;
@@ -114,7 +100,7 @@ export default function wiki_plugin(): Plugin {
 				if (!matches)
 					return;
 				
-				const token: InfoboxToken = { type: 'infobox', raw: matches[0], infotype: matches[1] };
+				const token = { type: 'infobox', raw: matches[0], infotype: matches[1] };
 				const attributes = matches[2]
 					.split('\n')
 					.map(str => str.substring(1).split('='));
@@ -130,7 +116,7 @@ export default function wiki_plugin(): Plugin {
 				return src.match(/{{gallery/)?.index;
 			},
 			renderer(token) {
-				const images = (token as GalleryToken)
+				const images = token
 					.images
 					.map(image => `<li><enhanced:img alt="${image.path.split('/').at(-1)}" fetchpriority="low" src="/static/${image.path}" width="256"/></li>`)
 					.join('\n');
@@ -157,30 +143,5 @@ export default function wiki_plugin(): Plugin {
 		}
 	});
 	
-	return {
-		enforce: 'pre',
-		name: 'wiki-plugin',
-		config() {
-			const files = (readdirSync(wiki_path, { recursive: true }) as string[])
-				.filter(entry => entry.endsWith('.md'));
-			console.info(`[Wiki]: Prebuilding ${files.length} files...`);
-			
-			for (const entry of files)
-				compile_route(entry, wiki_path, routes_path, base_page);
-		},
-		
-		configureServer(server) {
-			server.watcher.add('wiki/**/*.md');
-			server.watcher.add('wiki_plugin/layout.svelte');
-			server.watcher.on('all', (event, file) => {
-				if (file === layout_path)
-					return copyFileSync(layout_path, `${routes_path}/+layout.svelte`);
-				
-				if (!file.endsWith('.md'))
-					return;
-				if (event === 'add' || event === 'change')
-					compile_route(file.replace(wiki_path, ''), wiki_path, routes_path, base_page);
-			});
-		}
-	};
+	return [layout_path, routes_path, wiki_path, base_page];
 }

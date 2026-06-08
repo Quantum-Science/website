@@ -1,7 +1,5 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	
-	import optimise_image from '$lib/shared/optimise_image';
 </script>
 
 <div class="error_page">
@@ -15,10 +13,11 @@
 			{/if}
 		</p>
 		<div class="thumbnail">
-			<img
+			<enhanced:img
 				class="thumbnail_image"
 				fetchpriority="high"
-				srcset={optimise_image('/asset/image/error.png', [1200, 2400], 80)}
+				src="/static/asset/image/error.png"
+				sizes="min(2400px, 100vw)"
 				alt="Error Page Thumbnail"
 			/>
 		</div>
@@ -91,6 +90,7 @@
 					z-index: 2;
 				}
 				img {
+					height: auto;
 					width: 100%;
 				}
 			}

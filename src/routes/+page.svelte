@@ -1,6 +1,4 @@
 <script lang="ts">
-	import optimise_image from '$lib/shared/optimise_image';
-	
 	import { PUBLIC_SITE_URL, PUBLIC_SOCIAL_LINK_DISCORD } from '$env/static/public';
 	
 	import DiscordIcon from '$lib/interface/visuals/socials/discord_icon.svelte';
@@ -13,10 +11,11 @@
 
 <div class="landing">
 	<div class="thumbnail_container">
-		<img
+		<enhanced:img
 			class="thumbnail_image"
 			fetchpriority="high"
-			srcset={optimise_image('/asset/image/landing_background.png', [960, 1920], 80)}
+			src="/static/asset/image/landing_background.png"
+			sizes="min(2940px, 100vw)"
 			alt="Library Landing Thumbnail"
 		/>
 	</div>
@@ -64,7 +63,12 @@
 </div>
 <div class="divider"></div>
 <div class="next_generation">
-	<img fetchpriority="low" srcset={optimise_image('/asset/image/next_gen_render.png', [600, 1200], 90)} alt=""/>
+	<enhanced:img
+		fetchpriority="low"
+		src="/static/asset/image/next_gen_render.png"
+		sizes="min(1200px, 100vw)"
+		alt=""
+	/>
 	<div>
 		<h1>We're helping pioneer next-generation Sci-Fi.</h1>
 		<p>Since 2014, we've been creating immersive worlds with rich environments and storytelling that have deeply inspired the community, paving the way for future generations of the genre. And we're not stopping there.</p>
@@ -265,6 +269,7 @@
 		}
 		img {
 			max-width: 100%;
+			height: auto;
 			width: 600px;
 		}
 		h1 {

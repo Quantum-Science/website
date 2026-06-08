@@ -1,4 +1,24 @@
 .wiki_content {
+	.header {
+		border-bottom: 1px solid hsl(0 0% 85%);
+		display: flex;
+		margin-bottom: 16px;
+		padding-bottom: 16px;
+		a {
+			color: hsl(0 0% 50%);
+			font-size: 14px;
+			margin: 0;
+			text-decoration: none;
+			&:hover {
+				color: var(--color-primary);
+			}
+		}
+		p {
+			color: hsl(0 0% 50%);
+			font-size: 13px;
+			margin: auto 0 0 auto;
+		}
+	}
 	h1 {
 		font-family: var(--font-secondary);
 		font-size: 40px;
@@ -9,13 +29,25 @@
 		display: flow-root;
 		font-family: var(--font-secondary);
 		font-weight: 550;
-		margin: 16px 0;
-		padding: 16px 0 8px;
+		margin: 12px 0;
+		padding: 12px 0 8px;
+	}
+	h3 {
+		font-size: 20px;
+		font-weight: 600;
+		margin: 12px 0;
+		padding: 12px 0 0;
+	}
+	p {
+		margin: .5em 0 1em;
 	}
 	strong {
 		font-weight: 600;
 	}
 	
+	img {
+		border-radius: 4px;
+	}
 	.infobox {
 		background: linear-gradient(hsla(0, 0%, 50%, .2), hsla(0, 0%, 10%, .2));
 		border-radius: 16px;
@@ -29,17 +61,45 @@
 		margin-left: 24px;
 		padding: 16px;
 		text-align: center;
+		&.character img {
+			width: 192px;
+		}
 		div {
 			color: var(--color-primary);
 		}
 		img {
-			border-radius: 4px;
+			height: auto;
+			width: 320px;
 		}
 		a {
 			text-decoration: none;
 		}
 		& > p {
 			margin: 8px 0 0;
+		}
+	}
+	
+	.gallery {
+		padding: 0;
+		li {
+			display: inline-block;
+			margin: 4px;
+			width: 144px;
+			vertical-align: top;
+			img {
+				background: linear-gradient(hsla(0, 0%, 50%, .2), hsla(0, 0%, 10%, .2));
+				box-shadow: inset 0 0 0 1px hsla(0, 0%, 50%, .3);
+				height: 144px !important;
+				object-fit: contain;
+				padding: 8px;
+				width: 144px !important;
+			}
+			p {
+				font-size: 13px;
+				overflow: hidden;
+				padding: 0 4px;
+				word-wrap: break-word;
+			}
 		}
 	}
 }

@@ -2,15 +2,14 @@
 title: QSERF April Fools 2026
 ---
 
-<div class="infobox">
-	<img src="/asset/image/wiki/april_fools_26.png" alt="Update" width="320"/>
-	<p>BATTLE FOR DARK MATTER</p>
-	<p>Release date: April 1st, 2026</p>
-	<div>
-		<a href="/wiki/updates/qserf/v3.6.2">← v3.6.2</a> • April Fools 2026 • <a href="/wiki/updates/qserf/v3.12.2">v0.0.0 →</a>
-	</div>
-</div>
-
+{{infobox
+|image=asset/image/wiki/april_fools_26.png
+|text=BATTLE FOR DARK MATTER
+|release=April 1st, 2026
+|prev=updates/qserf/v3.6.2
+|curr=April Fools 2026
+|next=updates/qserf/v3.12.0
+}}
 QSERF's April Fools Event for 2026, which renamed the game to “BATTLE FOR DARK MATTER” and introduced a new wave of nonsense.
 The event lasted for 5 days before returning to the previous version.
 
@@ -35,7 +34,7 @@ There is no associated version number, as it was randomised for each session.
 * Improved control room security.
 * Pump Station Alpha now has a model showcase.
 
-## Update Contributors
+## Contributors
 * @Akyomia — Building
 * @BurnishedBreeze — Building
 * @Dominus_Loading — Building
@@ -44,6 +43,11 @@ There is no associated version number, as it was randomised for each session.
 * @mochino_mocha — Building
 * @MrSpxxds — Building
 * @pointcastle — Voice acting
+
+## Gallery
+{{gallery
+|asset/image/wiki/april_fools_26.png
+}}
 
 ## Trivia
 * The core theme of the event was primarily a reference to [Battle for Dream Island](https://en.wikipedia.org/wiki/Battle_for_Dream_Island).

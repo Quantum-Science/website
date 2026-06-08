@@ -1,14 +1,12 @@
 <script lang="ts">
-	import optimise_image from '$lib/shared/optimise_image.js';
-	
 	let { data } = $props();
 </script>
 
 <div class="thumbnail_container">
-	<img
+	<enhanced:img
 		class="thumbnail_image"
 		fetchpriority="high"
-		srcset={optimise_image('/asset/image/snl.png', [960, 1920], 80)}
+		src="/static/asset/image/snl.png"
 		alt="Library Landing Thumbnail"
 	/>
 </div>

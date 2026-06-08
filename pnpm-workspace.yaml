@@ -1,2 +1,3 @@
 allowBuilds:
+  sharp: true
   svelte-preprocess: true

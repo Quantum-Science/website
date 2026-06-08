@@ -176,7 +176,7 @@
 			align-items: flex-end;
 			display: flex;
 			flex-direction: column;
-			.links_title {
+			/*.links_title {
 				color: hsl(0 0% 50%);
 				font-size: 13px;
 				font-weight: 550;
@@ -193,7 +193,7 @@
 					text-decoration: none;
 					transition: color .5s;
 				}
-			}
+			}*/
 			.legal {
 				font-family: var(--font-secondary);
 				font-size: .9em;

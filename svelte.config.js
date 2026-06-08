@@ -8,14 +8,7 @@ export default {
 		runes: true
 	},
 	kit: {
-		adapter: adapter({
-			images: {
-				domains: ['quantum-science.net'],
-				formats: ['image/avif', 'image/webp'],
-				minimumCacheTTL: 300,
-				sizes: [600, 960, 1200, 1920, 2400]
-			}
-		}),
+		adapter: adapter(),
 		prerender: {
 			handleHttpError: ({ message, path }) => {
 				if (path.startsWith('/_vercel/'))

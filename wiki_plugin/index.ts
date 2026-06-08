@@ -159,6 +159,7 @@ export default function wiki_plugin(): Plugin {
 	});
 	
 	return {
+		enforce: 'pre',
 		name: 'wiki-plugin',
 		buildStart() {
 			for (const entry of readdirSync('wiki', { recursive: true }) as string[])

@@ -118,7 +118,12 @@ export function setup() {
 			renderer(token) {
 				const images = token
 					.images
-					.map(image => `<li><enhanced:img alt="${image.path.split('/').at(-1)}" fetchpriority="low" src="/static/${image.path}" width="256"/></li>`)
+					.map(image => {
+						let html = `<li><enhanced:img alt="${image.path.split('/').at(-1)}" fetchpriority="low" src="/static/${image.path}" width="256"/>`;
+						if (image.text)
+							html += `<p>${image.text}</p>`;
+						return html + '</li>';
+					})
 					.join('\n');
 				return `<ul class="gallery">\n${images}\n</ul>`;
 			},

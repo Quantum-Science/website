@@ -162,9 +162,12 @@ export default function wiki_plugin(): Plugin {
 		enforce: 'pre',
 		name: 'wiki-plugin',
 		buildStart() {
-			for (const entry of readdirSync('wiki', { recursive: true }) as string[])
-				if (entry.endsWith('.md'))
-					compile_route(entry, wiki_path, routes_path, base_page);
+			const files = (readdirSync(wiki_path, { recursive: true }) as string[])
+				.filter(entry => entry.endsWith('.md'));
+			console.log(`[Wiki]: Prebuilding ${files.length} files...`);
+			
+			for (const entry of files)
+				compile_route(entry, wiki_path, routes_path, base_page);
 		},
 		
 		configureServer(server) {

@@ -58,6 +58,8 @@ function compile_route(slug: string, wiki_path: string, routes_path: string, bas
 	
 	const path = `${dir_path}/+page.svelte`;
 	writeFileSync(path, compiled_page);
+	
+	console.log(markdown_path, path)
 }
 
 interface InfoboxToken {
@@ -75,6 +77,9 @@ export default function wiki_plugin(): Plugin {
 	const layout_path = resolve('wiki_plugin/layout.svelte');
 	const routes_path = resolve('src/routes/wiki/(generated)');
 	const wiki_path = resolve('wiki');
+	console.log(routes_path);
+	console.log(wiki_path);
+	console.log(layout_path);
 	
 	mkdirSync(routes_path, { recursive: true });
 	copyFileSync(layout_path, `${routes_path}/+layout.svelte`);
@@ -161,13 +166,14 @@ export default function wiki_plugin(): Plugin {
 	return {
 		enforce: 'pre',
 		name: 'wiki-plugin',
-		configResolved() {
+		buildStart() {
 			const files = (readdirSync(wiki_path, { recursive: true }) as string[])
 				.filter(entry => entry.endsWith('.md'));
 			console.log(`[Wiki]: Prebuilding ${files.length} files...`);
 			
 			for (const entry of files)
 				compile_route(entry, wiki_path, routes_path, base_page);
+			console.log('[Wiki]: Done!')
 		},
 		
 		configureServer(server) {

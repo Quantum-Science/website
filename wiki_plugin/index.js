@@ -6,7 +6,7 @@ export default function wiki_plugin() {
 		enforce: 'pre',
 		name: 'wiki-plugin',
 		configureServer(server) {
-			const [layout_path, routes_path, wiki_path, base_page] = setup();
+			const [layout_path, routes_path, wiki_path, base_page] = setup(true);
 			server.watcher.add('wiki/**/*.md');
 			server.watcher.add('wiki_plugin/layout.svelte');
 			server.watcher.on('all', (event, file) => {
@@ -16,7 +16,7 @@ export default function wiki_plugin() {
 				if (!file.endsWith('.md'))
 					return;
 				if (event === 'add' || event === 'change')
-					compile_route(file.replace(wiki_path, ''), wiki_path, routes_path, base_page);
+					compile_route(file.replace(wiki_path, ''), wiki_path, routes_path, base_page, true);
 			});
 		}
 	};

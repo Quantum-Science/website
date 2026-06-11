@@ -32,9 +32,9 @@ function extract_frontmatter(markdown) {
 	return { metadata, body };
 }
 
-export function compile_route(slug, wiki_path, routes_path, base_page) {
+export function compile_route(slug, wiki_path, routes_path, base_page, is_dev) {
 	const markdown_path = `${wiki_path}/${slug}`;
-	const timestamp = execSync(`git log -1 --format=%cd --date=iso-strict ${markdown_path}`)
+	const timestamp = is_dev ? null : execSync(`git log -1 --format=%cd --date=iso-strict ${markdown_path}`)
 		.toString()
 		.trim();
 	
@@ -59,12 +59,15 @@ export function compile_route(slug, wiki_path, routes_path, base_page) {
 	writeFileSync(path, compiled_page);
 }
 
-export function setup() {
+export function setup(is_dev) {
 	const layout_path = resolve('wiki_plugin/layout.svelte');
 	const routes_path = resolve('src/routes/wiki/(generated)');
 	const wiki_path = resolve('wiki');
 	mkdirSync(routes_path, { recursive: true });
 	copyFileSync(layout_path, `${routes_path}/+layout.svelte`);
+	
+	const asset = src => is_dev ? `/${src}` : `/static/${src}`;
+	const img = is_dev ? 'img' : 'enhanced:img';
 	
 	const base_page = readFileSync('wiki_plugin/page.svelte', { encoding: 'utf-8' });
 	marked.use({
@@ -77,7 +80,7 @@ export function setup() {
 			renderer(infobox) {
 				let html = `<div class="infobox${infobox.infotype ? ` ${infobox.infotype}` : ''}">`;
 				if (infobox.image)
-					html += `<enhanced:img alt="${infobox.image.split('/').at(-1)}" src="/static/${infobox.image}" width="${infobox.infotype === 'character' ? 384 : 640}"/>`;
+					html += `<${img} alt="${infobox.image.split('/').at(-1)}" src="${asset(infobox.image)}" width="${infobox.infotype === 'character' ? 384 : 640}"/>`;
 				if (infobox.text)
 					html += `<p>${infobox.text}</p>`;
 				if (infobox.release)
@@ -119,7 +122,7 @@ export function setup() {
 				const images = token
 					.images
 					.map(image => {
-						let html = `<li><enhanced:img alt="${image.path.split('/').at(-1)}" fetchpriority="low" src="/static/${image.path}" width="256"/>`;
+						let html = `<li><${img} alt="${image.path.split('/').at(-1)}" fetchpriority="low" src="${asset(image.path)}" width="256"/>`;
 						if (image.text)
 							html += `<p>${image.text}</p>`;
 						return html + '</li>';
@@ -143,7 +146,7 @@ export function setup() {
 		}],
 		renderer: {
 			image({ href }) {
-				return `<enhanced:img alt="${href.split('/').at(-1)}" src="${href}"/>`
+				return `<${img} alt="${href.split('/').at(-1)}" src="${asset(href)}"/>`
 			}
 		}
 	});

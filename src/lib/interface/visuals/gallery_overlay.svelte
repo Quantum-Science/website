@@ -10,14 +10,14 @@
 	let loaded = $derived.by(() => {
 		if (!image_ref)
 			return false;
-		return image_ref.complete && image_ref.naturalWidth !== 0;
+		return image_ref.complete && image_ref.naturalWidth === gallery![gallery_index].image.width;
 	});
 	let blur: string | null = $derived.by(() => {
 		if (!image_ref || !gallery![gallery_index].image.asset_blur)
 			return null;
 		if (!loaded)
 			return thumbHashToDataURL(Uint8Array.fromHex(gallery![gallery_index].image.asset_blur));
-		return null;
+		return blur;
 	});
 	let image_ref: HTMLImageElement | null = $state(null);
 	

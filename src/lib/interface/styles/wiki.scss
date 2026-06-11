@@ -71,9 +71,6 @@
 			height: auto;
 			width: 320px;
 		}
-		a {
-			text-decoration: none;
-		}
 		& > p {
 			margin: 8px 0 0;
 		}
@@ -101,5 +98,10 @@
 				word-wrap: break-word;
 			}
 		}
+	}
+	
+	a {
+		color: inherit;
+		font-weight: 550;
 	}
 }

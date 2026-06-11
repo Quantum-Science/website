@@ -1,3 +1,9 @@
+<script>
+	import { open_img } from '$lib/interface/stores/gallery.svelte.ts';
+	
+	import Gallery from '$lib/interface/visuals/gallery.svelte';
+</script>
+
 <script module>
 	export const last_updated_at = {{updatedate}};
 </script>

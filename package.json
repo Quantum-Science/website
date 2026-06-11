@@ -21,6 +21,7 @@
 		"@sveltejs/vite-plugin-svelte": "^7.1.2",
 		"marked": "^18.0.5",
 		"sass": "^1.100.0",
+		"sharp": "^0.35.0",
 		"svelte": "^5.56.0",
 		"svelte-preprocess": "^6.0.5",
 		"typescript": "^6.0.3",
@@ -31,7 +32,8 @@
 	"dependencies": {
 		"@sveltejs/enhanced-img": "^0.10.4",
 		"@vercel/analytics": "^2.0.1",
-		"@vercel/speed-insights": "^2.0.0"
+		"@vercel/speed-insights": "^2.0.0",
+		"thumbhash": "^0.1.1"
 	},
 	"packageManager": "pnpm@10.33.3+sha512.a19744364a7e248b92657a4ca5973f9354d21caf982579674b1c539f32c7420c47138ad8b1254df07aba9bc782d9b3029e3db34d5dbff974326eb74dac8ff489"
 }

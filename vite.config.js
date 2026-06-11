@@ -6,7 +6,7 @@ import wiki_plugin from './wiki_plugin';
 export default defineConfig(({ command }) => {
 	let plugins;
 	if (command === 'serve')
-		plugins = [wiki_plugin(), sveltekit()];
+		plugins = [wiki_plugin(), enhancedImages(), sveltekit()];
 	else
 		plugins = [enhancedImages(), sveltekit()];
 	

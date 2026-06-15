@@ -107,7 +107,7 @@
 		z-index: 10;
 		.header {
 			align-items: center;
-			backdrop-filter: blur(16px);
+			backdrop-filter: blur(16px) saturate(1.5);
 			background: hsla(350, 10%, 5%, .3);
 			border-radius: 24px;
 			box-shadow: inset 0 0 0 1px hsla(350, 20%, 40%, .15);
@@ -138,7 +138,6 @@
 		min-height: 100vh;
 		margin: 0 auto;
 		max-width: 1200px;
-		overflow: hidden;
 		padding: 80px 16px;
 		width: 100%;
 	}

@@ -61,15 +61,24 @@
 		* Average based on internal data analytics from April 8th to May 4th, 2026.
 	</p>
 </div>
-<div class="divider"></div>
 <div class="next_generation">
+	<div class="thumbnail_container">
+		<enhanced:img
+			class="thumbnail_image"
+			fetchpriority="low"
+			src="/static/asset/image/qserf_cavern.png"
+			sizes="min(1920px, 100vw)"
+			alt="Library Landing Thumbnail"
+		/>
+	</div>
 	<enhanced:img
+		class="render"
 		fetchpriority="low"
-		src="/static/asset/image/next_gen_render.png"
+		src="/static/asset/image/qserf_render.png"
 		sizes="min(1200px, 100vw)"
 		alt=""
 	/>
-	<div>
+	<div class="content">
 		<h1>We're helping pioneer next-generation Sci-Fi.</h1>
 		<p>Since 2014, we've been creating immersive worlds with rich environments and storytelling that have deeply inspired the community, paving the way for future generations of the genre. And we're not stopping there.</p>
 	</div>
@@ -254,38 +263,92 @@
 			margin: 16px 0 0;
 		}
 	}
-	.divider {
-		background: linear-gradient(to right, hsl(0 0% 30% / 0), hsl(0 0% 30% / .1) 30%, hsl(0 0% 30% / .1) 70%, hsl(0 0% 30% / 0));
-		height: 1px;
-		margin: 64px 0;
-		width: 100%;
-	}
 	.next_generation {
 		display: flex;
 		margin-bottom: -80px;
-		margin-top: 64px;
+		margin-top: 16px;
+		padding: 192px 0 64px;
+		position: relative;
 		@media (max-width: 480px) {
 			flex-wrap: wrap-reverse;
 		}
-		img {
-			max-width: 100%;
-			height: auto;
-			width: 600px;
-		}
-		h1 {
-			color: hsl(0 0% 10%);
-			font-family: var(--font-secondary);
-			font-size: 48px;
-			font-weight: 500;
-			line-height: 1.1;
-			margin: 96px 0 0;
-			@media (max-width: 480px) {
-				margin: 0;
+		.thumbnail_container {
+			height: 100%;
+			left: 50%;
+			position: absolute;
+			top: 0;
+			transform: translateX(-50%);
+			width: 100vw;
+			z-index: -1;
+			&:after {
+				background: linear-gradient(to top,
+					color-mix(in srgb, var(--background-primary) 0%, transparent) 0%,
+					color-mix(in srgb, var(--background-primary) 11.29%, transparent) 8.1%,
+					color-mix(in srgb, var(--background-primary) 22.04%, transparent) 15.5%,
+					color-mix(in srgb, var(--background-primary) 32.25%, transparent) 22.5%,
+					color-mix(in srgb, var(--background-primary) 41.88%, transparent) 29%,
+					color-mix(in srgb, var(--background-primary) 50.92%, transparent) 35.3%,
+					color-mix(in srgb, var(--background-primary) 59.33%, transparent) 41.2%,
+					color-mix(in srgb, var(--background-primary) 67.09%, transparent) 47.1%,
+					color-mix(in srgb, var(--background-primary) 74.16%, transparent) 52.9%,
+					color-mix(in srgb, var(--background-primary) 80.5%, transparent) 58.8%,
+					color-mix(in srgb, var(--background-primary) 86.07%, transparent) 64.7%,
+					color-mix(in srgb, var(--background-primary) 90.81%, transparent) 71%,
+					color-mix(in srgb, var(--background-primary) 94.66%, transparent) 77.5%,
+					color-mix(in srgb, var(--background-primary) 97.54%, transparent) 84.5%,
+					color-mix(in srgb, var(--background-primary) 99.36%, transparent) 91.9%,
+					var(--background-primary) 100%
+				);
+				content: '';
+				height: 96px;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 100%;
+				z-index: 2;
+			}
+			.thumbnail_image {
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
+				width: 100%;
 			}
 		}
-		p {
-			color: hsl(0 0% 10%);
-			font-size: 16px;
+		.render {
+			max-width: 100%;
+			height: auto;
+			margin-bottom: -64px;
+			width: 600px;
+			@media (max-width: 480px) {
+				height: 340px;
+				object-fit: cover;
+			}
+		}
+		.content {
+			background: radial-gradient(at 50% 50%, #00000080 20%, #00000000 70%);
+			padding: 64px 64px;
+			margin: auto -64px;
+			max-width: 100%;
+			@media (max-width: 480px) {
+				margin: auto 0;
+				padding: 64px 0;
+			}
+			h1 {
+				color: transparent;
+				background: radial-gradient(at 30% 60%, #fff, #edafa1);
+				background-clip: text;
+				font-family: var(--font-secondary);
+				font-size: 48px;
+				font-weight: 500;
+				line-height: 1.1;
+				margin: 0;
+			}
+			p {
+				color: transparent;
+				background: radial-gradient(at 30% 40%, #eee, #edafa1);
+				background-clip: text;
+				font-size: 16px;
+			}
 		}
 	}
 </style>

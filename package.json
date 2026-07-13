@@ -7,7 +7,7 @@
 	"private": true,
 	"version": "1.0.0",
 	"scripts": {
-		"dev": "node ./scripts/build_wiki.js dev && vite dev",
+		"dev": "vite dev",
 		"build": "node ./scripts/build_wiki.js && vite build",
 		"deploy": "vercel deploy --prod",
 		"deploy:preview": "vercel deploy",

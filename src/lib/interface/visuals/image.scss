@@ -1,0 +1,26 @@
+.image {
+	display: flex;
+	position: relative;
+	&:has(.error) {
+		background: #0000001a;
+	}
+	img {
+		height: 100%;
+		left: 0;
+		object-fit: contain;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+	.placeholder_overlay {
+		pointer-events: none;
+		transition: opacity .2s ease;
+	}
+	.error {
+		color: hsl(0 0% 40%);
+		font-size: 14px;
+		margin: auto;
+		padding: 8px;
+		text-align: center;
+	}
+}

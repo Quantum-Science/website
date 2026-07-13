@@ -6,7 +6,7 @@
 	<div class="content">
 		<h1>Something went wrong!</h1>
 		<p>
-			{#if page.status === 404}
+			{#if page.status === 404 && page.error?.message === 'Not Found'}
 				Sorry, but we couldn't find what you were looking for.
 			{:else}
 				{page.error?.message}

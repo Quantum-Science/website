@@ -144,3 +144,6 @@ vite.config.ts.timestamp-*
 
 .DS_Store
 .vercel
+
+src/lib/server/generated/*
+src/routes/wiki/(generated)/

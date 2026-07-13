@@ -20,6 +20,7 @@
 }
 
 :root {
+	--color-primary: hsl(0 0% 10%);
 	--background-primary: hsl(0 0% 95%);
 	--font-primary: 'figtree', sans-serif;
 	--font-secondary: 'outfit', sans-serif;
@@ -27,11 +28,18 @@
 
 body {
 	background: var(--background-primary);
-	color: #fff;
+	color: var(--color-primary);
 	font-family: var(--font-primary);
 	height: 100vh;
 	margin: 0;
 	max-height: 100vh;
 	overflow: hidden auto;
 	width: 100%;
+	&:has(.error_page) {
+		background: #000;
+	}
+}
+
+picture {
+	display: contents;
 }

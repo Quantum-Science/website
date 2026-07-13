@@ -11,7 +11,7 @@ export default {
 		adapter: adapter(),
 		prerender: {
 			handleHttpError: ({ message, path }) => {
-				if (path.startsWith('/_vercel/'))
+				if (path.startsWith('/_vercel/') || path.startsWith('/wiki'))
 					return;
 				
 				throw new Error(message);

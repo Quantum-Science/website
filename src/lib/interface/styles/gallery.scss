@@ -42,15 +42,6 @@
 	}
 	.image {
 		animation: appear .2s ease-out forwards;
-		position: relative;
-		img {
-			height: 100%;
-			left: 0;
-			position: absolute;
-			top: 0;
-			transition: opacity .5s;
-			width: 100%;
-		}
 	}
 	p {
 		animation: appear .2s ease-out forwards;
@@ -75,7 +66,7 @@
 			&.active {
 				filter: none;
 			}
-			img {
+			.image {
 				height: 100%;
 				object-fit: cover;
 				width: 100%;

@@ -45,9 +45,6 @@
 		font-weight: 600;
 	}
 	
-	img {
-		border-radius: 4px;
-	}
 	.infobox {
 		background: linear-gradient(hsla(0, 0%, 50%, .2), hsla(0, 0%, 10%, .2));
 		border-radius: 16px;
@@ -89,20 +86,19 @@
 			margin: 4px;
 			width: 144px;
 			vertical-align: top;
-			img {
+			.image_wrapper {
 				background: linear-gradient(hsla(0, 0%, 50%, .2), hsla(0, 0%, 10%, .2));
+				border-radius: 4px;
 				box-shadow: inset 0 0 0 1px hsla(0, 0%, 50%, .3);
 				cursor: zoom-in;
-				height: 144px !important;
-				object-fit: contain;
+				height: 144px;
 				padding: 8px;
-				user-select: none;
-				width: 144px !important;
+				width: 144px;
 			}
 			p {
 				font-size: 13px;
 				overflow: hidden;
-				padding: 0 4px;
+				padding: 2px 4px;
 				word-wrap: break-word;
 			}
 		}

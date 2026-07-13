@@ -2,6 +2,8 @@
 	import { open_img } from '$lib/interface/stores/gallery.svelte.ts';
 	
 	import Gallery from '$lib/interface/visuals/gallery.svelte';
+	import Image from '$lib/interface/visuals/image.svelte';
+	{{images}}
 </script>
 
 <script module>

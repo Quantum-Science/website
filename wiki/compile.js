@@ -1,3 +1,4 @@
+import { randomBytes } from 'node:crypto';
 import { execSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { marked } from 'marked';
@@ -5,6 +6,8 @@ import { copyFileSync, createReadStream, existsSync, mkdirSync, readFileSync, wr
 import { basename, dirname, extname, resolve } from 'node:path';
 import sharp from 'sharp';
 import { rgbaToThumbHash } from 'thumbhash';
+
+const IS_DEV = process.argv[1] === 'dev' && !process.env.ENHANCED_IMG;
 
 function extract_frontmatter(markdown) {
 	const match = /---\r?\n([\s\S]+?)\r?\n---/.exec(markdown);
@@ -35,9 +38,45 @@ function extract_frontmatter(markdown) {
 	return { metadata, body };
 }
 
-export async function compile_route(slug, wiki_path, routes_path, base_page, is_dev) {
+function get_hash(path) {
+	return new Promise(resolve => {
+		const hash = createHash('sha256');
+		const input = createReadStream(path);
+		input.on('readable', () => {
+			let chunk;
+			while (null !== (chunk = input.read())) {
+				hash.update(chunk);
+			}
+		});
+		input.on('close', () => resolve(hash.digest('hex')));
+	})
+}
+
+export const optimised_images = {};
+export async function optimise_image(path, size) {
+	const hash = await get_hash(path);
+	const output_path = `node_modules/.cache/wiki_images/${hash}w${size}`;
+	if (existsSync(output_path)) {
+		const image = sharp(output_path);
+		optimised_images[`${hash}w${size}`] = image;
+		
+		return [image, `${hash}w${size}`];
+	}
+	
+	const image = await sharp(path)
+		.resize({ width: size })
+		.toFormat('webp', { quality: 80 });
+	writeFileSync(output_path, await image.toBuffer());
+	
+	optimised_images[`${hash}w${size}`] = image;
+	return [image, `${hash}w${size}`];
+}
+
+export const generated_images = {};
+export const route_images = {};
+export async function compile_route(slug, wiki_path, routes_path, base_page) {
 	const markdown_path = `${wiki_path}/${slug}`;
-	const timestamp = is_dev ? null : execSync(`git log -1 --format=%cd --date=iso-strict ${markdown_path}`)
+	const timestamp = IS_DEV ? null : execSync(`git log -1 --format=%cd --date=iso-strict ${markdown_path}`)
 		.toString()
 		.trim();
 	
@@ -46,10 +85,18 @@ export async function compile_route(slug, wiki_path, routes_path, base_page, is_
 	const { body, metadata } = extract_frontmatter(markdown);
 	const html = await marked.parse(body);
 	
+	let images = 'const IMAGES = {';
+	for (const key in route_images) {
+		images += `["${key}"]: ${JSON.stringify(route_images[key])}, `;
+		delete route_images[key];
+	}
+	images += '};';
+	
 	const compiled_page = base_page
 		.replace('{{title}}', metadata.title)
 		.replace('{{update}}', timestamp ? new Intl.DateTimeFormat('en-US', { day: 'numeric', month: 'long', weekday: 'long', year: 'numeric' }).format(new Date(timestamp)) : 'Uncommitted file')
 		.replace('{{updatedate}}', timestamp ? `'${timestamp.substring(0, 10)}'` : 'null')
+		.replace('{{images}}', images)
 		.replace('{{body}}', html);
 	
 	const name = basename(slug, extname(slug));
@@ -62,24 +109,24 @@ export async function compile_route(slug, wiki_path, routes_path, base_page, is_
 	writeFileSync(path, compiled_page);
 }
 
-async function get_blur(path) {
-	const hash = await new Promise(resolve => {
-		const hash = createHash('sha256');
-		const input = createReadStream(path);
-		input.on('readable', () => {
-			let chunk;
-			while (null !== (chunk = input.read())) {
-				hash.update(chunk);
-			}
-		});
-		input.on('close', () => resolve(hash.digest('hex')));
-	});
-	const hash_path = `.svelte-kit/.wiki/${hash}`;
+async function get_blur(path, sizes) {
+	const hash = await get_hash(path);
+	const image = sharp(path);
+	const metadata = await image.metadata();
+	
+	const images = [];
+	for (const size of sizes) {
+		//const image_id = randomBytes(8).toString('hex');
+		const [image, image_id] = await optimise_image(path, size);
+		images.push([`/_wiki/${image_id}`, size]);
+	}
+	
+	/*const hash_path = `node_modules/.cache/wiki_images/${hash}`;
 	if (existsSync(hash_path))
-		return readFileSync(hash_path, { encoding: 'utf-8' }).split(' ');
+		return [...readFileSync(hash_path, { encoding: 'utf-8' }).split(' '), image_id];
 	
 	const metadata = await sharp(path)
-		.metadata();
+		.metadata();*/
 	
 	let blur_width = metadata.width, blur_height = metadata.height;
 	if (blur_width > 100 || blur_height > 100) {
@@ -90,28 +137,35 @@ async function get_blur(path) {
 			blur_height = 100, blur_width = Math.round(blur_height * ratio);
 	}
 	
-	const buffer = await sharp(path)
+	const buffer = await image
 		.ensureAlpha()
 		.resize(blur_width, blur_height)
 		.raw()
 		.toBuffer();
 	const blur = Buffer.from(rgbaToThumbHash(blur_width, blur_height, buffer))
 		.toString('hex');
-	writeFileSync(`.svelte-kit/.wiki/${hash}`, `${blur} ${metadata.width} ${metadata.height}`);
+	//writeFileSync(`node_modules/.cache/wiki_images/${hash}`, `${blur} ${metadata.width} ${metadata.height}`);
 	
-	return [blur, metadata.width, metadata.height];
+	optimised_images[hash] = image;
+	route_images[hash] = {
+		url: `/_wiki/${hash}`,
+		placeholder: blur,
+		sizes: images
+	};
+	
+	return [blur, metadata.width, metadata.height, hash, images];
 }
 
-export function setup(is_dev) {
+export function setup() {
 	const layout_path = resolve('wiki_plugin/layout.svelte');
 	const routes_path = resolve('src/routes/wiki/(generated)');
 	const wiki_path = resolve('wiki');
-	mkdirSync('.svelte-kit/.wiki', { recursive: true });
+	mkdirSync('node_modules/.cache/wiki_images', { recursive: true });
 	mkdirSync(routes_path, { recursive: true });
 	copyFileSync(layout_path, `${routes_path}/+layout.svelte`);
 	
-	const asset = src => is_dev ? `/${src}` : `/static/${src}`;
-	const img = is_dev ? 'img' : 'enhanced:img';
+	const asset = src => IS_DEV ? `/${src}` : `/static/${src}`;
+	const img = IS_DEV ? 'img' : 'enhanced:img';
 	
 	const base_page = readFileSync('wiki_plugin/page.svelte', { encoding: 'utf-8' });
 	marked.use({
@@ -192,9 +246,9 @@ export function setup(is_dev) {
 			let html = '<Gallery>\n';
 			for (const image of token.images) {
 				console.log(image.path);
-				const [blur, width, height] = await get_blur(`static/${image.path}`);
+				const [blur, width, height, hash, images] = await get_blur(`static/${image.path}`, [128, 256]);
 				
-				html += `<li i="/${image.path}" w="${width}" h="${height}" b="${blur.replaceAll('{', '&#123;').replaceAll('}', '&#125;')}"><${img} alt="${image.path.split('/').at(-1)}" fetchpriority="low" src="${asset(image.path)}" width="256"/>`;
+				html += `<li><div class="image_wrapper"><Image image={IMAGES["${hash}"]} width="128" height="128"/></div>`;
 				if (image.text)
 					html += `<p>${image.text}</p>`;
 				html += '</li>\n';

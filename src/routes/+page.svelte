@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { PUBLIC_SITE_URL, PUBLIC_SOCIAL_LINK_DISCORD } from '$env/static/public';
+	import { PUBLIC_ENABLE_WIKI, PUBLIC_SITE_URL, PUBLIC_SOCIAL_LINK_DISCORD } from '$env/static/public';
 	
 	import DiscordIcon from '$lib/interface/visuals/socials/discord_icon.svelte';
 	import RobloxIcon from '$lib/interface/visuals/socials/roblox_icon.svelte';
@@ -31,7 +31,7 @@
 			<DiscordIcon size={20}/>Join us on Discord
 		</a>
 	</div>
-	<a class="wiki" href="/wiki">
+	<a class="wiki" href="/wiki" class:hidden={PUBLIC_ENABLE_WIKI !== 'true'}>
 		Learn about us on our official wiki! →
 	</a>
 </div>
@@ -212,6 +212,11 @@
 			&:hover {
 				filter: brightness(150%);
 				transform: translate3d(0, 0, 0);
+			}
+			&.hidden {
+				opacity: 0;
+				pointer-events: none;
+				user-select: none;
 			}
 		}
 	}

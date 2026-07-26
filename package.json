@@ -1,8 +1,8 @@
 {
-	"name": "qs_website",
-	"author": "katsumi143",
+	"name": "website",
+	"author": "Quantum Science",
 	"type": "module",
-	"repository": "https://github.com/katsumi143/qs_website.git",
+	"repository": "https://github.com/Quantum-Science/website.git",
 	"license": "AGPL-3.0-only",
 	"private": true,
 	"version": "1.0.0",

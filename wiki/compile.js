@@ -76,7 +76,7 @@ export const generated_images = {};
 export const route_images = {};
 export async function compile_route(slug, wiki_path, routes_path, base_page) {
 	const markdown_path = `${wiki_path}/${slug}`;
-	const timestamp = IS_DEV ? null : execSync(`git log -1 --format=%cd --date=iso-strict ${markdown_path}`)
+	const timestamp = IS_DEV ? null : execSync(`git log -1 --format=%cd --date=iso-strict "${markdown_path}"`)
 		.toString()
 		.trim();
 	

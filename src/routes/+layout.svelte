@@ -63,16 +63,10 @@
 			</div>
 		</div>
 		<div class="more">
-			<!--<p class="links_title">Links</p>
-			<div class="links">
-				<a href="/contact">
-					Contact
-				</a>
-				<a href="/" title="(soon)">
-					Open Source
-				</a>
-			</div>-->
 			<p class="legal" aria-hidden="true">
+				{#if page.url.pathname.startsWith('/wiki/')}
+					The text on this wiki is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" target="_blank">CC BY-NC-SA 4.0</a>.<br/>
+				{/if}
 				© {new Date().getFullYear()} Quantum Science. All rights reserved.
 			</p>
 		</div>
@@ -198,6 +192,11 @@
 				font-size: .9em;
 				font-weight: 500;
 				margin-top: 96px;
+				text-align: right;
+				a {
+					color: inherit;
+					font-weight: 600;
+				}
 			}
 		}
 	}

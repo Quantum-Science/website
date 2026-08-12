@@ -97,7 +97,8 @@ export async function compile_route(slug, wiki_path, routes_path, base_page) {
 		.replace('{{update}}', timestamp ? new Intl.DateTimeFormat('en-US', { day: 'numeric', month: 'long', weekday: 'long', year: 'numeric' }).format(new Date(timestamp)) : 'Uncommitted file')
 		.replace('{{updatedate}}', timestamp ? `'${timestamp.substring(0, 10)}'` : 'null')
 		.replace('{{images}}', images)
-		.replace('{{body}}', html);
+		.replace('{{body}}', html)
+		.replace('{{filepath}}', slug);
 	
 	const name = basename(slug, extname(slug));
 	const parent = dirname(`${routes_path}/${slug}`);

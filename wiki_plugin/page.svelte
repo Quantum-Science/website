@@ -1,4 +1,6 @@
 <script>
+	import { PUBLIC_GITHUB_URL } from '$env/static/public';
+	
 	import { open_img } from '$lib/interface/stores/gallery.svelte.ts';
 	
 	import Gallery from '$lib/interface/visuals/gallery.svelte';
@@ -13,8 +15,8 @@
 <div class="header">
 	<div>
 		<h1>{{title}}</h1>
-		<a href="/wiki">← Back to Home Page</a>
+		<a class="return_home" href="/wiki">← Back to Home Page</a>
 	</div>
-	<p>Last updated: {{update}}</p>
+	<a class="last_updated" href={`${PUBLIC_GITHUB_URL}/commits/main/wiki/{{filepath}}`} target="_blank">Last updated: {{update}}</a>
 </div>
 {{body}}

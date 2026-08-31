@@ -180,7 +180,7 @@ export function setup() {
 			renderer(infobox) {
 				let html = `<div class="infobox${infobox.infotype ? ` ${infobox.infotype}` : ''}">`;
 				if (infobox.image)
-					html += `<button i="/${infobox.image}" class="image" type="button" onclick={open_img}><${img} alt="${infobox.image.split('/').at(-1)}" src="${asset(infobox.image)}" width="${infobox.infotype === 'character' ? 384 : 640}"/></button>`;
+					html += `<button i="/${infobox.image}" type="button" onclick={open_img}><${img} alt="${infobox.image.split('/').at(-1)}" src="${asset(infobox.image)}" width="${infobox.infotype === 'character' ? 384 : 320}"/></button>`;
 				if (infobox.text)
 					html += `<p>${infobox.text}</p>`;
 				if (infobox.release)

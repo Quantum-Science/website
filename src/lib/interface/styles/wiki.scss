@@ -74,6 +74,12 @@
 				width: 320px;
 			}
 		}
+		button {
+			background: none;
+			border: none;
+			margin: 0;
+			padding: 0;
+		}
 		& > p {
 			margin: 8px 0 0;
 		}
@@ -107,5 +113,27 @@
 	a {
 		color: inherit;
 		font-weight: 550;
+	}
+	
+	table {
+		background: hsla(0, 0%, 50%, .05);
+		border: 1px solid hsla(0, 0%, 50%, .3);
+		border-collapse: collapse;
+		margin: 16px 0;
+		thead {
+			background: hsla(0, 0%, 50%, .15);
+			th {
+				border: 1px solid hsla(0, 0%, 50%, .3);
+				font-weight: 600;
+				padding: 6px 16px 6px 8px;
+				text-align: left;
+			}
+		}
+		tbody {
+			td {
+				border: 1px solid hsla(0, 0%, 50%, .3);
+				padding: 6px 16px 6px 8px;
+			}
+		}
 	}
 }

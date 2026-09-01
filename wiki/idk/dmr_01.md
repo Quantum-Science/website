@@ -10,3 +10,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio erat, convall
 
 # TODO: PROPOSAL
 i'm thinking dmr 01 and dmr 02 should be combined into one "DMR" page?
+^^ nah bc i wanna add in a how to guide for how to use the separate dmr generations, since SNL is like stupid complex while qserf is press a button and temp go up

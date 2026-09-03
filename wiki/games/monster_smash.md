@@ -7,6 +7,7 @@ title: MONSTER SMASH
 |text=MONSTER SMASH
 |release=April 8th, 2026
 }}
+{{incomplete}}
 **MONSTER SMASH** is an original PvE Shooter created by @pointcastle, made in only 7 days as a followup to [BATTLE FOR DARK MATTER](/wiki/updates/qserf/april_fools_26).
 
 ## Gameplay

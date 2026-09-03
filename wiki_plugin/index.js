@@ -1,6 +1,6 @@
-import { copyFileSync, createReadStream, readdirSync } from 'node:fs';
+import { copyFileSync, readdirSync } from 'node:fs';
 
-import { compile_route, optimised_images, optimise_image, setup } from '../wiki/compile';
+import { compile_route, optimised_images, setup } from '../wiki/compile.js';
 export default function wiki_plugin() {
 	return {
 		enforce: 'pre',

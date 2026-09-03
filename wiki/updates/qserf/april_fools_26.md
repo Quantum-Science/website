@@ -10,6 +10,7 @@ title: QSERF April Fools 2026
 |curr=April Fools 2026
 |next=updates/qserf/v3.12.0
 }}
+{{incomplete}}
 QSERF's April Fools Event for 2026, which renamed the game to “BATTLE FOR DARK MATTER” and introduced a new wave of nonsense.
 The event lasted for 5 days before returning to the previous version.
 

@@ -234,6 +234,45 @@ export function setup() {
 					});
 				return { type: 'gallery', raw: match[0], images };
 			}
+		}, {
+			name: 'main_article',
+			level: 'block',
+			renderer(token) {
+				return `<div class="note">Main article: <a href="${token.path}">${token.text}</a></div>`;
+			},
+			tokenizer(str) {
+				const match = str.match(/^{{main\|([\w\/]+)\|([\w ]+)}}/);
+				if (!match)
+					return;
+				
+				return { type: 'main_article', raw: match[0], path: match[1], text: match[2] };
+			}
+		}, {
+			name: 'incomplete',
+			level: 'block',
+			renderer(token) {
+				return `<div class="message"><b>This article is incomplete and may not be accurate.</b><p>You can help by expanding it and making suggestions.</p></div>`;
+			},
+			tokenizer(str) {
+				const match = str.match(/^{{incomplete}}/);
+				if (!match)
+					return;
+				
+				return { type: 'incomplete', raw: match[0] };
+			}
+		}, {
+			name: 'stub',
+			level: 'block',
+			renderer(token) {
+				return `<div class="message"><b>This article is a stub.</b><p>You can help by expanding it and making suggestions.</p></div>`;
+			},
+			tokenizer(str) {
+				const match = str.match(/^{{stub}}/);
+				if (!match)
+					return;
+				
+				return { type: 'stub', raw: match[0] };
+			}
 		}],
 		renderer: {
 			image({ href }) {

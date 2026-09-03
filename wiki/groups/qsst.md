@@ -7,9 +7,8 @@ title: Quantum Structural Science Team
 	<p>QSST Logo</p>
 </div>
 
-
-## Group Information
-The **Quantum Structural Science Team or QSST** is the department which handles all game development and creative content within [Quantum Science](/wiki/groups/qs). It houses multiple subdepartments including Quality Assurance, Weapon Analytics, Archival, and Media departments.<br/>
+{{incomplete}}
+**Quantum Structural Science Team (QSST)** is the department which handles all game development and creative content within [Quantum Science](/wiki/groups/qs). It houses multiple subdepartments including Quality Assurance, Weapon Analytics, Archival, and Media departments.<br/>
 
 Since its creation on the 12th of January 2018, QSST has gone through many directors and changes. Originally being called **Quantum Advanced Structural Science Team or QASST** in 2017 and being led by JustSimplyWild and EramsorGR. It was renamed on the 25th of February 2020 to the Quantum Structural Science Team, and is now led by MrSpxxds after JustSimplyWild left in 2023, with the old group now being called **Quantum Archival & Storage Service Team**, which houses all development projects from 2018 to 2020.<br/>
 
@@ -44,15 +43,30 @@ QSST currently has **109 members**, below is a list of the staff.<br/><br/>
 - Dominus_Loading
 
 ## Subdepartments
-QSST is home to many subdepartments, each fulfiling a vital role to the groups functionality.<br/>
+The department is home to several subdepartments (or subdivisions) that split various development-related jobs into dedicated groups of people.
 
-Starting off with the **Quantum Quality Control team or QQC**, this department handles the testing and quality control for all QS games. You can join QQC through applications which are posted in QDF, Ko-fi, and Corporate channels, it is not open to the wider community. These applications are only open when new members are required.
+### Archival Department
+{{main|/wiki/groups/qad|Quantum Archival Department}}
+The **Quantum Archival Department (QAD)** is one of the larger subdepartments and works closely with the [Quantum Broadcasting Corporation](/wiki/groups/qbc).
+The subdepartment mainly focuses on writing the lore for the Quantum Universe, and assisting QBC with their productions to ensure they fit into the canonical universe. While QBC in turn helps QAD with creating lore material for the community to use, such as posters, magazines, videos, etc.
 
-**Weapon Analytics** handles combat balancing for our games containing combat systems, at the time of writing this is currently only QSERF. You can join WA through applications posted in main QSP, these are only posted when new members are required.
+The subdepartment is currently closed at the time of writing.
 
-The **Archival department**, also known as [Quantum Archival Department](/wiki/groups/qad) is one of the larger subdepartments and works closeley with the [Quantum Broadcasting Corporation](/wiki/groups/qbc). QAD mainly focuses on writing the lore for the Quantum Universe, and assist QBC with their productions and ensuring that the lore they use is correct, QBC in turn helps QAD with creating lore material for the community to use, such as posters, magazines, videos, etc etc. You can join QAD (unknown for now, may end up being through qbc after the merger)
+### Broadcasting Corporation
+{{main|/wiki/groups/qbc|Quantum Broadcasting Corporation}}
+The **Quantum Broadcasting Corporation (QBC)** is yet another large subdepartment under SST, as mentioned before it works closely with QAD with creating lore and video productions. The subdepartment mainly focuses on creating video productions for the [Quantum Science YouTube](https://www.youtube.com/@QuantumScience).
 
-The **Broadcasting department** also known as [Quantum Broadcasting Corporation](/wiki/groups/qbc) is yet another large subdepartment under SST, as mentioned before it works closely with QAD with creating lore and video productions. QBC mainly focuses on creating media for the QS YouTube channel. You can join QBC through applications released in QSP, these are once again only posted when new members are required.
+The subdepartment is an open volunteer program, and routinely puts out interest forms when necessary in [Quantum Science Public](/discord).
+
+### Quantum Quality Control
+**Quantum Quality Control (QQC)** is a subdivision responsible for quality assurance pertaining to any of the department's projects, including any games.
+
+The subdivision is an open volunteer program, but is currently closed at the time of writing.
+
+### Weapons Analytics
+**Weapons Analytics (WA)** is a subdivision responsible for balancing combat and planning related changes in games developed by the department.
+
+The subdivision is an open volunteer program, and routinely puts out interest forms when necessary in [Quantum Science Public](/discord).
 
 ## Benefits Program
 
@@ -68,3 +82,6 @@ Note that we may not be able to provide these benefits due to personal matters o
 We reserve the right to revoke access at any time if we consider you to be breaking rules or to be a security risk.<br/>
 Perks may be added or removed in the future.<br/>
 **Note that the SST benefits program does not give you access to the SST group or devsites, due to Roblox ToS we are unable to provide this benefit.** *However*, we can provide priority access to Public Test Builds, as this involves us giving SSTBP the link early and then to the wider community.
+
+## Trivia
+* While the department is technically abbreviated as QSST, it is instead more commonly and officially referred to as SST.

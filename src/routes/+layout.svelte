@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import { PUBLIC_SITE_URL, PUBLIC_SOCIAL_LINK_BLUESKY, PUBLIC_SOCIAL_LINK_DISCORD, PUBLIC_SOCIAL_LINK_KOFI, PUBLIC_SOCIAL_LINK_ROBLOX, PUBLIC_SOCIAL_LINK_X, PUBLIC_SOCIAL_LINK_YOUTUBE } from '$env/static/public';
+	import { PUBLIC_ENABLE_WIKI, PUBLIC_SITE_URL, PUBLIC_SOCIAL_LINK_BLUESKY, PUBLIC_SOCIAL_LINK_DISCORD, PUBLIC_SOCIAL_LINK_KOFI, PUBLIC_SOCIAL_LINK_ROBLOX, PUBLIC_SOCIAL_LINK_X, PUBLIC_SOCIAL_LINK_YOUTUBE } from '$env/static/public';
 	
 	import '$lib/interface/styles/root.scss';
 	
@@ -23,6 +23,11 @@
 			<BrandLogo height={48}/>
 		</a>
 		<div class="links">
+			{#if PUBLIC_ENABLE_WIKI}
+				<a href="/wiki">
+					Official Wiki
+				</a>
+			{/if}
 			<a href="https://www.roblox.com/catalog?CreatorName=Quantum+Science+Inc.&CreatorType=Group&salesTypeFilter=1&SortType=3">
 				Roblox Store
 			</a>

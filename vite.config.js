@@ -2,7 +2,7 @@ import { enhancedImages } from '@sveltejs/enhanced-img';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 
-import wiki_plugin from './wiki_plugin';
+import wiki_plugin from './wiki_plugin/index.js';
 export default defineConfig(({ command }) => {
 	let plugins;
 	if (command === 'serve')

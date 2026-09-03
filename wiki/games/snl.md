@@ -8,17 +8,15 @@ title: Sitka National Laboratory
 	<p>Release date: Coming soon</p>
 </div>
 
-## Introduction
+{{incomplete}}
+**Sitka National Laboratory (SNL)** is an upcoming game developed by the [Quantum Structural Science Team](/wiki), and is the latest installment of the [QSML3](/wiki/games/qsml3) series of games, it takes place in 2042 after the events of [QSERF](/wiki/games/qserf).
 
-**Sitka National Laboratory or SNL** is an upcoming game developed by the [Quantum Structural Science Team](/wiki), and is the latest installment of the [QSML3](/wiki/games/qsml3) series of games, it takes place in 2042 after the events of [QSERF](/wiki/games/qserf).
-
-## Project Information
-
-**Sitka National Laboratory or SNL** is a research-based supersite located in the mountains of Sitka Alaska. This facility contains labs ranging from Biological to Energy, it houses the second generation Dark Matter Reactor and oversees the regions energy production and medical aid.<br/>
+## Synopsis
+The game is a research-based supersite located in the mountains of Sitka Alaska. This facility contains labs ranging from Biological to Energy, it houses the second generation Dark Matter Reactor and oversees the regions energy production and medical aid.<br/>
 Following the disaster in 1985 with the first generation Dark Matter Reactor, the concept was refined and effectively redesigned to be as safe as possible and is now deployed in multiple sites across the globe.<br/>
 SNL was originally built as a testing site in the late 2010s, and has since been transformed into a full-fledged power generation and research site, operating for well over 20 years.<br/>
 
-## Lore
+## Plot
 with the nuclear ban in 1986? the world turned to fossil fuels or otherwise unrenewable energy generation, which accellerated climate changed and made weather events worse throughout the globe, hence snls abundance of snow, the extreme weather yada yada yada yada yada yada 
 
 ## Gameplay

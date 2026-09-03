@@ -7,9 +7,8 @@ title: Quantum Supervisory Operations Center
 	<p>QSOC Logo</p>
 </div>
 
-## Group Information
-
-The **Quantum Supervisory Operations Center or QSOC** is the department tasked with safeguarding the community, QSOC monitors in-game activity, the Quantum Science Public (QSP) Discord server and all other instances of this group where users can freely interact to prevent exploitation of the rules and other malicious behavior.
+{{incomplete}}
+The **Quantum Supervisory Operations Center (QSOC)** is the department tasked with safeguarding the community, QSOC monitors in-game activity, the Quantum Science Public (QSP) Discord server and all other instances of this group where users can freely interact to prevent exploitation of the rules and other malicious behavior.
 
 It was created on the 6th of June 2024 to replace QAC moderation, making it fairer to gain a position in moderation. Previously you would have been handpicked to get the Recognised Community Member or RCM role which would be sort of a trail for working in the [Quantum Community Outreach Department](/wiki/groups/qcod) which would eventually see you promoted to supervisor and eventually administrator, who would moderate the games and discord servers.<br/>
 This was changed following community backlash in 2024 which saw the creation of QSOC and an application based system. It was originally directed by Fhizix, and is now directed by ByGermanKnight

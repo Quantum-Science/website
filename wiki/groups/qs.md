@@ -6,4 +6,6 @@ title: Quantum Science
 |image=asset/image/brand_card.jpg
 |text=Quantum Science
 }}
+{{stub}}
+
 **Quantum Science (QS)** is an indie game development studio that specializes in the sci-fi realm.

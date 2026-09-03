@@ -7,9 +7,8 @@ title: Quantum Community Outreach Department
 	<p>QCOD Logo</p>
 </div>
 
-## Group Information
-
-**Quantum Community Outreach Department or QCOD** strives to collaborate with other departments to serve as a bridge between the community and the administrative teams. It is the main center for any assistance, guidance or support which may be required from staff members. We’re also here as a friendly and fun center for community entertainment and engagement.<br/>
+{{incomplete}}
+**Quantum Community Outreach Department (QCOD)** strives to collaborate with other departments to serve as a bridge between the community and the administrative teams. It is the main center for any assistance, guidance or support which may be required from staff members. We’re also here as a friendly and fun center for community entertainment and engagement.<br/>
 In addition to community support, QCOD processes all Corporate applications, and remains the main location to report rule violations to [QSOC](/wiki/groups/qsoc).<br/>
 
 QCOD was created on September 30th 2020 with xXDarkMemoriesXx as its director and has since been passed onto Gajammer.<br/>

@@ -7,5 +7,6 @@ title: QS Multipurpose Laboratories 1
 |text=QS Multipurpose Laboratories 1
 |release=2016
 }}
+{{stub}}
 **Quantum Science Multipurpose Laboratories 1 (QSML1)** was a simulation game developed by JustSimplyWild.
 It was discontinued in 2017, and succeeded by [QSML2](/wiki/games/qsml2).

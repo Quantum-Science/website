@@ -10,12 +10,16 @@ title: Quantum Structural Science Team
 {{incomplete}}
 **Quantum Structural Science Team (QSST)** is the department which handles all game development and creative content within [Quantum Science](/wiki/groups/qs). It houses multiple subdepartments including Quality Assurance, Weapon Analytics, Archival, and Media departments.<br/>
 
-Since its creation on the 12th of January 2018, QSST has gone through many directors and changes. Originally being called **Quantum Advanced Structural Science Team or QASST** in 2017 and being led by JustSimplyWild and EramsorGR. It was renamed on the 25th of February 2020 to the Quantum Structural Science Team, and is now led by MrSpxxds after JustSimplyWild left in 2023, with the old group now being called **Quantum Archival & Storage Service Team**, which houses all development projects from 2018 to 2020.<br/>
+QSST used to be known as **Quantum Advanced Structural Science Team or QASST**, which was created on the 12 of January 2018, and has since been replaced by the QSST group, made on the 25th of February 2020.
+QASST had multiple owners, first being AdjacentPhoenix in 2018, then to JustSimplyWild on the 6th of September 2018, then to iXev on the 17th of February 2020, then back to Wild on the 19th of April 2020, and then to MrSpxxds on the 13th of January 2023.<br/>
+Aside from owners it has also had many different directors, including iXev, AdjacentPhoenix, arch1bald (axcracy), and auroraisluna (EramsorGR).<br/>
+Since late 2022, QASST has been renamed to **Quantum Archival & Storage Service Team**, keeping the acronym while also accurately describing what the group is used for now, which is essentially archival of all projects from 2018 to 2020.<br/><br/>
+QSST itself has had two directors, JustSimplyWild from 2020 to 2023, and MrSpxxds from 2023.<br/>
 
 There are multiple ways you can join SST, some are through subdepartments as explained below, other ways you can get in are through Developer and Admin applications when they are posted in QSP, or through being invited to be a Contractor or a Developer. We will reach out to people that we are interested in hiring, please do not approach SST developers or directorate asking to be invited to SST, it will only lower your chances in the future.
 
 ## Staff
-QSST currently has **109 members**, below is a list of the staff.<br/><br/>
+QSST currently has **19 staff members**, below is a list.<br/><br/>
 **Director**
 - MrSpxxds
 

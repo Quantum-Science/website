@@ -3,11 +3,3 @@ allowBuilds:
   esbuild: true
   sharp: true
   svelte-preprocess: true
-supportedArchitectures:
-  os:
-  - win32
-  - darwin
-  - current
-  cpu:
-  - x64
-  - arm64

@@ -44,3 +44,7 @@ QIAD currently has **34 members**, below is a list of the staff.<br/><br/>
 
 **Probationary Affairs**
 - N/A
+
+## External Links
+* ["Quantum Internal Affairs Department"](https://www.roblox.com/communities/32735586) — Roblox.
+* ["Quantum Internal Affairs Department"](https://discord.com/invite/pvDzDrwdHZ) — Discord.

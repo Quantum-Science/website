@@ -8,3 +8,6 @@ title: Quantum Archival Department
 }}
 {{stub}}
 **Quantum Archival Department (QAD)** is a subdepartment of the [Quantum Structural Science Team](/wiki/groups/qsst) in charge of the creation of lore material for the [Quantum Corporation](/wiki/groups/qc) universe, as well as storage of relevant historical records. Content produced from this department (varying from documents and technical specifications to photography and storytelling) is canon.
+
+## External Links
+* ["Quantum Archival Department"](https://www.roblox.com/communities/17062791) — Roblox.

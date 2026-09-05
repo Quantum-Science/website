@@ -84,3 +84,7 @@ As of writing this version currently isnt public or under any official archive, 
 V3 started off as a fan project built by imskyyc in 2020 and several other developers (ill add them in later) and significantly overhauled parts of the Showcase map, it included a fully functioning DMR2 with a meltdown which most previous versions didn't have, this version eventually included a rebuilt DMR2 and all surrounding equiment, sadly this version didn't end up being released as the project was shut down in Mid 2021. This version can be found on the QASST group, and is not uncopylocked and therefore may not be used by the community.
 
 <div style="clear: both;"></div>
+
+## External Links
+* ["QSML3 Version 3 | Public Archive"](https://www.roblox.com/games/14226700580) — Roblox.
+* ["QSML³ V3"](https://www.roblox.com/games/70670938996645) — Roblox.

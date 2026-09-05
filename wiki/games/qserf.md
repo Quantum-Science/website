@@ -18,3 +18,10 @@ don't even get me started
 
 ## Credits
 https://devforum.roblox.com/t/qs-energy-research-facility-—-credits-attributions/3983851
+
+## External Links
+* ["☢️ QS Energy Research Facility"](https://www.roblox.com/games/3039795291) — Roblox.
+* ["QSERF History Archive"](https://www.roblox.com/games/71925478164705) — Roblox.
+* ["QS Energy Research Facility — In-Experience Rules"](https://devforum.roblox.com/t/3455319) — Roblox DevForum.
+* ["QS Energy Research Facility — Raider Pass Guidelines"](https://devforum.roblox.com/t/3892850) — Roblox DevForum.
+* ["QS Energy Research Facility — Credits & Attributions"](https://devforum.roblox.com/t/3983851) — Roblox DevForum.

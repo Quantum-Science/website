@@ -45,3 +45,6 @@ QSOC currently has **26 members**, below is a list of the staff.<br/><br/>
 
 **Novice Supervisor**
 - N/A
+
+## External Links
+* ["Quantum Supervisory Operations Center"](https://www.roblox.com/communities/34416266) — Roblox.

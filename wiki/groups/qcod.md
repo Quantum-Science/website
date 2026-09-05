@@ -55,3 +55,7 @@ The Kleiner Oil Group an organization of the best of the best in crime and chaos
 As such, it operates as a pseudo-roleplay insurgency group that enhances gameplay through its activities and opposition to security operatives.<br/><br/>
 
 KOG became an official subdepartment under QCOD on the 10th of August 2026.
+
+## External Links
+* ["Quantum Community Outreach Department"](https://www.roblox.com/communities/7822239) — Roblox.
+* ["Quantum Community Outreach Department"](https://discord.com/invite/Pg3QFV4eg6) — Discord.

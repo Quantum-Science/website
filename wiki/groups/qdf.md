@@ -52,3 +52,6 @@ QDF currently has **7 staff members**, below is a list.<br/><br/>
 **Control & Intervention Unit or CIU** consists of QDFs most sharp-minded individuals. These analytical operatives wield their knowledge and experience as their weapons. Utilizing intel gathering methods such as CCTV and active reconnaissance to predict, identify, and disrupt enemy tactics. Whilst CIU operatives are typically expected to aid and lead their fellow operatives to victory, their individual lethality — being a selection of the best QDF has to offer — is not to be underestimated.
 
 **Suppression & Enforcement Unit or SEU** consists of the most dedicated and lethal fighters of QDF. Selected and trained from the top crop of QDF, SEU Operatives are relentless front-line combatives who use overwhelming firepower and effective maneuver warfare to counter and overmatch enemy forces, defend key locations, and push through contested front lines.
+
+## External Links
+* ["Quantum Defense Firm"](https://www.roblox.com/communities/5684648) — Roblox.

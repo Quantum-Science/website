@@ -89,3 +89,6 @@ Perks may be added or removed in the future.<br/>
 
 ## Trivia
 * While the department is technically abbreviated as QSST, it is instead more commonly and officially referred to as SST.
+
+## External Links
+* ["Quantum Structural Science Team"](https://www.roblox.com/communities/5681740) — Roblox.

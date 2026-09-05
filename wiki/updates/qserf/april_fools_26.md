@@ -53,3 +53,6 @@ There is no associated version number, as it was randomised for each session.
 ## Trivia
 * The core theme of the event was primarily a reference to [Battle for Dream Island](https://en.wikipedia.org/wiki/Battle_for_Dream_Island).
 * As a followup surprise, an original PvE Shooter titled [MONSTER SMASH](/wiki/games/monster_smash) released shortly after the event ended.
+
+## External Links
+* ["APRIL FOOLS EVENT"](https://www.roblox.com/events/9174547099637908152) — Roblox Events.

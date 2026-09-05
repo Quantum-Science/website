@@ -17,7 +17,7 @@ Following the disaster in 1985 with the first generation Dark Matter Reactor, th
 SNL was originally built as a testing site in the late 2010s, and has since been transformed into a full-fledged power generation and research site, operating for well over 20 years.<br/>
 
 ## Plot
-with the nuclear ban in 1986? the world turned to fossil fuels or otherwise unrenewable energy generation, which accellerated climate changed and made weather events worse throughout the globe, hence snls abundance of snow, the extreme weather yada yada yada yada yada yada 
+After the events of QSERF and shortly after, Chernobyl, there was a nuclear energy ban put in place due to its proven unsafe nature at the time, which caused a global change to fossil fuels or otherwise non-renewable forms of energy generation, and resulted in the accelleration of climate change. This resulted in harsher climates around the world, cold regions became colder, and warm regions became warmer, hence SNL's abundance of snow, and extreme weather.
 
 ## Gameplay
 SNL is not the type of core game that most players are used to, this game will be more of a roleplay facility management simulator, with elements of a normal core game blended in.<br/>
@@ -30,7 +30,7 @@ These are just some of the features we have planned for this game, this page wil
 
 ## Development
 SNL began development in late 2020, when wild announced the project to QSP, it had a few areas built at the time but was more of a concept for what the game could be.<br/>
-Up until 2024, SNL hadn't had much work done to it, due to qserf updates taking priority, and by this point there still wasn't much in terms of a layout or features that were set in stone.<br/>
+Up until 2024, SNL hadn't had much work done to it, due to [QSERF](/wiki/games/qserf) updates taking priority, and by this point there still wasn't much in terms of a layout or features that were set in stone.<br/>
 Fast forward to the time of writing (September 1st 2026) we have a layout for sector c set in stone and have begun building it out, there is no release date for this project, however we are working on it pretty much daily at this point. <br/>As for features we have a few set in stone, and are visible on the public SNL Trello (LINK PLEASE)
 
 ## Credits

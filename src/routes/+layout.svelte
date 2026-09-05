@@ -23,7 +23,7 @@
 			<BrandLogo height={48}/>
 		</a>
 		<div class="links">
-			{#if PUBLIC_ENABLE_WIKI}
+			{#if PUBLIC_ENABLE_WIKI === 'true'}
 				<a href="/wiki">
 					Official Wiki
 				</a>

@@ -293,7 +293,9 @@ export function setup() {
 				return `<${img} alt="${href.split('/').at(-1)}" src="${asset(href)}"/>`
 			},
 			link({ href, text }) {
-				return `<a href="${href}" target="${href.startsWith('/') ? '_self' : '_blank'}">${text}</a>`;
+				if (href.startsWith('/'))
+					return `<a href="${href}">${text}</a>`;
+				return `<a href="${href}" target="_blank" rel="external">${text}</a>`;
 			}
 		},
 		async walkTokens(token) {

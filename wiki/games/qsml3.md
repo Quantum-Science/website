@@ -4,7 +4,7 @@ title: QS Multipurpose Laboratories 3
 
 {{incomplete}}
 **Quantum Science Multipurpose Laboratories 3 (QSML3)** was a string of games starting in 2018, with QSML3 Pre Alpha and went on to recieve 7 different iterations over the years that followed.<br/>
-All of these versions are owned and have at some point be developed by [Quantum Structural Science Team](/wiki).<br/>
+All of these versions are owned and have at some point be developed by [Quantum Structural Science Team](/wiki/groups/qsst).<br/>
 QSML3 in lore is the home of the 2nd Generation Dark Matter Reactor and goes on to be commercially available to the world, it is regarded as the safest nuclear fusion reactor.
 
 ## QS Multipurpose Laboratories 3 Pre-Alpha (V1)

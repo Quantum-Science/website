@@ -93,7 +93,8 @@ export async function compile_route(slug, wiki_path, routes_path, base_page) {
 	images += '};';
 	
 	const compiled_page = base_page
-		.replace('{{title}}', metadata.title)
+		.replaceAll('{{title}}', metadata.title)
+		.replace('{{href}}', `/wiki/${slug.substring(0, slug.length - 3)}`)
 		.replace('{{update}}', timestamp ? new Intl.DateTimeFormat('en-US', { day: 'numeric', month: 'long', weekday: 'long', year: 'numeric' }).format(new Date(timestamp)) : 'Uncommitted file')
 		.replace('{{updatedate}}', timestamp ? `'${timestamp.substring(0, 10)}'` : 'null')
 		.replace('{{images}}', images)

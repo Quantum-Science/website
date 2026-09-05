@@ -8,7 +8,7 @@ title: GLOCK 17
 }}
 {{stub}}
 
-The **GLOCK 17 (G-17)** is a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF](/wiki/games/qserf). It is a Semi-automatic pistol wielded by Tier 1 Raiders and [QDF](/wiki/groups/qdf)'s Operatives in Training.
+The **GLOCK 17 (G-17)** is a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF](/wiki/games/qserf). It is a semi-automatic pistol wielded by Tier 1 Raiders and [QDF](/wiki/groups/qdf)'s Operatives in Training.
 
 ## Statistics
 |Ammunition|Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate (RPM)|

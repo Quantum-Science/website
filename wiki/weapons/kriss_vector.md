@@ -8,7 +8,7 @@ title: KRISS Vector
 }}
 {{stub}}
 
-The **KRISS Vector** is a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF](/wiki/games/qserf). It is an Automatic/Semi-automatic submachine gun wielded by [QDF](/wiki/groups/qdf)'s Field Operatives.
+The **KRISS Vector** is a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF](/wiki/games/qserf). It is an automatic submachine gun wielded by [QDF](/wiki/groups/qdf)'s Field Operatives.
 
 ## Statistics
 |Ammunition|Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate (RPM)|

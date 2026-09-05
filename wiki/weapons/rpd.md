@@ -8,7 +8,7 @@ title: RPD
 }}
 {{stub}}
 
-The **RPD** is a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF](/wiki/games/qserf). It is an Automatic machine gun wielded by Tier 4 Raiders.
+The **RPD** is a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF](/wiki/games/qserf). It is an automatic machine gun wielded by Tier 4 Raiders.
 
 ## Statistics
 |Ammunition|Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate (RPM)|

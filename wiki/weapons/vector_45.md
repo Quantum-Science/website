@@ -8,7 +8,7 @@ title: Vector-45
 }}
 {{stub}}
 
-The **Vector-45** is a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF](/wiki/games/qserf). It is an Automatic/Semi-automatic submachine gun wielded by [QDF](/wiki/groups/qdf)'s Warrant Officers and CIU's Senior Operators.
+The **Vector-45** is a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF](/wiki/games/qserf). It is an automatic submachine gun wielded by [QDF](/wiki/groups/qdf)'s Warrant Officers and CIU's Senior Operators.
 
 ## Statistics
 |Ammunition|Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate (RPM)|

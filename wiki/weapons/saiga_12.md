@@ -8,7 +8,7 @@ title: Saiga-12
 }}
 {{stub}}
 
-The **Saiga-12** is a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF](/wiki/games/qserf). It is a Semi-automatic shotgun wielded by Tier 3 Raiders.
+The **Saiga-12** is a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF](/wiki/games/qserf). It is a semi-automatic shotgun wielded by Tier 3 Raiders.
 
 ## Statistics
 |Ammunition          |Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate (RPM)|

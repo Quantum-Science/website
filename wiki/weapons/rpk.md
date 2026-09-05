@@ -8,7 +8,7 @@ title: RPK
 }}
 {{stub}}
 
-The **RPK** is a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF](/wiki/games/qserf). It is an Automatic/Semi-automatic machine gun wielded by Tier 3 Raiders.
+The **RPK** is a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF](/wiki/games/qserf). It is an automatic machine gun wielded by Tier 3 Raiders.
 
 ## Statistics
 |Ammunition|Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate (RPM)|

@@ -8,7 +8,7 @@ title: GLOCK 18
 }}
 {{stub}}
 
-The **GLOCK 18 (G-18)** is a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF](/wiki/games/qserf). It is an Automatic/Semi-automatic pistol wielded by Tier 2 Raiders and [QDF](/wiki/groups/qdf)'s Junior Specialists.
+The **GLOCK 18 (G-18)** is a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF](/wiki/games/qserf). It is an automatic pistol wielded by Tier 2 Raiders and [QDF](/wiki/groups/qdf)'s Junior Specialists.
 
 ## Statistics
 |Ammunition|Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate (RPM)|

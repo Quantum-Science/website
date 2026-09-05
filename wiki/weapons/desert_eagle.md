@@ -8,7 +8,7 @@ title: Desert Eagle
 }}
 {{stub}}
 
-The **Desert Eagle** is a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF](/wiki/games/qserf). It is a Semi-automatic pistol wielded by [QDF](/wiki/groups/qdf)'s Junior Field Officers and QDF's Junior Squadron Operators.
+The **Desert Eagle** is a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF](/wiki/games/qserf). It is a semi-automatic pistol wielded by [QDF](/wiki/groups/qdf)'s Junior Field Officers and QDF's Junior Squadron Operators.
 
 
 ## Statistics

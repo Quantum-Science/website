@@ -8,7 +8,7 @@ title: AKM
 }}
 {{stub}}
 
-The **AKM** is a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF](/wiki/games/qserf). It is an Automatic/Semi-automatic rifle wielded by Tier 2 Raiders.
+The **AKM** is a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF](/wiki/games/qserf). It is an automatic assault rifle wielded by Tier 2 Raiders.
 
 Added in the [May 2026 Combat Update](/wiki/updates/qserf/v3.12.0), it functions similarly to the now-removed AK-47, with some minor differences.
 

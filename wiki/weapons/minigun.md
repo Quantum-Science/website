@@ -8,7 +8,7 @@ title: MIN-134
 }}
 {{stub}}
 
-The **MIN-134** is a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF](/wiki/games/qserf). It is an Automatic rotary machine gun wielded by Tier 3 Raiders and [QDF](/wiki/groups/qdf)'s Specialists.
+The **MIN-134** is a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF](/wiki/games/qserf). It is an automatic rotary machine gun wielded by Tier 3 Raiders and [QDF](/wiki/groups/qdf)'s Specialists.
 
 ## Statistics
 |Ammunition    |Accuracy (Hip Fire)|Equip Delay|Fire Rate (RPM)|

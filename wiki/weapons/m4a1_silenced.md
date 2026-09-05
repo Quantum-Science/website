@@ -8,7 +8,7 @@ title: M4A1 Silenced
 }}
 {{stub}}
 
-The **M4A1 Silenced (M4A1-S)** is a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF](/wiki/games/qserf). It is an Automatic/Semi-automatic rifle wielded by [QDF](/wiki/groups/qdf)'s Warrant Officers and QDF's Junior Squadron Operators.
+The **M4A1 Silenced (M4A1-S)** is a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF](/wiki/games/qserf). It is an automatic assault rifle wielded by [QDF](/wiki/groups/qdf)'s Warrant Officers and QDF's Junior Squadron Operators.
 
 Added in the [May 2026 Combat Update](/wiki/updates/qserf/v3.12.0), it serves as a variant of the [M4A1](/wiki/weapons/m4a1) that provides improved precision alongside an added holographic sight.
 

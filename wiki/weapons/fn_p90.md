@@ -8,7 +8,7 @@ title: FN P90
 }}
 {{stub}}
 
-The **FN P90** is a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF](/wiki/games/qserf). It is an Automatic/Semi-automatic submachine gun wielded by Tier 2 Raiders and [QDF](/wiki/groups/qdf)'s Senior Field Operatives.
+The **FN P90** is a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF](/wiki/games/qserf). It is an automatic submachine gun wielded by Tier 2 Raiders and [QDF](/wiki/groups/qdf)'s Senior Field Operatives.
 
 ## Statistics
 |Ammunition|Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate (RPM)|

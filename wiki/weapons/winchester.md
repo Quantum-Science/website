@@ -8,7 +8,7 @@ title: Winchester M70
 }}
 {{stub}}
 
-The **Winchester M70** is a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF](/wiki/games/qserf). It is a Semi-automatic bolt rifle wielded by [QDF](/wiki/groups/qdf)'s Warrant Officers and CIU's Senior Operators.
+The **Winchester M70** is a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF](/wiki/games/qserf). It is a bolt-action sniper rifle wielded by [QDF](/wiki/groups/qdf)'s Warrant Officers and CIU's Senior Operators.
 
 ## Statistics
 The weapon is intended for long-range usage, and has an inversed damage falloff.

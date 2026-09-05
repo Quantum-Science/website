@@ -8,7 +8,7 @@ title: GLOCK 18 Duals
 }}
 {{stub}}
 
-The **GLOCK 18 Duals** are a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF](/wiki/games/qserf). They are Automatic/Semi-automatic pistols wielded by Tier 4 Raiders, [QDF](/wiki/groups/qdf)'s Junior Field Officers, and QDF Squadron Operators.
+The **GLOCK 18 Duals** are a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF](/wiki/games/qserf). They are automatic pistols wielded by Tier 4 Raiders, [QDF](/wiki/groups/qdf)'s Junior Field Officers, and QDF Squadron Operators.
 
 ## Statistics
 |Ammunition|Accuracy (Hip Fire)|Equip Delay|Fire Rate (RPM)|

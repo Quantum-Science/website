@@ -72,5 +72,5 @@ All bullet damage has a gradual distance-based falloff, usually the closer you a
 |FN FAL                      |Was a semi-automatic rifle wielded by both combat teams, **replaced by the L1A1**.  |
 |Eyelander                   |Was an admin item, previously used in a halloween boss event, removed due to its texture containing blood.|
 |Knife                       |Was a basic raider weapon, **replaced by the Crowbar**.                             |
-|M16                         |Was an automatic assault rifle wielded by security, removed with the introduction of MGKS2.|
-|P320                        |Was a semi-automatic pistol wielded by security, removed with the introduction of MGKS2.|
+|M16                         |Was an automatic assault rifle wielded by security, removed with the introduction of [MGKS2](/wiki/games/qserf/mgks).|
+|P320                        |Was a semi-automatic pistol wielded by security, removed with the introduction of [MGKS2](/wiki/games/qserf/mgks).|

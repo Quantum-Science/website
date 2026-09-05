@@ -8,7 +8,7 @@ title: RPG-7
 }}
 {{stub}}
 
-The **RPG-7** is a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF](/wiki/games/qserf). It is a Hand-held rocket launcher wielded by Tier 4 Raiders, [QDF](/wiki/groups/qdf)'s Senior Field Officers, and QDF's Senior Squadron Operators.
+The **RPG-7** is a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF](/wiki/games/qserf). It is a Hand-held rocket launcher wielded by Tier 4 Raiders, [QDF](/wiki/groups/qdf)'s Senior Field Officers, and QDF's Senior Squadron Officers.
 
 ## Statistics
 Technically the explosive damage leads up to infinity with a theoretical perfect hit, but the intended maximum is 600 damage at a distance of 1 stud.

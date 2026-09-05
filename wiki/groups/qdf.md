@@ -8,11 +8,20 @@ title: Quantum Defense Firm
 </div>
 
 {{incomplete}}
-**Quantum Defense Firm (QDF)** is a private defense contracting department tasked with defending facilities under the umbrella of the Quantum Corporation and other contracted facilities, companies, assets, political figures, and intelligence gathering agencies. <br/>
+**Quantum Defense Firm or QDF** is a private defense contracting department tasked with defending facilities under the umbrella of the Quantum Corporation and other contracted facilities, companies, assets, political figures, and intelligence gathering agencies. <br/>
 As such, it functions as a pseudo-roleplay security force that enhances gameplay and protects employees against raiders. 
 
 QDF was created on the 26th of February 2020 with (IDFK) as its director, it has had two other directors since then, those being Aerasto and Apture, who is the current Director of QDF.<br/>
-QDF has undergone multiple name changes in the past, with it first being called QSTF, or Quantum Security Task Force, then later being renamed to QDF in 2020, then in 2022 the name was changed again to QSO, or Quantum Security Operations, in order to better fit in with the lore that was being written at the time. It has since been renamed to QDF by popular demand and lore writers preferring that name overall.<br/>
+QDF has undergone multiple name changes in the past, with it first being called **Quantum Security Task Force or QSTF**, then later being renamed to QDF in 2020, then in 2022 the name was changed again to **Quantum Security Operations or QSO**, in order to better fit in with the lore that was being written at the time. It has since been renamed to QDF by popular demand and lore writers preferring that name overall.<br/>
+
+In addition to the main groups, there have also been squadrons which were part of both QDF and QSTF. Squadrons are experienced groups of individuals which use different tactics than regular security.
+
+Starting off with QSTF squadrons, there were two that existed before QSTF was disbanded, first being the **Heavy Defense Unit or HDU**, and granted members access to higher tiered weaponry, and then **Special Reactor Operations or SRO** which as the name suggests, was primarily geared towards controlling the reactor, but was reserved for emergencies and taking control of the reactor during meltdown, this was a relatively short lived squadron as it was quickly deemed unnecessary, hence why few people know about its existence.<br/>
+
+
+Moving onto QDF squadrons there have been three in the past, those being **Defensive Squadron Bravo or DSB**, **Offensive Squadron Alpha or OSA** and **Tactical Response Unit or TRU**. As the names suggest, DSB was more geared towards defense while OSA used more offensive tactics, while TRU was primarily a force to respond to large raids.<br/>
+
+These squadrons have since been superseded by **Control & Intervention Unit or CIU** and **Suppression & Enforcement Unit or SEU** which are further explained below.
 
 You can join QDF through attending a tryout, which are hosted whenever instructors feel like it, they are currently hosted at Futuretops but will in the future be hosted at the QDF Headquarters that is currently being developed by [QSST](/wiki/groups/qsst).<br/>
 After completing the tryout, you will be given OiT or Operative in training and from there will move up the ranks, and if you are active enough you may climb the ranks enough to get into QDF Command.<br/>

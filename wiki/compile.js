@@ -1,4 +1,4 @@
-import { randomBytes } from 'node:crypto';
+import extendedTables from 'marked-extended-tables';
 import { execSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { marked } from 'marked';
@@ -169,6 +169,7 @@ export function setup() {
 	const img = IS_DEV ? 'img' : 'enhanced:img';
 	
 	const base_page = readFileSync('wiki_plugin/page.svelte', { encoding: 'utf-8' });
+	marked.use(extendedTables());
 	marked.use({
 		async: true,
 		extensions: [{
@@ -180,7 +181,7 @@ export function setup() {
 			renderer(infobox) {
 				let html = `<div class="infobox${infobox.infotype ? ` ${infobox.infotype}` : ''}">`;
 				if (infobox.image)
-					html += `<button i="/${infobox.image}" type="button" onclick={open_img}><${img} alt="${infobox.image.split('/').at(-1)}" src="${asset(infobox.image)}" width="${infobox.infotype === 'character' ? 384 : 320}"/></button>`;
+					html += `<button i="/${infobox.image}" type="button" onclick={open_img}><${img} alt="${infobox.image.split('/').at(-1)}" src="${asset(infobox.image)}?w=640;320" width="${infobox.infotype === 'character' ? 384 : 320}"/></button>`;
 				if (infobox.text)
 					html += `<p>${infobox.text}</p>`;
 				if (infobox.release)
@@ -273,10 +274,26 @@ export function setup() {
 				
 				return { type: 'stub', raw: match[0] };
 			}
+		}, {
+			name: 'removed',
+			level: 'block',
+			renderer(token) {
+				return `<div class="message message-red"><b>This article describes content that was removed from <a href="/wiki/games/qserf">QSERF</a>.</b><p>This feature was present in earlier versions of <a href="/wiki/games/qserf">QSERF</a>, but has since been removed.</p></div>`;
+			},
+			tokenizer(str) {
+				const match = str.match(/^{{removed}}/);
+				if (!match)
+					return;
+				
+				return { type: 'removed', raw: match[0] };
+			}
 		}],
 		renderer: {
 			image({ href }) {
 				return `<${img} alt="${href.split('/').at(-1)}" src="${asset(href)}"/>`
+			},
+			link({ href, text }) {
+				return `<a href="${href}" target="${href.startsWith('/') ? '_self' : '_blank'}">${text}</a>`;
 			}
 		},
 		async walkTokens(token) {

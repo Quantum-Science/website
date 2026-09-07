@@ -164,7 +164,7 @@ export async function compile_route(slug, wiki_path, routes_path, base_page, bas
 	const description = MARKED_RAW.parse(body).split('\n')[0];
 	const compiled_load = base_load
 		.replace('{{title}}', metadata.title)
-		.replace('{{description}}', description ? `'${description.replace('\'', '\\\'')}'` : 'null')
+		.replace('{{description}}', description ? `'${description.replaceAll('\'', '\\\'')}'` : 'null')
 		.replace('{{image}}', route_image ? `'${route_image}'` : 'null');
 	route_image = null;
 	

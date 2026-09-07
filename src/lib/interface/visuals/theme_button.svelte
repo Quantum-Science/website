@@ -1,5 +1,5 @@
-<script>
-	import { get_current_theme, set_current_theme } from '$lib/interface/stores/theme.svelte.ts';
+<script lang="ts">
+	import { get_current_theme, set_current_theme } from '$lib/interface/stores/theme.svelte';
 	
 	import MoonStarsFill from './icons/moon_stars_fill.svelte';
 	import SunFill from './icons/sun_fill.svelte';

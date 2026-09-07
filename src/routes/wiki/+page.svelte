@@ -95,7 +95,7 @@
 		gap: 16px;
 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 		a {
-			background: linear-gradient(hsl(0, 0%, 90%), hsl(0, 0%, 80%));
+			background: var(--background-gradient);
 			border-radius: 24px;
 			box-shadow: inset 0 0 0 1px hsla(0, 0%, 50%, .3);
 			padding: 16px 24px;

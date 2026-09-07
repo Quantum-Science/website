@@ -12,6 +12,8 @@
 	import XIcon from '$lib/interface/visuals/socials/x_icon.svelte';
     import YoutubeIcon from '$lib/interface/visuals/socials/youtube_icon.svelte';
 	
+	import ThemeButton from '$lib/interface/visuals/theme_button.svelte';
+	
 	let { children } = $props();
 	let pathname = $derived(page.url.pathname);
 </script>
@@ -68,6 +70,7 @@
 			</div>
 		</div>
 		<div class="more">
+			<ThemeButton/>
 			<p class="legal" aria-hidden="true">
 				{#if page.url.pathname.startsWith('/wiki/')}
 					The text on this wiki is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" target="_blank">CC BY-NC-SA 4.0</a>.<br/>
@@ -141,9 +144,9 @@
 		width: 100%;
 	}
 	footer {
-		background: linear-gradient(to bottom, hsl(0, 0%, 85%), hsl(0, 0%, 80%));
+		background: var(--background-gradient);
 		border-radius: 24px 24px 0 0;
-		border-top: 1px solid hsl(0, 0%, 70%);
+		border-top: 1px solid var(--divider-footer);
 		overflow: hidden;
 		position: relative;
 		.footer_contents {

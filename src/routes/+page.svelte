@@ -222,7 +222,6 @@
 	}
 	
 	.statistics {
-		color: hsl(0 0% 10%);
 		margin-top: 96px;
 		h1 {
 			font-family: var(--font-secondary);
@@ -241,7 +240,7 @@
 			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 			margin-top: 48px;
 			div {
-				background: linear-gradient(hsla(0, 0%, 50%, .2), hsla(0, 0%, 10%, .2));
+				background: var(--background-gradient);
 				border-radius: 24px;
 				box-shadow: inset 0 0 0 1px hsla(0, 0%, 50%, .3);
 				display: flex;
@@ -262,7 +261,7 @@
 			}
 		}
 		.disclaimer {
-			color: hsl(0 0% 75%);
+			color: var(--color-secondary);
 			font-size: 12px;
 			font-style: italic;
 			margin: 16px 0 0;
@@ -278,7 +277,7 @@
 			flex-wrap: wrap-reverse;
 		}
 		.thumbnail_container {
-			height: 100%;
+			height: calc(100% + 24px);
 			left: 50%;
 			position: absolute;
 			top: 0;

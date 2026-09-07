@@ -20,10 +20,30 @@
 }
 
 :root {
-	--color-primary: hsl(0 0% 10%);
-	--background-primary: hsl(0 0% 95%);
 	--font-primary: 'figtree', sans-serif;
 	--font-secondary: 'outfit', sans-serif;
+}
+
+:root.dark {
+	color-scheme: dark;
+	
+	--color-primary: hsl(0 0% 90%);
+	--color-secondary: hsl(0 0% 60%);
+	--background-primary: hsl(0 0% 8%);
+	--background-gradient: linear-gradient(to bottom, hsl(0, 0%, 15%), hsl(0, 0%, 10%));
+	--divider-default: hsl(0 0% 25%);
+	--divider-footer: hsl(0 0% 30%);
+}
+
+:root.light {
+	color-scheme: light;
+	
+	--color-primary: hsl(0 0% 10%);
+	--color-secondary: hsl(0 0% 50%);
+	--background-primary: hsl(0 0% 95%);
+	--background-gradient: linear-gradient(to bottom, hsl(0, 0%, 85%), hsl(0, 0%, 80%));
+	--divider-default: hsl(0 0% 85%);
+	--divider-footer: hsl(0 0% 70%);
 }
 
 body {

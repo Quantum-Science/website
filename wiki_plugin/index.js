@@ -6,11 +6,11 @@ export default function wiki_plugin() {
 		enforce: 'pre',
 		name: 'wiki-plugin',
 		async configureServer(server) {
-			const [layout_path, routes_path, wiki_path, base_page] = setup();
+			const [layout_path, routes_path, wiki_path, base_page, base_load] = setup();
 			const files = readdirSync(wiki_path, { recursive: true })
 				.filter(entry => entry.endsWith('.md'));
 			for (const entry of files)
-				await compile_route(entry, wiki_path, routes_path, base_page);
+				await compile_route(entry, wiki_path, routes_path, base_page, base_load);
 			
 			server.watcher.add('wiki/**/*.md');
 			server.watcher.add('wiki_plugin/layout.svelte');
@@ -21,7 +21,7 @@ export default function wiki_plugin() {
 				if (!file.endsWith('.md'))
 					return;
 				if (event === 'add' || event === 'change')
-					compile_route(file.replace(wiki_path, ''), wiki_path, routes_path, base_page);
+					compile_route(file.replace(wiki_path, ''), wiki_path, routes_path, base_page, base_load);
 			});
 			
 			server.middlewares.use(async (request, response, next) => {

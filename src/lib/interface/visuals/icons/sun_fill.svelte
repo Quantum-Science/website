@@ -1,5 +1,5 @@
 <!-- https://icons.getbootstrap.com/icons/sun-fill -->
-<script>
+<script lang="ts">
 	let { size = 16 } = $props();
 </script>
 

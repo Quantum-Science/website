@@ -15,6 +15,10 @@
 	import ThemeButton from '$lib/interface/visuals/theme_button.svelte';
 	
 	let { children } = $props();
+	
+	let title = $derived(page.data.title ?? 'Quantum Science — Roblox Sci-Fi Studio');
+	let description = $derived(page.data.description ?? 'Quantum Science is an indie game development studio that specialises in the Sci-Fi realm.');
+	let image = $derived(page.data.image ?? '/asset/image/brand_card.jpg');
 	let pathname = $derived(page.url.pathname);
 </script>
 
@@ -82,6 +86,20 @@
 </footer>
 
 <svelte:head>
+	{#key title}
+		<meta property="og:title" content={title}/>
+		<meta name="twitter:title" content={title}/>
+		<title>{title}</title>
+	{/key}
+	{#key description}
+		<meta property="og:description" content={description}/>
+		<meta name="twitter:description" content={description}/>
+		<meta name="description" content={description}/>
+	{/key}
+	{#key image}
+		<meta property="og:image" content={image}/>
+		<meta name="twitter:image" content={image}/>
+	{/key}
 	{#key pathname}
 		<meta property="og:url" content="{PUBLIC_SITE_URL}{pathname}"/>
 	{/key}

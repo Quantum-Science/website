@@ -1,13 +1,72 @@
 import extendedTables from 'marked-extended-tables';
 import { execSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
-import { marked } from 'marked';
+import { Marked, marked } from 'marked';
 import { copyFileSync, createReadStream, existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { basename, dirname, extname, resolve } from 'node:path';
 import sharp from 'sharp';
 import { rgbaToThumbHash } from 'thumbhash';
 
+import * as extensions from './extensions.js';
+
 const IS_DEV = process.argv[1] === 'dev' && !process.env.ENHANCED_IMG;
+
+const EMPTY_STRING_FN = () => '';
+const TOKEN_BLOCK_FN = token => token.text + '\n';
+const TOKEN_INLINE_FN = token => '' + token.text;
+
+const MARKED_RAW = new Marked({
+	extensions: [{
+		name: 'gallery',
+		level: 'block',
+		start: extensions.gallery_start,
+		tokenizer: extensions.gallery_tokenizer,
+		renderer: EMPTY_STRING_FN
+	}, {
+		name: 'incomplete',
+		level: 'block',
+		tokenizer: extensions.incomplete_tokenizer,
+		renderer: EMPTY_STRING_FN
+	}, {
+		name: 'infobox',
+		level: 'block',
+		start: extensions.infobox_start,
+		tokenizer: extensions.infobox_tokenizer,
+		renderer: EMPTY_STRING_FN
+	}, {
+		name: 'main',
+		level: 'block',
+		tokenizer: extensions.main_tokenizer,
+		renderer: EMPTY_STRING_FN
+	}, {
+		name: 'removed',
+		level: 'block',
+		tokenizer: extensions.removed_tokenizer,
+		renderer: EMPTY_STRING_FN
+	}, {
+		name: 'stub',
+		level: 'block',
+		tokenizer: extensions.stub_tokenizer,
+		renderer: EMPTY_STRING_FN
+	}],
+	renderer: {
+		br: () => '\n',
+		codespan: TOKEN_INLINE_FN,
+		em: TOKEN_INLINE_FN,
+		heading: TOKEN_BLOCK_FN,
+		html: EMPTY_STRING_FN,
+		image: EMPTY_STRING_FN,
+		link: TOKEN_INLINE_FN,
+		list: EMPTY_STRING_FN,
+		listitem: EMPTY_STRING_FN,
+		paragraph({ tokens }) { return this.parser.parseInline(tokens) + '\n'; },
+		strong: TOKEN_INLINE_FN,
+		table: EMPTY_STRING_FN,
+		tablecell: EMPTY_STRING_FN,
+		tablerow: EMPTY_STRING_FN,
+		text: TOKEN_INLINE_FN
+	}
+});
 
 function extract_frontmatter(markdown) {
 	const match = /---\r?\n([\s\S]+?)\r?\n---/.exec(markdown);
@@ -72,9 +131,10 @@ export async function optimise_image(path, size) {
 	return [image, `${hash}w${size}`];
 }
 
+let route_image;
 export const generated_images = {};
 export const route_images = {};
-export async function compile_route(slug, wiki_path, routes_path, base_page) {
+export async function compile_route(slug, wiki_path, routes_path, base_page, base_load) {
 	const markdown_path = `${wiki_path}/${slug}`;
 	const timestamp = IS_DEV ? null : execSync(`git log -1 --format=%cd --date=iso-strict "${markdown_path}"`)
 		.toString()
@@ -100,6 +160,13 @@ export async function compile_route(slug, wiki_path, routes_path, base_page) {
 		.replace('{{images}}', images)
 		.replace('{{body}}', html)
 		.replace('{{filepath}}', slug);
+		
+	const description = MARKED_RAW.parse(body).split('\n')[0];
+	const compiled_load = base_load
+		.replace('{{title}}', metadata.title)
+		.replace('{{description}}', description ? `'${description.replace('\'', '\\\'')}'` : 'null')
+		.replace('{{image}}', route_image ? `'${route_image}'` : 'null');
+	route_image = null;
 	
 	const name = basename(slug, extname(slug));
 	const parent = dirname(`${routes_path}/${slug}`);
@@ -107,8 +174,8 @@ export async function compile_route(slug, wiki_path, routes_path, base_page) {
 	const dir_path = `${parent}/${name}`;
 	mkdirSync(dir_path, { recursive: true });
 	
-	const path = `${dir_path}/+page.svelte`;
-	writeFileSync(path, compiled_page);
+	writeFileSync(`${dir_path}/+page.svelte`, compiled_page);
+	writeFileSync(`${dir_path}/+page.js`, compiled_load);
 }
 
 async function get_blur(path, sizes) {
@@ -154,6 +221,8 @@ async function get_blur(path, sizes) {
 		placeholder: blur,
 		sizes: images
 	};
+	if (!route_image)
+		route_image = path.replace(/^static/, '');
 	
 	return [blur, metadata.width, metadata.height, hash, images];
 }
@@ -170,124 +239,42 @@ export function setup() {
 	const img = IS_DEV ? 'img' : 'enhanced:img';
 	
 	const base_page = readFileSync('wiki_plugin/page.svelte', { encoding: 'utf-8' });
+	const base_load = readFileSync('wiki_plugin/page.js', { encoding: 'utf-8' });
 	marked.use(extendedTables());
 	marked.use({
 		async: true,
 		extensions: [{
-			name: 'infobox',
-			level: 'block',
-			start(src) {
-				return src.match(/{{infobox/)?.index;
-			},
-			renderer(infobox) {
-				let html = `<div class="infobox${infobox.infotype ? ` ${infobox.infotype}` : ''}">`;
-				if (infobox.image)
-					html += `<button i="/${infobox.image}" type="button" onclick={open_img}><${img} alt="${infobox.image.split('/').at(-1)}" src="${asset(infobox.image)}?w=640;320" width="${infobox.infotype === 'character' ? 384 : 320}"/></button>`;
-				if (infobox.text)
-					html += `<p>${infobox.text}</p>`;
-				if (infobox.release)
-					html += `<p>Release date: ${infobox.release}</p>`;
-				if (infobox.curr || infobox.prev) {
-					html += '<div>';
-					if (infobox.prev)
-						html += `<a href="/wiki/${infobox.prev}">← ${infobox.prev.split('/').at(-1)}</a>`;
-					if (infobox.curr)
-						html += `${infobox.prev ? ' • ' : ''}${infobox.curr}${infobox.next ? ' • ' : ''}`;
-					if (infobox.next)
-						html += `<a href="/wiki/${infobox.next}">${infobox.next.split('/').at(-1)} →</a>`;
-					html += '</div>';
-				}
-				
-				return html + '</div>';
-			},
-			tokenizer(str) {
-				const matches = str.match(/^{{infobox(?:\s*(\w+))?\n((?:[^\n]*(\n\|[^\n]+)?)*)?\n}}/);
-				if (!matches)
-					return;
-				
-				const token = { type: 'infobox', raw: matches[0], infotype: matches[1] };
-				const attributes = matches[2]
-					.split('\n')
-					.map(str => str.substring(1).split('='));
-				for (const [key, value] of attributes)
-					token[key] = value;
-				
-				return token;
-			}
-		}, {
 			name: 'gallery',
 			level: 'block',
-			start(src) {
-				return src.match(/{{gallery/)?.index;
-			},
-			renderer(token) {
-				return token.html;
-			},
-			tokenizer(str) {
-				const match = str.match(/^{{gallery\n((?:[^\n]*(\n\|[^\n]+)?)*)?\n}}/);
-				if (!match)
-					return;
-				
-				const images = match[1]
-					.split('\n')
-					.map(str => {
-						const [path, text] = str.substring(1).split('|');
-						return { path, text };
-					});
-				return { type: 'gallery', raw: match[0], images };
-			}
-		}, {
-			name: 'main_article',
-			level: 'block',
-			renderer(token) {
-				return `<div class="note">Main article: <a href="${token.path}">${token.text}</a></div>`;
-			},
-			tokenizer(str) {
-				const match = str.match(/^{{main\|([\w\/]+)\|([\w ]+)}}/);
-				if (!match)
-					return;
-				
-				return { type: 'main_article', raw: match[0], path: match[1], text: match[2] };
-			}
+			start: extensions.gallery_start,
+			tokenizer: extensions.gallery_tokenizer,
+			renderer: extensions.gallery_renderer
 		}, {
 			name: 'incomplete',
 			level: 'block',
-			renderer(token) {
-				return `<div class="message"><b>This article is incomplete and may not be accurate.</b><p>You can help by expanding it and making suggestions.</p></div>`;
-			},
-			tokenizer(str) {
-				const match = str.match(/^{{incomplete}}/);
-				if (!match)
-					return;
-				
-				return { type: 'incomplete', raw: match[0] };
-			}
+			tokenizer: extensions.incomplete_tokenizer,
+			renderer: extensions.incomplete_renderer
 		}, {
-			name: 'stub',
+			name: 'infobox',
 			level: 'block',
-			renderer(token) {
-				return `<div class="message"><b>This article is a stub.</b><p>You can help by expanding it and making suggestions.</p></div>`;
-			},
-			tokenizer(str) {
-				const match = str.match(/^{{stub}}/);
-				if (!match)
-					return;
-				
-				return { type: 'stub', raw: match[0] };
-			}
+			start: extensions.infobox_start,
+			tokenizer: extensions.infobox_tokenizer,
+			renderer: extensions.infobox_renderer
+		}, {
+			name: 'main',
+			level: 'block',
+			tokenizer: extensions.main_tokenizer,
+			renderer: extensions.main_renderer
 		}, {
 			name: 'removed',
 			level: 'block',
-			renderer(token) {
-				return `<div class="message message-red"><b>This article describes content that was removed from <a href="/wiki/games/qserf">QSERF</a>.</b><p>This feature was present in earlier versions of <a href="/wiki/games/qserf">QSERF</a>, but has since been removed.</p></div>`;
-			},
-			tokenizer(str) {
-				const match = str.match(/^{{removed}}/);
-				if (!match)
-					return;
-				
-				return { type: 'removed', raw: match[0] };
-			}
+			tokenizer: extensions.removed_tokenizer,
+			renderer: extensions.removed_renderer
+		}, {
+			name: 'stub',
+			level: 'block',
+			tokenizer: extensions.stub_tokenizer,
+			renderer: extensions.stub_renderer
 		}],
 		renderer: {
 			image({ href }) {
@@ -300,6 +287,8 @@ export function setup() {
 			}
 		},
 		async walkTokens(token) {
+			if (token.type === 'infobox' && token.image && !route_image)
+				route_image = `/${token.image}`;
 			if (token.type !== 'gallery')
 				return;
 			
@@ -317,5 +306,5 @@ export function setup() {
 		}
 	});
 	
-	return [layout_path, routes_path, wiki_path, base_page];
+	return [layout_path, routes_path, wiki_path, base_page, base_load];
 }

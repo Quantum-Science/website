@@ -142,9 +142,12 @@
 	
 	table {
 		background: hsla(0, 0%, 50%, .05);
-		border: 1px solid hsla(0, 0%, 50%, .3);
 		border-collapse: collapse;
+		display: block;
 		margin: 16px 0;
+		max-width: 100%;
+		overflow: auto;
+		width: fit-content;
 		thead {
 			background: hsla(0, 0%, 50%, .15);
 			th {

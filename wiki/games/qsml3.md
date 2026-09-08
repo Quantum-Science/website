@@ -77,7 +77,7 @@ As of writing this version currently isnt public or under any official archive, 
 
 ## QS Multipurpose Laboratories³ V3
 {{infobox
-|image=asset/image/wiki/game_screenshots/3v3.png
+|image=asset/image/wiki/game_screenshots/3V3.png
 |text=QSML³ V3's DMR Control Room
 }}
 

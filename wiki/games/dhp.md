@@ -8,6 +8,7 @@ title: Donovan Hydroelectric Plant
 |release=Unconfirmed
 }}
 {{incomplete}}
+
 **Donovan Hydroelectric Plant (DHP)** is an upcoming [simulation video game](https://en.wikipedia.org/wiki/Simulation_video_game) developed by the [Quantum Structural Science Team](/wiki/groups/qsst). It currently has no release date and is on hold.
 
 ## Synopsis

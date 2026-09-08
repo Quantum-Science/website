@@ -2,13 +2,13 @@
 title: Sitka National Laboratory
 ---
 
-<div class="infobox">
-	<img src="/asset/image/wiki/snl.webp" alt="Update" width="320"/>
-	<p>Sitka National Laboratory</p>
-	<p>Release date: Coming soon</p>
-</div>
-
+{{infobox
+|image=asset/image/wiki/snl.webp
+|text=Sitka National Laboratory
+|release=Unconfirmed
+}}
 {{incomplete}}
+
 **Sitka National Laboratory (SNL)** is an upcoming [simulation video game](https://en.wikipedia.org/wiki/Simulation_video_game) developed by the [Quantum Structural Science Team](/wiki/groups/qsst). It is the successor to [QSML3](/wiki/games/qsml3), and takes place in 2042 after the events of [QSERF](/wiki/games/qserf).
 
 ## Synopsis

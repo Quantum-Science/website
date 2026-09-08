@@ -36,3 +36,6 @@ Fast forward to the time of writing (September 1st 2026) we have a layout for se
 ## Credits
 many many people.
 Some music done by MusicJakey
+
+## External Links
+* ["SNL | Public Development"](https://trello.com/b/Fl6V5goX) — Trello.

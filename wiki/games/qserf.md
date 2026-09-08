@@ -26,3 +26,4 @@ https://devforum.roblox.com/t/qs-energy-research-facility-—-credits-attributio
 * ["QS Energy Research Facility — In-Experience Rules"](https://devforum.roblox.com/t/3455319) — Roblox DevForum.
 * ["QS Energy Research Facility — Raider Pass Guidelines"](https://devforum.roblox.com/t/3892850) — Roblox DevForum.
 * ["QS Energy Research Facility — Credits & Attributions"](https://devforum.roblox.com/t/3983851) — Roblox DevForum.
+* ["QSERF | Development"](https://trello.com/b/KDHRRPyb) — Trello.

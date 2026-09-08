@@ -8,7 +8,7 @@ title: QS Energy Research Facility
 |release=August 18th, 2019
 }}
 {{incomplete}}
-**Quantum Science Energy Research Facility (QSERF)** is a simulation game developed by the [Quantum Structural Science Team](/wiki/groups/qsst). It is the successor to [QSML2](/wiki/games/qsml2), originally built as a showcase, and was released in 2019.
+**Quantum Science Energy Research Facility (QSERF)** is a [simulation video game](https://en.wikipedia.org/wiki/Simulation_video_game) developed by the [Quantum Structural Science Team](/wiki/groups/qsst). It is the successor to [QSML2](/wiki/games/qsml2), originally built as a showcase, and was released in 2019.
 
 ## Gameplay
 operate the big ball of doom

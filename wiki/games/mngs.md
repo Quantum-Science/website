@@ -2,15 +2,13 @@
 title: Middlepoint Nuclear Generation Station
 ---
 
+{{infobox
+|image=asset/image/wiki/game_screenshots/MNGS3.png
+|text=Middlepoint Nuclear Generation Station
+|release=Unconfirmed
+}}
 {{incomplete}}
-The **Middlepoint Nuclear Generation Station or MNGS** is a nuclear generation station, one of the first QS projects that aimed to be as realistic as possible.
-
-<div class="infobox">
-	<img src="/asset/image/wiki/game_screenshots/MNGS3.png" alt="Update" width="320"/>
-	<p>Middlepoint Nuclear Generation Station</p>
-    <p>Release date: Unconfirmed</p>
-</div>
-
+**Middlepoint Nuclear Generation Station (MNGS)** is an upcoming [simulation video game](https://en.wikipedia.org/wiki/Simulation_video_game) developed by the [Quantum Structural Science Team](/wiki/groups/qsst). It currently has no release date and is on hold.
 
 ## Synopsis
 The game takes place in the early 1970s and is located in N/A, the facility is relatively new and is [Quantum Atomic Energy Corporations](/wiki/lore_companies/qaec) first nuclear power plant, this plant served QAEC for a couple of years beforeand suffering a near meltdown which was prevented by [Dr. Helene Kaiser](/wiki/characters/kaiser). Shortly after this the site was closed and decomissioned.

@@ -2,13 +2,13 @@
 title: Quantum Defense Firm
 ---
 
-<div class="infobox">
-	<img src="/asset/image/wiki/logos/QDF.png" alt="DMR" width="256" height="256"/>
-	<p>QDF Logo</p>
-</div>
-
+{{infobox entity
+|image=asset/image/wiki/logos/QDF.png
+|text=QDF Group Icon
+}}
 {{incomplete}}
-**Quantum Defense Firm or QDF** is a private defense contracting department tasked with defending facilities under the umbrella of the Quantum Corporation and other contracted facilities, companies, assets, political figures, and intelligence gathering agencies. <br/>
+
+**Quantum Defense Firm (QDF)** is a private defense contracting department tasked with defending facilities under the umbrella of the Quantum Corporation and other contracted facilities, companies, assets, political figures, and intelligence gathering agencies. <br/>
 As such, it functions as a pseudo-roleplay security force that enhances gameplay and protects employees against raiders. 
 
 QDF was created on the 26th of February 2020 with (IDFK) as its director, it has had two other directors since then, those being Aerasto and Apture, who is the current Director of QDF.<br/>

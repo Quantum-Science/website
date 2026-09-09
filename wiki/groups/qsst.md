@@ -2,12 +2,13 @@
 title: Quantum Structural Science Team
 ---
 
-<div class="infobox">
-	<img src="/asset/image/wiki/logos/QSSTLogo.png" alt="DMR" width="256" height="256"/>
-	<p>QSST Logo</p>
-</div>
 
+{{infobox entity
+|image=asset/image/wiki/logos/QSSTLogo.png
+|text=QSST Group Icon
+}}
 {{incomplete}}
+
 **Quantum Structural Science Team (QSST)** is the department which handles all game development and creative content within [Quantum Science](/wiki/groups/qs). It houses multiple subdepartments including Quality Assurance, Weapon Analytics, Archival, and Media departments.<br/>
 
 QSST used to be known as **Quantum Advanced Structural Science Team or QASST**, which was created on the 12 of January 2018, and has since been replaced by the QSST group, made on the 25th of February 2020.

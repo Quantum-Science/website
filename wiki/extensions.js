@@ -53,8 +53,16 @@ export function infobox_tokenizer(str) {
 }
 export function infobox_renderer(infobox) {
 	let html = `<div class="infobox${infobox.infotype ? ` ${infobox.infotype}` : ''}">`;
-	if (infobox.image)
-		html += `<button i="/${infobox.image}" type="button" onclick={open_img}><${IMG} alt="${infobox.image.split('/').at(-1)}" src="${ASSET(infobox.image)}?w=640;320" width="${infobox.infotype === 'character' ? 384 : 320}"/></button>`;
+	if (infobox.image) {
+		let width;
+		if (infobox.infotype === 'character')
+			width = 384;
+		else if (infobox.infotype === 'entity')
+			width = 256;
+		else
+			width = 320;
+		html += `<button i="/${infobox.image}" type="button" onclick={open_img}><${IMG} alt="${infobox.image.split('/').at(-1)}" src="${ASSET(infobox.image)}?w=${width * 2};${width}" width="${width}"/></button>`;
+	}
 	if (infobox.text)
 		html += `<p>${infobox.text}</p>`;
 	if (infobox.release)

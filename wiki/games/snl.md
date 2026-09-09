@@ -2,14 +2,14 @@
 title: Sitka National Laboratory
 ---
 
-<div class="infobox">
-	<img src="/asset/image/wiki/snl.webp" alt="Update" width="320"/>
-	<p>Sitka National Laboratory</p>
-	<p>Release date: Coming soon</p>
-</div>
-
+{{infobox
+|image=asset/image/wiki/snl.webp
+|text=Sitka National Laboratory
+|release=Unconfirmed
+}}
 {{incomplete}}
-**Sitka National Laboratory (SNL)** is an upcoming game developed by the [Quantum Structural Science Team](/wiki/groups/qsst), and is the latest installment of the [QSML3](/wiki/games/qsml3) series of games, it takes place in 2042 after the events of [QSERF](/wiki/games/qserf).
+
+**Sitka National Laboratory (SNL)** is an upcoming [simulation video game](https://en.wikipedia.org/wiki/Simulation_video_game) developed by the [Quantum Structural Science Team](/wiki/groups/qsst). It is the successor to [QSML3](/wiki/games/qsml3), and takes place in 2042 after the events of [QSERF](/wiki/games/qserf).
 
 ## Synopsis
 The game is a research-based supersite located in the mountains of Sitka Alaska. This facility contains labs ranging from Biological to Energy, it houses the second generation Dark Matter Reactor and oversees the regions energy production and medical aid.<br/>
@@ -36,3 +36,6 @@ Fast forward to the time of writing (September 1st 2026) we have a layout for se
 ## Credits
 many many people.
 Some music done by MusicJakey
+
+## External Links
+* ["SNL | Public Development"](https://trello.com/b/Fl6V5goX) — Trello.

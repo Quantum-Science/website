@@ -2,14 +2,14 @@
 title: Donovan Hydroelectric Plant
 ---
 
+{{infobox
+|image=asset/image/wiki/game_screenshots/DHPIndev.png
+|text=Donovan Hydroelectric Plant
+|release=Unconfirmed
+}}
 {{incomplete}}
-The **Donovan Hydroelectric Plant or DHP** is, as the name describes, a hydroelectric power plant, this is the first public project of Quantum Science that doesn't involve a nuclear reactor of some kind.
 
-<div class="infobox">
-	<img src="/asset/image/wiki/game_screenshots/DHPIndev.png" alt="Update" width="320"/>
-	<p>Donovan Hydroelectric Plant</p>
-    <p>Release date: Unconfirmed</p>
-</div>
+**Donovan Hydroelectric Plant (DHP)** is an upcoming [simulation video game](https://en.wikipedia.org/wiki/Simulation_video_game) developed by the [Quantum Structural Science Team](/wiki/groups/qsst). It currently has no release date and is on hold.
 
 ## Synopsis
 The game takes place in the early 2000s and is located at Gore Creek, Colorado, the facility has some wear but is still fully operational, providing energy to the surrounding area.

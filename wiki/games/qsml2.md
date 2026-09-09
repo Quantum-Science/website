@@ -8,7 +8,9 @@ title: QS Multipurpose Laboratories 2
 |release=February 2018
 }}
 {{stub}}
-**Quantum Science Multipurpose Laboratories 2 (QSML2)** was a game developed by the [Quantum Structural Science Team](/wiki/groups/qsst). It was the first to introduce the [Dark Matter Reactor](/wiki/idk/dmr_01) concept, and was discontinued in favour of [QSERF](/wiki/games/qserf).
+
+**Quantum Science Multipurpose Laboratories 2 (QSML2)** was a [simulation video game](https://en.wikipedia.org/wiki/Simulation_video_game) developed by the [Quantum Structural Science Team](/wiki/groups/qsst). It was the first to introduce the [Dark Matter Reactor](/wiki/idk/dmr_01) concept, and was discontinued in favour of [QSERF](/wiki/games/qserf).
 
 ## External Links
 * ["Classic QSERF (Archive)"](https://www.roblox.com/games/1010896630) — Roblox.
+* ["Quantum Science Multipurpose Labs²"](https://www.roblox.com/games/4291450545) — Roblox.

@@ -2,7 +2,7 @@ import extendedTables from 'marked-extended-tables';
 import { execSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { Marked, marked } from 'marked';
-import { copyFileSync, createReadStream, existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { copyFileSync, createReadStream, existsSync, mkdirSync, readdirSync, readFileSync, rmSync, statSync, writeFileSync } from 'node:fs';
 import { basename, dirname, extname, resolve } from 'node:path';
 import sharp from 'sharp';
 import { rgbaToThumbHash } from 'thumbhash';
@@ -234,6 +234,19 @@ export function setup() {
 	mkdirSync('node_modules/.cache/wiki_images', { recursive: true });
 	mkdirSync(routes_path, { recursive: true });
 	copyFileSync(layout_path, `${routes_path}/+layout.svelte`);
+	
+	for (const entry of readdirSync(routes_path, { recursive: true })) {
+		const path = `${routes_path}/${entry}`;
+		try {
+			if (!statSync(path).isDirectory())
+				continue;
+		} catch {
+			continue;
+		}
+		
+		if (!existsSync(`${wiki_path}/${entry}.md`) && !existsSync(`${wiki_path}/${entry}`))
+			rmSync(path, { recursive: true });
+	}
 	
 	const asset = src => IS_DEV ? `/${src}` : `/static/${src}`;
 	const img = IS_DEV ? 'img' : 'enhanced:img';

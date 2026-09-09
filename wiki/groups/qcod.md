@@ -2,12 +2,12 @@
 title: Quantum Community Outreach Department
 ---
 
-<div class="infobox">
-	<img src="/asset/image/wiki/logos/QCODLogo.png" alt="DMR" width="256" height="256"/>
-	<p>QCOD Logo</p>
-</div>
-
+{{infobox entity
+|image=asset/image/wiki/logos/QCODLogo.png
+|text=QCOD Group Icon
+}}
 {{incomplete}}
+
 **Quantum Community Outreach Department (QCOD)** strives to collaborate with other departments to serve as a bridge between the community and the administrative teams. It is the main center for any assistance, guidance or support which may be required from staff members. We’re also here as a friendly and fun center for community entertainment and engagement.<br/>
 In addition to community support, QCOD processes all Corporate applications, and remains the main location to report rule violations to [QSOC](/wiki/groups/qsoc).<br/>
 

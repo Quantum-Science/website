@@ -1,4 +1,5 @@
-import { copyFileSync, readdirSync } from 'node:fs';
+import { copyFileSync, readdirSync, rmSync } from 'node:fs';
+import { basename, dirname, extname } from 'node:path';
 
 import { compile_route, optimised_images, setup } from '../wiki/compile.js';
 export default function wiki_plugin() {
@@ -22,6 +23,15 @@ export default function wiki_plugin() {
 					return;
 				if (event === 'add' || event === 'change')
 					compile_route(file.replace(wiki_path, ''), wiki_path, routes_path, base_page, base_load);
+				else if (event === 'unlink') {
+					const slug = file.replace(wiki_path, '');
+					
+					const name = basename(slug, extname(slug));
+					const parent = dirname(`${routes_path}/${slug}`);
+					
+					const dir_path = `${parent}/${name}`;
+					rmSync(dir_path, { recursive: true });
+				}
 			});
 			
 			server.middlewares.use(async (request, response, next) => {

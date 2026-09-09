@@ -7,14 +7,9 @@ title: MONSTER SMASH
 |text=MONSTER SMASH
 |release=April 8th, 2026
 }}
-{{incomplete}}
-**MONSTER SMASH** is an original PvE Shooter created by @pointcastle, made in only 7 days as a followup to [BATTLE FOR DARK MATTER](/wiki/updates/qserf/april_fools_26).
+{{stub}}
 
-## Gameplay
-SMSAH THE MONSTERS!!!
-
-## Development
-gura gura
+**MONSTER SMASH** was a 2026 [dungeon crawler](https://en.wikipedia.org/wiki/Dungeon_crawl) video game created by pointcastle. It was created as a followup to [BATTLE FOR DARK MATTER](/wiki/updates/qserf/april_fools_26), and is no longer available to play.
 
 ## Credits
 * @katsumisoda — SST Representative

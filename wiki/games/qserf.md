@@ -8,7 +8,8 @@ title: QS Energy Research Facility
 |release=August 18th, 2019
 }}
 {{incomplete}}
-**Quantum Science Energy Research Facility (QSERF)** is a simulation game developed by the [Quantum Structural Science Team](/wiki/groups/qsst). It is the successor to [QSML2](/wiki/games/qsml2), originally built as a showcase, and was released in 2019.
+
+**Quantum Science Energy Research Facility (QSERF)** is a [simulation video game](https://en.wikipedia.org/wiki/Simulation_video_game) developed by the [Quantum Structural Science Team](/wiki/groups/qsst). It is the successor to [QSML2](/wiki/games/qsml2), originally built as a showcase, and was released in 2019.
 
 ## Gameplay
 operate the big ball of doom
@@ -25,3 +26,4 @@ https://devforum.roblox.com/t/qs-energy-research-facility-—-credits-attributio
 * ["QS Energy Research Facility — In-Experience Rules"](https://devforum.roblox.com/t/3455319) — Roblox DevForum.
 * ["QS Energy Research Facility — Raider Pass Guidelines"](https://devforum.roblox.com/t/3892850) — Roblox DevForum.
 * ["QS Energy Research Facility — Credits & Attributions"](https://devforum.roblox.com/t/3983851) — Roblox DevForum.
+* ["QSERF | Development"](https://trello.com/b/KDHRRPyb) — Trello.

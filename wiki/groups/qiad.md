@@ -2,12 +2,12 @@
 title: Quantum Internal Affairs Department
 ---
 
-<div class="infobox">
-	<img src="/asset/image/wiki/logos/QIADLogo.png" alt="DMR" width="256" height="256"/>
-	<p>QIAD Logo</p>
-</div>
-
+{{infobox entity
+|image=asset/image/wiki/logos/QIADLogo.png
+|text=QIAD Group Icon
+}}
 {{incomplete}}
+
 **Quantum Internal Affairs Department (QIAD)** is a department of Quantum Science that objectively reviews appeals from users who committed infractions within Quantum Science, its subsidiary games and Discords servers. Additionally, the Quantum Internal Affairs Department reviews any abusive behaviour from all staff members and Quantum Science departments. While most of QIAD's work is kept confidential, we strive to be semi-transparent with brief information about events and incidents available via the public database.<br/>
 
 QIAD was created in 2020 with Hurrah123456 as its director, and has been through several directors since, including doodynana1, HappySentinel, Apollo1207, DrAlexDamaging, AestherParadox, and Ender_Playz16 who is the current QIAD director.<br/>

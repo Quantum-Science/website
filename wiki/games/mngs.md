@@ -24,7 +24,7 @@ Much like [DHP](/wiki/games/dhp), MNGS aims to be a realistic simulation of an a
 
 ## Development
 MNGS began development on the 14th of July 2019 an has had three versions over the years that followed.<br/>
-The projects progress what scrapped twice with people coming and going and development efforts being focused on [QSERF](/wiki/games/qserf). During this the concepts for the games have also changed dramatically, MNGS1 used a second generation BWR, while MNGS2 used molten-salt reactors, and MNGS3 using two second generation BWR's.<br/>
+The projects progress what scrapped twice with people coming and going and development efforts being focused on [QSERF](/wiki/games/qserf). During this the concepts for the games have also changed dramatically, MNGS1 used a second generation BWR, while MNGS2 used two molten-salt reactors, and MNGS3 using two second generation BWR's.<br/>
 
 As of writing, not much more has been done to this project and it is still on hold for the foreseeable future.
 

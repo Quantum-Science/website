@@ -3,7 +3,7 @@ title: QS Fusion Reactor Complex
 ---
 
 {{infobox
-|image=asset/image/wiki/game_screenshots/qsfrc.png
+|image=asset/image/wiki/game_screenshots/QSFRC.png
 |text=QS Fusion Reactor Complex
 }}
 {{incomplete}}

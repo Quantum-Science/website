@@ -8,7 +8,7 @@ title: QS Fusion Reactor Complex
 }}
 {{incomplete}}
 
-**QS Fusion Reactor Complex (QSFRC)** was a shortlived project developed in 2019 and focused on a magnetic-confinement based fusion reactor. Developed by iXev, Lectoric, and AdjacentPhoenix, it was scrapped shortly after it was made, attempts were made to return to the project years later, however, not much progress was made.<br/>
+**QS Fusion Reactor Complex (QSFRC)** was a shortlived project developed in 2019 and focused on a magnetic-confinement based fusion reactor. Developed by iXev, Lectoric, and AdjacentPhoenix, there were two versions of this proejct, and unfortunately it was scrapped shortly after the second version was made, attempts were made to return to the project years later, however, that was also shortlived.<br/>
 
 QSFRC was pivotal in changing how QSST at the time designed facilities and "unlocked" a higher level of understanding in the game design process, which was carried into future games, such as [QSML3](/wiki/games/qsml3) Version 3.
 There is an archive of this game under the QASST group, as of writing this however, the archive currently isnt public.

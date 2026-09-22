@@ -56,7 +56,7 @@ export function infobox_renderer(infobox) {
 	if (infobox.image) {
 		let width;
 		if (infobox.infotype === 'character')
-			width = 384;
+			width = 256;
 		else if (infobox.infotype === 'entity')
 			width = 256;
 		else

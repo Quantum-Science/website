@@ -22,7 +22,7 @@ export default function wiki_plugin() {
 				if (!file.endsWith('.md'))
 					return;
 				if (event === 'add' || event === 'change')
-					compile_route(file.replace(wiki_path, ''), wiki_path, routes_path, base_page, base_load);
+					compile_route(file.replace(wiki_path, '').substring(1), wiki_path, routes_path, base_page, base_load);
 				else if (event === 'unlink') {
 					const slug = file.replace(wiki_path, '');
 					

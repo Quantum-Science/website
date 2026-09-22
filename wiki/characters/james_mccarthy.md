@@ -4,12 +4,17 @@ title: James McCarthy
 
 {{infobox character
 |image=asset/image/wiki/characters/james_mccarthy.png
-|text=Portrait of McCarthy.
+|text=McCarthy in 198X
 }}
 {{incomplete}}
-chief executive officer
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio erat, convallis in volutpat sit amet, consectetur non justo. Suspendisse volutpat, elit in fermentum rutrum, eros magna eleifend magna, eu sodales dui leo at dolor. Aliquam dignissim hendrerit erat vel sodales. Fusce eleifend nisl arcu, ut vulputate orci ultrices a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius, ligula at posuere suscipit, enim nibh sollicitudin lacus, ut pellentesque mi dui ac est. Curabitur purus erat, ultrices sit amet iaculis eget, hendrerit sed odio. Pellentesque elementum lacus vel mi dapibus venenatis. In nec scelerisque diam. Pellentesque ornare enim nec velit congue, sed semper nibh auctor. Vivamus dignissim nulla justo, ut gravida massa sodales at. Maecenas in purus eu velit hendrerit ullamcorper. Nunc finibus dui in diam dictum, ut condimentum diam sodales. Suspendisse viverra, sem eu pretium tempus, elit ante blandit dolor, sit amet tempus ex ex accumsan justo. Vestibulum molestie blandit sapien nec lobortis.
+**James Ryder McCarthy** (March 23rd, 1928 — February 13th, 2008) was an American entrepreneur and co-founder of the [Quantum Corporation](/wiki/lore_companies/qc).
 
-## Personal Life
-Morbi consequat, felis sit amet finibus eleifend, urna massa sagittis elit, a tincidunt purus dolor at eros. Suspendisse nec erat a justo semper laoreet. Sed elit nibh, posuere congue quam id, hendrerit euismod urna. Fusce nisl nisl, cursus et mattis eu, feugiat quis nibh. Duis lacinia venenatis tellus, scelerisque accumsan ex tempus a. Fusce euismod urna nec sapien laoreet egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean quis libero condimentum, fermentum lorem a, tempus mauris. Fusce faucibus viverra leo, ac sollicitudin orci aliquet sed. Suspendisse lacinia urna sed velit sollicitudin rhoncus. Aliquam erat volutpat. Integer id pretium purus. Nam non fringilla dolor, quis facilisis odio. Cras et nunc eu lacus interdum pulvinar non nec mi.
+## Early life and education
+James McCarthy was born at Kenmore Mercy Hospital on March 23rd 1928 to Elizabeth and Russel McCarthy, a teacher and store manager respectively. The elementary years of his life were quiet: James grew up in his home town of Buffalo, New York, as an above-average, imaginative child. It was clear from a very young age that James wanted to go into science as a career. At this time, his peers described him as talkative, but friendly and caring to everyone he met.
+
+As America prepared to join the Second World War, Russel entered the military as a navy pilot on November 2nd, 1940. While James was distressed by the departure of his father, he tried to stay optimistic. Now 12 years old, he was beginning to excel academically and find talent as a leader: as a student council member, he worked hard to ensure the needs of all of the students in his grade were met. 
+
+On December 28th 1941, Elizabeth reluctantly left James with his grandparents to work at a B-29 assembly plant, following the attack on Pearl Harbour. This was a blow to James, since he had no parents during his teenagehood, and his mental health suffered as a result.
+
+Unfortunately, his mental health only deteriorated further in January of 1942, when he was given the unfortunate news that Russel died in battle during the Pacific Theatre.

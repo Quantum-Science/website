@@ -11,6 +11,16 @@ import * as extensions from './extensions.js';
 
 const IS_DEV = process.argv[1] === 'dev' && !process.env.ENHANCED_IMG;
 
+const CATEGORIES = {
+	characters: 'Fictional Characters',
+	games: 'Roblox Games',
+	groups: 'Roblox Groups',
+	locations: 'Fictional Locations',
+	lore_companies: 'Fictional Companies',
+	reactors: 'Fictional Reactors',
+	updates: 'Game Updates',
+	weapons: 'Game Weapons'
+};
 const EMPTY_STRING_FN = () => '';
 const TOKEN_BLOCK_FN = token => token.text + '\n';
 const TOKEN_INLINE_FN = token => '' + token.text;
@@ -151,9 +161,10 @@ export async function compile_route(slug, wiki_path, routes_path, base_page, bas
 		delete route_images[key];
 	}
 	images += '};';
-	
+	console.log(slug);
 	const compiled_page = base_page
 		.replaceAll('{{title}}', metadata.title)
+		.replace('{{category}}', CATEGORIES[slug.split('/')[0]] || 'Unknown Category')
 		.replace('{{href}}', `/wiki/${slug.substring(0, slug.length - 3)}`)
 		.replace('{{update}}', timestamp ? new Intl.DateTimeFormat('en-US', { day: 'numeric', month: 'long', weekday: 'long', year: 'numeric' }).format(new Date(timestamp)) : 'Uncommitted file')
 		.replace('{{updatedate}}', timestamp ? `'${timestamp.substring(0, 10)}'` : 'null')

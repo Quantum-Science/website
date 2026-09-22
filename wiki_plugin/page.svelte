@@ -21,11 +21,14 @@
 <div class="header">
 	<div>
 		<h1>{{title}}</h1>
-		{#if last_article}
-			<a class="return_home" href={last_article.href}>← Back to {last_article.title}</a>
-		{:else}
-			<a class="return_home" href="/wiki">← Back to Home Page</a>
-		{/if}
+		<p>
+			{#if last_article}
+				<a class="return_home" href={last_article.href}>← Back to {last_article.title}</a>
+			{:else}
+				<a class="return_home" href="/wiki">← Back to Home Page</a>
+			{/if}
+			&nbsp;•&nbsp; {{category}}
+		</p>
 	</div>
 	<a class="last_updated" href={`${PUBLIC_GITHUB_URL}/commits/main/wiki/{{filepath}}`} target="_blank">Last updated: {{update}}</a>
 </div>

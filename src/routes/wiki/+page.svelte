@@ -6,7 +6,7 @@
 	<enhanced:img
 		class="thumbnail_image"
 		fetchpriority="high"
-		src="/static/asset/image/snl.png"
+		src="/static/asset/image/snl.jpeg"
 		alt="Library Landing Thumbnail"
 	/>
 </div>

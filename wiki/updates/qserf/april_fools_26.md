@@ -3,7 +3,7 @@ title: QSERF April Fools 2026
 ---
 
 {{infobox
-|image=asset/image/wiki/april_fools_26.png
+|image=asset/image/wiki/games/qserf/updates/april_fools_26/april_fools_26_thumbnail.jpeg
 |text=BATTLE FOR DARK MATTER
 |release=April 1st, 2026
 |prev=updates/qserf/v3.6.2
@@ -47,7 +47,7 @@ There is no associated version number, as it was randomised for each session.
 
 ## Gallery
 {{gallery
-|asset/image/wiki/april_fools_26.png
+|asset/image/wiki/games/qserf/updates/april_fools_26/april_fools_26_thumbnail.jpeg
 }}
 
 ## Trivia

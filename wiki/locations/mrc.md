@@ -3,7 +3,7 @@ title: Madison Research Center
 ---
 
 {{infobox
-|image=asset/image/wiki/mrc.png
+|image=asset/image/wiki/locations/mrc/mrc_image.jpeg
 |text=Madison Research Center
 }}
 {{incomplete}}

@@ -3,7 +3,7 @@ title: Sitka National Laboratory
 ---
 
 {{infobox
-|image=asset/image/wiki/snl.webp
+|image=asset/image/wiki/games/snl/snl_thumbnail.jpeg
 |text=Sitka National Laboratory
 |release=Unconfirmed
 }}

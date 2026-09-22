@@ -3,7 +3,7 @@ title: Donovan Hydroelectric Plant
 ---
 
 {{infobox
-|image=asset/image/wiki/game_screenshots/DHPIndev.png
+|image=asset/image/wiki/games/dhp/dhp_preview.png
 |text=Donovan Hydroelectric Plant
 |release=Unconfirmed
 }}

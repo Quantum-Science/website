@@ -3,7 +3,7 @@ title: Middlepoint Nuclear Generation Station
 ---
 
 {{infobox
-|image=asset/image/wiki/game_screenshots/MNGS3.png
+|image=asset/image/wiki/games/mngs/mngs_preview.jpeg
 |text=Middlepoint Nuclear Generation Station
 |release=Unconfirmed
 }}
@@ -30,8 +30,8 @@ As of writing, not much more has been done to this project and it is still on ho
 ## Gallery
 
 {{gallery
-|asset/image/wiki/game_screenshots/MNGS1CR.png|MNGS Version 1 Control Room
-|asset/image/wiki/game_screenshots/MNGS1.png|MNGS Version 1 Outside
-|asset/image/wiki/game_screenshots/MNGS2CR.png|MNGS Version 2 Control Room
-|asset/image/wiki/game_screenshots/MNGS2.png|MNGS Version 2 Outside
+|asset/image/wiki/games/mngs/mngs_v1_control_room.jpeg|MNGS Version 1 Control Room
+|asset/image/wiki/games/mngs/mngs_v1_outside.jpeg|MNGS Version 1 Outside
+|asset/image/wiki/games/mngs/mngs_v2_control_room.jpeg|MNGS Version 2 Control Room
+|asset/image/wiki/games/mngs/mngs_v2_outside.jpeg|MNGS Version 2 Outside
 }}

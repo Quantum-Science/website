@@ -3,7 +3,7 @@ title: Quantuplex
 ---
 
 {{infobox
-|image=asset/image/wiki/game_screenshots/qplex/QPLEXThumbnail.webp
+|image=asset/image/wiki/games/quantuplex/quantuplex_thumbnail.webp
 |text=Quantuplex
 }}
 {{incomplete}}
@@ -16,21 +16,19 @@ Nowerdays Quantuplex is used for community events and big announcements, it is a
 
 Quantuplex does however have a remake in development as of mid 2025, this is not being actively developed as it is typically something that new SST developers work on when they are first hired, due to this, there is no release date planned.
 
+## Gallery
+{{gallery
+|asset/image/wiki/games/quantuplex/quantuplex_old_1.jpeg|Quantuplex Exterior
+|asset/image/wiki/games/quantuplex/quantuplex_old_2.jpeg|Quantuplex Interior
+|asset/image/wiki/games/quantuplex/quantuplex_old_3.jpeg|Quantuplex Interior
+|asset/image/wiki/games/quantuplex/quantuplex_1.jpeg|New Quantuplex Exterior
+|asset/image/wiki/games/quantuplex/quantuplex_2.jpeg|New Quantuplex Interior
+|asset/image/wiki/games/quantuplex/quantuplex_old_4.jpeg|Old Quantuplex Security Interior
+|asset/image/wiki/games/quantuplex/quantuplex_old_5.jpeg|Old Quantuplex Security Interior
+|asset/image/wiki/games/quantuplex/quantuplex_old_6.jpeg|Old Quantuplex Security Interior
+|asset/image/wiki/games/quantuplex/quantuplex_old_7.jpeg|Old Quantuplex Security Interior
+|asset/image/wiki/games/quantuplex/quantuplex_old_8.jpeg|Old Quantuplex Security Interior
+}}
 
 ## External Links
 * ["Quantuplex"](https://www.roblox.com/games/2791797024) — Roblox.
-
-## Gallery
-
-{{gallery
-|asset/image/wiki/game_screenshots/qplex/QPLEX1.png|Quantuplex Exterior
-|asset/image/wiki/game_screenshots/qplex/QPLEX2.png|Quantuplex Interior
-|asset/image/wiki/game_screenshots/qplex/QPLEX3.png|Quantuplex Interior
-|asset/image/wiki/game_screenshots/qplex/NewQPLEX1.png|New Quantuplex Exterior
-|asset/image/wiki/game_screenshots/qplex/NewQPLEX2.png|New Quantuplex Interior
-|asset/image/wiki/game_screenshots/qplex/OldQPLEXSecurity1.png|Old Quantuplex Security Interior
-|asset/image/wiki/game_screenshots/qplex/OldQPLEXSecurity2.png|Old Quantuplex Security Interior
-|asset/image/wiki/game_screenshots/qplex/OldQPLEXSecurity3.png|Old Quantuplex Security Interior
-|asset/image/wiki/game_screenshots/qplex/OldQPLEXSecurity4.png|Old Quantuplex Security Interior
-|asset/image/wiki/game_screenshots/qplex/OldQPLEXSecurity5.png|Old Quantuplex Security Interior
-}}

@@ -3,7 +3,7 @@ title: QS Fusion Reactor Complex
 ---
 
 {{infobox
-|image=asset/image/wiki/game_screenshots/QSFRC.png
+|image=asset/image/wiki/games/qsfrc/qsfrc_thumbnail.webp
 |text=QS Fusion Reactor Complex
 }}
 {{incomplete}}
@@ -16,12 +16,12 @@ There is an archive of this game under the QASST group, as of writing this howev
 ## Gallery
 
 {{gallery
-|asset/image/wiki/game_screenshots/QSFRCEx1.png|QSFRC Exterior
-|asset/image/wiki/game_screenshots/QSFRCIn1.png|QSFRC Interior
-|asset/image/wiki/game_screenshots/QSFRCIn2.png|QSFRC Interior
-|asset/image/wiki/game_screenshots/QSFRCIn3.png|QSFRC Interior
-|asset/image/wiki/game_screenshots/QSFRCIn4.png|QSFRC Interior
-|asset/image/wiki/game_screenshots/QSFRCIn5.png|QSFRC Interior
-|asset/image/wiki/game_screenshots/QSFRCPlan1.png|QSFRC Planning
-|asset/image/wiki/game_screenshots/QSFRCPlan2.png|QSFRC Planning
+|asset/image/wiki/games/qsfrc/qsfrc_exterior.jpeg|QSFRC Exterior
+|asset/image/wiki/games/qsfrc/qsfrc_interior_1.jpeg|QSFRC Interior
+|asset/image/wiki/games/qsfrc/qsfrc_interior_2.jpeg|QSFRC Interior
+|asset/image/wiki/games/qsfrc/qsfrc_interior_3.jpeg|QSFRC Interior
+|asset/image/wiki/games/qsfrc/qsfrc_interior_4.jpeg|QSFRC Interior
+|asset/image/wiki/games/qsfrc/qsfrc_interior_5.jpeg|QSFRC Interior
+|asset/image/wiki/games/qsfrc/qsfrc_layout_1.jpeg|QSFRC Planning
+|asset/image/wiki/games/qsfrc/qsfrc_layout_2.jpeg|QSFRC Planning
 }}

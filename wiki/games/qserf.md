@@ -3,7 +3,7 @@ title: QS Energy Research Facility
 ---
 
 {{infobox
-|image=asset/image/wiki/qserf.webp
+|image=asset/image/wiki/games/qserf/qserf_thumbnail.webp
 |text=QS Energy Research Facility
 |release=August 18th, 2019
 }}

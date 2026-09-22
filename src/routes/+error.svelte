@@ -16,7 +16,7 @@
 			<enhanced:img
 				class="thumbnail_image"
 				fetchpriority="high"
-				src="/static/asset/image/error.png"
+				src="/static/asset/image/error.jpeg"
 				sizes="min(2400px, 100vw)"
 				alt="Error Page Thumbnail"
 			/>

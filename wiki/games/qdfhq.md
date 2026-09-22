@@ -3,7 +3,7 @@ title: Quantum Defense Firm Headquarters
 ---
 
 {{infobox
-|image=asset/image/wiki/game_screenshots/qdfhq/QDFHQV4 4.png
+|image=asset/image/wiki/games/qdfhq/qdfhq_thumbnail.jpeg
 |text=Quantum Defense Firm Headquarters
 }}
 {{incomplete}}
@@ -31,20 +31,20 @@ This was given the name "The Highschool" early on in its development because the
 ## Gallery
 
 {{gallery
-|asset/image/wiki/game_screenshots/qdfhq/QDFHQV1 1.png|QDFHQ Version 1 Exterior
-|asset/image/wiki/game_screenshots/qdfhq/QDFHQV1 4.png|QDFHQ Version 1 Exterior
-|asset/image/wiki/game_screenshots/qdfhq/QDFHQV1 2.png|QDFHQ Version 1 Interior
-|asset/image/wiki/game_screenshots/qdfhq/QDFHQV1 3.png|QDFHQ Version 1 Interior
-|asset/image/wiki/game_screenshots/qdfhq/QDFHQV2 1.png|QDFHQ Version 2 Exterior
-|asset/image/wiki/game_screenshots/qdfhq/QDFHQV2 4.png|QDFHQ Version 2 Exterior
-|asset/image/wiki/game_screenshots/qdfhq/QDFHQV2 2.png|QDFHQ Version 2 Interior
-|asset/image/wiki/game_screenshots/qdfhq/QDFHQV2 3.png|QDFHQ Version 2 Interior
-|asset/image/wiki/game_screenshots/qdfhq/QDFHQV3 1.png|QDFHQ Version 3 Exterior
-|asset/image/wiki/game_screenshots/qdfhq/QDFHQV3 2.png|QDFHQ Version 3 Interior
-|asset/image/wiki/game_screenshots/qdfhq/QDFHQV3 3.png|QDFHQ Version 3 Interior
-|asset/image/wiki/game_screenshots/qdfhq/QDFHQV3 4.png|QDFHQ Version 3 Interior
-|asset/image/wiki/game_screenshots/qdfhq/QDFHQV4 3.png|QDFHQ Version 4 Exterior
-|asset/image/wiki/game_screenshots/qdfhq/QDFHQV4 4.png|QDFHQ Version 4 Exterior
-|asset/image/wiki/game_screenshots/qdfhq/QDFHQV4 2.png|QDFHQ Version 4 Interior
-|asset/image/wiki/game_screenshots/qdfhq/QDFHQV4 1.png|QDFHQ Version 4 Interior
+|asset/image/wiki/games/qdfhq/qdfhq_v1_1.jpeg|QDFHQ Version 1 Exterior
+|asset/image/wiki/games/qdfhq/qdfhq_v1_4.jpeg|QDFHQ Version 1 Exterior
+|asset/image/wiki/games/qdfhq/qdfhq_v1_2.jpeg|QDFHQ Version 1 Interior
+|asset/image/wiki/games/qdfhq/qdfhq_v1_3.jpeg|QDFHQ Version 1 Interior
+|asset/image/wiki/games/qdfhq/qdfhq_v2_1.jpeg|QDFHQ Version 2 Exterior
+|asset/image/wiki/games/qdfhq/qdfhq_v2_4.jpeg|QDFHQ Version 2 Exterior
+|asset/image/wiki/games/qdfhq/qdfhq_v2_2.jpeg|QDFHQ Version 2 Interior
+|asset/image/wiki/games/qdfhq/qdfhq_v2_3.jpeg|QDFHQ Version 2 Interior
+|asset/image/wiki/games/qdfhq/qdfhq_v3_1.jpeg|QDFHQ Version 3 Exterior
+|asset/image/wiki/games/qdfhq/qdfhq_v3_2.jpeg|QDFHQ Version 3 Interior
+|asset/image/wiki/games/qdfhq/qdfhq_v3_3.jpeg|QDFHQ Version 3 Interior
+|asset/image/wiki/games/qdfhq/qdfhq_v3_4.jpeg|QDFHQ Version 3 Interior
+|asset/image/wiki/games/qdfhq/qdfhq_3.jpeg|QDFHQ Version 4 Exterior
+|asset/image/wiki/games/qdfhq/qdfhq_4.jpeg|QDFHQ Version 4 Exterior
+|asset/image/wiki/games/qdfhq/qdfhq_2.jpeg|QDFHQ Version 4 Interior
+|asset/image/wiki/games/qdfhq/qdfhq_1.jpeg|QDFHQ Version 4 Interior
 }}

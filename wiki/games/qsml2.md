@@ -3,7 +3,7 @@ title: QS Multipurpose Laboratories 2
 ---
 
 {{infobox
-|image=asset/image/wiki/qsml2.webp
+|image=asset/image/wiki/games/qsml2/qsml2_thumbnail.webp
 |text=QS Multipurpose Laboratories 2
 |release=February 2018
 }}

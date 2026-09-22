@@ -3,7 +3,7 @@ title: MONSTER SMASH
 ---
 
 {{infobox
-|image=asset/image/wiki/monster_smash.webp
+|image=asset/image/wiki/games/monster_smash/monster_smash.webp
 |text=MONSTER SMASH
 |release=April 8th, 2026
 }}

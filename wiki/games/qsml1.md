@@ -3,7 +3,7 @@ title: QS Multipurpose Laboratories 1
 ---
 
 {{infobox
-|image=asset/image/wiki/qsml1.webp
+|image=asset/image/wiki/games/qsml1/qsml1_thumbnail.webp
 |text=QS Multipurpose Laboratories 1
 |release=2016
 }}

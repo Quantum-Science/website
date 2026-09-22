@@ -14,7 +14,7 @@
 		<enhanced:img
 			class="thumbnail_image"
 			fetchpriority="high"
-			src="/static/asset/image/landing_background.png"
+			src="/static/asset/image/landing_background.jpeg"
 			sizes="min(2940px, 100vw)"
 			alt="Library Landing Thumbnail"
 		/>
@@ -66,7 +66,7 @@
 		<enhanced:img
 			class="thumbnail_image"
 			fetchpriority="low"
-			src="/static/asset/image/qserf_cavern.png"
+			src="/static/asset/image/qserf_cavern.jpeg"
 			sizes="min(1920px, 100vw)"
 			alt="Library Landing Thumbnail"
 		/>

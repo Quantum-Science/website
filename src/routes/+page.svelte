@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { PUBLIC_ENABLE_WIKI, PUBLIC_SITE_URL, PUBLIC_SOCIAL_LINK_DISCORD } from '$env/static/public';
+	import { PUBLIC_ENABLE_WIKI, PUBLIC_SITE_URL, PUBLIC_SOCIAL_LINK_DISCORD } from '$app/env/public';
 	
-	import DiscordIcon from '$lib/interface/visuals/socials/discord_icon.svelte';
-	import RobloxIcon from '$lib/interface/visuals/socials/roblox_icon.svelte';
+	import DiscordIcon from '#lib/interface/visuals/socials/discord_icon.svelte';
+	import RobloxIcon from '#lib/interface/visuals/socials/roblox_icon.svelte';
 </script>
 
 <script module>
@@ -13,6 +13,7 @@
 	<div class="thumbnail_container">
 		<enhanced:img
 			class="thumbnail_image"
+			decoding="sync"
 			fetchpriority="high"
 			src="/static/asset/image/landing_background.jpeg"
 			sizes="min(2940px, 100vw)"

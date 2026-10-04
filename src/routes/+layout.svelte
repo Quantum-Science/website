@@ -1,25 +1,29 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import { PUBLIC_ENABLE_WIKI, PUBLIC_SITE_URL, PUBLIC_SOCIAL_LINK_BLUESKY, PUBLIC_SOCIAL_LINK_DISCORD, PUBLIC_SOCIAL_LINK_KOFI, PUBLIC_SOCIAL_LINK_ROBLOX, PUBLIC_SOCIAL_LINK_X, PUBLIC_SOCIAL_LINK_YOUTUBE } from '$env/static/public';
+	import { PUBLIC_ENABLE_WIKI, PUBLIC_SITE_URL, PUBLIC_SOCIAL_LINK_BLUESKY, PUBLIC_SOCIAL_LINK_DISCORD, PUBLIC_SOCIAL_LINK_KOFI, PUBLIC_SOCIAL_LINK_ROBLOX, PUBLIC_SOCIAL_LINK_X, PUBLIC_SOCIAL_LINK_YOUTUBE } from '$app/env/public';
 	
-	import '$lib/interface/styles/root.scss';
+	import '#lib/interface/styles/root.scss';
+	import { inject_analytics } from '#lib/analytics.svelte.ts';
 	
-	import BlueskyIcon from '$lib/interface/visuals/socials/bluesky_icon.svelte';
-	import BrandLogo from '$lib/interface/visuals/brand_logo.svelte';
-    import DiscordIcon from '$lib/interface/visuals/socials/discord_icon.svelte';
-	import KofiIcon from '$lib/interface/visuals/socials/kofi_icon.svelte';
-	import RobloxIcon from '$lib/interface/visuals/socials/roblox_icon.svelte';
-	import XIcon from '$lib/interface/visuals/socials/x_icon.svelte';
-    import YoutubeIcon from '$lib/interface/visuals/socials/youtube_icon.svelte';
+	import BlueskyIcon from '#lib/interface/visuals/socials/bluesky_icon.svelte';
+	import BrandLogo from '#lib/interface/visuals/brand_logo.svelte';
+    import DiscordIcon from '#lib/interface/visuals/socials/discord_icon.svelte';
+	import KofiIcon from '#lib/interface/visuals/socials/kofi_icon.svelte';
+	import RobloxIcon from '#lib/interface/visuals/socials/roblox_icon.svelte';
+	import WikiLogo from '#lib/interface/visuals/wiki_logo.svelte';
+	import XIcon from '#lib/interface/visuals/socials/x_icon.svelte';
+    import YoutubeIcon from '#lib/interface/visuals/socials/youtube_icon.svelte';
 	
-	import ThemeButton from '$lib/interface/visuals/theme_button.svelte';
+	import ThemeButton from '#lib/interface/visuals/theme_button.svelte';
 	
 	let { children } = $props();
 	
+	let wiki = $derived(page.url.pathname.startsWith('/wiki'));
 	let title = $derived(page.data.title ?? 'Quantum Science — Roblox Sci-Fi Studio');
 	let description = $derived(page.data.description ?? 'Quantum Science is an indie game development studio that specialises in the Sci-Fi realm.');
 	let image = $derived(page.data.image ?? '/asset/image/brand_card.jpg');
 	let pathname = $derived(page.url.pathname);
+	inject_analytics();
 </script>
 
 <div class="cool_top_blur"></div>
@@ -50,7 +54,11 @@
 	<div class="footer_contents">
 		<div class="brand">
 			<a class="brand_logo" href="/" title="Quantum Science">
-				<BrandLogo height={80}/>
+				{#if wiki}
+					<WikiLogo height={80}/>
+				{:else}
+					<BrandLogo height={80}/>
+				{/if}
 			</a>
 			<div class="lower_section">
 				<a class="social_logo" href={PUBLIC_SOCIAL_LINK_DISCORD} title="Discord" target="_blank">
@@ -76,7 +84,7 @@
 		<div class="more">
 			<ThemeButton/>
 			<p class="legal" aria-hidden="true">
-				{#if page.url.pathname.startsWith('/wiki/')}
+				{#if wiki}
 					The text on this wiki is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" target="_blank">CC BY-NC-SA 4.0</a>.<br/>
 				{/if}
 				© {new Date().getFullYear()} Quantum Science. All rights reserved.

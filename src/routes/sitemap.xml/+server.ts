@@ -1,6 +1,6 @@
-import generate_body from '$lib/server/sitemap/generate_body';
-import generate_response from '$lib/server/sitemap/generate_response';
-import get_routes from '$lib/server/sitemap/get_routes';
+import generate_body from '#lib/server/sitemap/generate_body';
+import generate_response from '#lib/server/sitemap/generate_response';
+import get_routes from '#lib/server/sitemap/get_routes';
 
 export const prerender = true;
 

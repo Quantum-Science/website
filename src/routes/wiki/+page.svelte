@@ -1,23 +1,22 @@
 <script lang="ts">
-	let { data } = $props();
+	import '#lib/interface/styles/wiki.scss';
+	import WikiLogo from '#lib/interface/visuals/wiki_logo.svelte';
 </script>
 
 <div class="thumbnail_container">
 	<enhanced:img
 		class="thumbnail_image"
+		decoding="sync"
 		fetchpriority="high"
-		src="/static/asset/image/snl.jpeg"
+		src="/static/asset/image/wiki_background.jpg"
 		alt="Library Landing Thumbnail"
 	/>
 </div>
-<div class="content">
-	<h1>The Quantum Science Wiki</h1>
-	<p>Your official source for everything in the Quantum Corporation universe!</p>
+<div class="landing">
+	<WikiLogo height={144}/>
 </div>
-<div class="links">
-	{#each data.links as link}
-		<a href={`/wiki/${link.path}`}>{link.title} ({link.path})</a>
-	{/each}
+<div class="content">
+	<wiki:markdown src=".home/index.md"></wiki:markdown>
 </div>
 
 <style lang="scss">
@@ -63,43 +62,25 @@
 			width: 100%;
 		}
 	}
-	.content {
-		background: radial-gradient(at 50% 50%, #00000080 20%, #00000000 70%);
-		margin-top: 64px;
-		padding: 64px 64px;
+	.landing {
+		background: radial-gradient(at 50% 50%, #00000080 25%, #00000000 70%);
+		color: #fff;
+		margin: 64px 0 0;
+		padding: 32px 96px;
+		text-align: center;
 		@media (max-width: 480px) {
-			background: radial-gradient(at 50% 50%, #00000080 20%, #00000000 80%);
-			padding: 64px 0;
+			background: radial-gradient(at 50% 50%, #00000060 25%, #00000000 70%);
+			margin: 32px 0 0;
+			padding: 0;
 		}
-		h1 {
-			color: transparent;
-			background: radial-gradient(at 50% 60%, #fff, #edafa1);
-			background-clip: text;
-			font-family: var(--font-secondary);
-			font-size: 56px;
-			font-weight: 500;
-			line-height: 1.1;
-			margin: 0;
-			text-align: center;
-		}
-		p {
-			color: transparent;
-			background: radial-gradient(at 50% 40%, #eee, #edafa1);
-			background-clip: text;
-			font-size: 16px;
-			text-align: center;
+		:global(svg) {
+			max-width: 100%;
 		}
 	}
-	.links {
-		display: grid;
-		gap: 16px;
-		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-		a {
-			background: var(--background-gradient);
-			border-radius: 24px;
-			box-shadow: inset 0 0 0 1px hsla(0, 0%, 50%, .3);
-			padding: 16px 24px;
-			text-decoration: none;
-		}
+	.content {
+		background: var(--background-primary);
+		border-radius: 24px;
+		box-shadow: inset 0 0 0 1px hsla(0, 0%, 50%, .3);
+		padding: 10px 24px 0;
 	}
 </style>

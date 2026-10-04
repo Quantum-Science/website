@@ -1,11 +1,11 @@
 <script>
 	import { beforeNavigate } from '$app/navigation';
 	
-	import '$lib/interface/styles/wiki.scss';
+	import '#lib/interface/styles/wiki.scss';
 	
-	import { clear_article_history, get_article_history, get_current_article, pop_article_history, push_article_history, set_article_history, set_current_article } from '$lib/interface/stores/wiki.svelte.ts';
+	import { clear_article_history, get_article_history, get_current_article, pop_article_history, push_article_history, set_article_history, set_current_article } from '#lib/interface/stores/wiki.svelte.ts';
 	
-	import GalleryOverlay from '$lib/interface/visuals/gallery_overlay.svelte';
+	import GalleryOverlay from '#lib/interface/visuals/gallery_overlay.svelte';
 	
 	let { children } = $props();
 	
@@ -16,7 +16,7 @@
 		if (from?.route.id === to?.route.id)
 			return;
 		
-		if (to && !to.url.pathname.startsWith('/wiki/')) {
+		if (to && (!to.url.pathname.startsWith('/wiki/') || to.url.pathname.startsWith('/wiki/pages'))) {
 			clear_article_history();
 			set_current_article(null);
 			return;

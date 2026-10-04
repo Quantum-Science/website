@@ -144,16 +144,21 @@ export async function optimise_image(path, size) {
 let route_image;
 export const generated_images = {};
 export const route_images = {};
+export async function compile_markdown(markdown_path) {
+	const markdown = readFileSync(markdown_path, { encoding: 'utf-8' });
+	
+	const { body, metadata } = extract_frontmatter(markdown);
+	const html = await marked.parse(body);
+	return { html, raw: body, metadata };
+}
+
 export async function compile_route(slug, wiki_path, routes_path, base_page, base_load) {
 	const markdown_path = `${wiki_path}/${slug}`;
 	const timestamp = IS_DEV ? null : execSync(`git log -1 --format=%cd --date=iso-strict "${markdown_path}"`)
 		.toString()
 		.trim();
 	
-	const markdown = readFileSync(markdown_path, { encoding: 'utf-8' });
-	
-	const { body, metadata } = extract_frontmatter(markdown);
-	const html = await marked.parse(body);
+	const { html, raw, metadata } = await compile_markdown(markdown_path);
 	
 	let images = 'const IMAGES = {';
 	for (const key in route_images) {
@@ -161,7 +166,6 @@ export async function compile_route(slug, wiki_path, routes_path, base_page, bas
 		delete route_images[key];
 	}
 	images += '};';
-	console.log(slug);
 	const compiled_page = base_page
 		.replaceAll('{{title}}', metadata.title)
 		.replace('{{category}}', CATEGORIES[slug.split('/')[0]] || 'Unknown Category')
@@ -172,7 +176,7 @@ export async function compile_route(slug, wiki_path, routes_path, base_page, bas
 		.replace('{{body}}', html)
 		.replace('{{filepath}}', slug);
 		
-	const description = MARKED_RAW.parse(body).split('\n')[0];
+	const description = MARKED_RAW.parse(raw).split('\n')[0];
 	const compiled_load = base_load
 		.replace('{{title}}', metadata.title)
 		.replace('{{description}}', description ? `'${description.replaceAll('\'', '\\\'')}'` : 'null')
@@ -238,32 +242,10 @@ async function get_blur(path, sizes) {
 	return [blur, metadata.width, metadata.height, hash, images];
 }
 
-export function setup() {
-	const layout_path = resolve('wiki_plugin/layout.svelte');
-	const routes_path = resolve('src/routes/wiki/(generated)');
-	const wiki_path = resolve('wiki');
-	mkdirSync('node_modules/.cache/wiki_images', { recursive: true });
-	mkdirSync(routes_path, { recursive: true });
-	copyFileSync(layout_path, `${routes_path}/+layout.svelte`);
-	
-	for (const entry of readdirSync(routes_path, { recursive: true })) {
-		const path = `${routes_path}/${entry}`;
-		try {
-			if (!statSync(path).isDirectory())
-				continue;
-		} catch {
-			continue;
-		}
-		
-		if (!existsSync(`${wiki_path}/${entry}.md`) && !existsSync(`${wiki_path}/${entry}`))
-			rmSync(path, { recursive: true });
-	}
-	
+export function setup_markdown() {
 	const asset = src => IS_DEV ? `/${src}` : `/static/${src}`;
 	const img = IS_DEV ? 'img' : 'enhanced:img';
 	
-	const base_page = readFileSync('wiki_plugin/page.svelte', { encoding: 'utf-8' });
-	const base_load = readFileSync('wiki_plugin/page.js', { encoding: 'utf-8' });
 	marked.use(extendedTables());
 	marked.use({
 		async: true,
@@ -329,6 +311,32 @@ export function setup() {
 			token.html = html + '</Gallery>';
 		}
 	});
+}
+
+export function setup() {
+	const layout_path = resolve('wiki_plugin/layout.svelte');
+	const routes_path = resolve('src/routes/wiki/(generated)');
+	const wiki_path = resolve('wiki');
+	mkdirSync('node_modules/.cache/wiki_images', { recursive: true });
+	mkdirSync(routes_path, { recursive: true });
+	copyFileSync(layout_path, `${routes_path}/+layout.svelte`);
 	
+	for (const entry of readdirSync(routes_path, { recursive: true })) {
+		const path = `${routes_path}/${entry}`;
+		try {
+			if (!statSync(path).isDirectory())
+				continue;
+		} catch {
+			continue;
+		}
+		
+		if (!existsSync(`${wiki_path}/${entry}.md`) && !existsSync(`${wiki_path}/${entry}`))
+			rmSync(path, { recursive: true });
+	}
+	
+	setup_markdown();
+	
+	const base_page = readFileSync('wiki_plugin/page.svelte', { encoding: 'utf-8' });
+	const base_load = readFileSync('wiki_plugin/page.js', { encoding: 'utf-8' });
 	return [layout_path, routes_path, wiki_path, base_page, base_load];
 }

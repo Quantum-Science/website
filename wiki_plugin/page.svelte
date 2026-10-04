@@ -1,13 +1,13 @@
 <script>
 	import { onMount } from 'svelte';
 	
-	import { PUBLIC_GITHUB_URL } from '$env/static/public';
+	import { PUBLIC_GITHUB_URL } from '$app/env/public';
 	
-	import { open_img } from '$lib/interface/stores/gallery.svelte.ts';
-	import { get_article_history, set_current_article } from '$lib/interface/stores/wiki.svelte.ts';
+	import { open_img } from '#lib/interface/stores/gallery.svelte.ts';
+	import { get_article_history, set_current_article } from '#lib/interface/stores/wiki.svelte.ts';
 	
-	import Gallery from '$lib/interface/visuals/gallery.svelte';
-	import Image from '$lib/interface/visuals/image.svelte';
+	import Gallery from '#lib/interface/visuals/gallery.svelte';
+	import Image from '#lib/interface/visuals/image.svelte';
 	{{images}}
 	
 	let last_article = $derived(get_article_history().at(-1));
@@ -15,6 +15,7 @@
 </script>
 
 <script module>
+	export const title = '{{title}}';
 	export const last_updated_at = {{updatedate}};
 </script>
 

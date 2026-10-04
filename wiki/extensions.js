@@ -61,7 +61,7 @@ export function infobox_renderer(infobox) {
 			width = 256;
 		else
 			width = 320;
-		html += `<button i="/${infobox.image}" type="button" onclick={open_img}><${IMG} alt="${infobox.image.split('/').at(-1)}" src="${ASSET(infobox.image)}?w=${width * 2};${width}" width="${width}"/></button>`;
+		html += `<button i="/${infobox.image}" type="button"><${IMG} alt="${infobox.image.split('/').at(-1)}" src="${ASSET(infobox.image)}?w=${width * 2};${width}" width="${width}"/></button>`;
 	}
 	if (infobox.text)
 		html += `<p>${infobox.text}</p>`;

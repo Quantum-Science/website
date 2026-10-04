@@ -1,4 +1,7 @@
 .wiki_content {
+	&:not(:has(h1)) h2 {
+		padding-top: 0;
+	}
 	.header {
 		border-bottom: 1px solid var(--divider-default);
 		display: flex;
@@ -34,6 +37,7 @@
 		font-family: var(--font-secondary);
 		font-weight: 550;
 		margin: 12px 0;
+		min-width: fit-content;
 		padding: 12px 0 8px;
 	}
 	h3 {

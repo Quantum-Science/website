@@ -11,7 +11,7 @@ title: Quantum Defense Firm Headquarters
 **Quantum Defense Firm Headquarters (QDFHQ)** is as the name describes the canonical headquarters of [QDF](/wiki/groups/qdf). In lore, this is where all QDF operations were moved in the early 2000s and hosts tryouts for new QDF operatives, along with promotion ceremonies for current QDF operatives.
 
 ## Development
-QDFHQ has been through about 4 iterations since its introduction in 2020, and have each been given names relating to their appearance. The aim of all of these remakes has been to provide QDF with a facility where they can reliably host ceremonies and tryouts, which are currently outsourced to [Futuretops](https://www.roblox.com/games/5169051062/Futuretops-Rework) and have been for the last 5 years at least due to the QDFHQ not being fit to host tryouts.
+**QDFHQ** has been through about 4 iterations since its introduction in 2020, and have each been given names relating to their appearance. The aim of all of these remakes has been to provide QDF with a facility where they can reliably host ceremonies and tryouts, which are currently outsourced to [Futuretops](https://www.roblox.com/games/5169051062/Futuretops-Rework) and have been for the last 5 years at least due to **QDFHQ** not being fit to host tryouts.
 
 ## V1 "The Modern Office Building"
 Probably the only one that actually fits the purpose of QDFHQ, it has a lot of empty space for offices, but they were never implemented due to the game needing to be optimised to host tryouts, which were held there for a short amount of time before being moved to Futuretops, this was however still used for ceremonies up until V4 was opened to QDF which has a finished auditorium. This version is restricted to QDF only.

@@ -12,12 +12,12 @@ title: QS Energy Research Facility
 **Quantum Science Energy Research Facility (QSERF)** is a [simulation video game](https://en.wikipedia.org/wiki/Simulation_video_game) developed by the [Quantum Structural Science Team](/wiki/groups/qsst). It is the successor to [QSML2](/wiki/games/qsml2), originally built as a showcase, and was released in 2019.
 
 ## Gameplay
-**QSERF** is a co-op [simulation video game](https://en.wikipedia.org/wiki/Simulation_video_game) in which players assume the role of employees within the [Madison Research Center](/wiki/locations/mrc). The primary objective is to operate and maintain the [Dark Matter Reactor 01](/wiki/reactors/dmr_01.md), a nuclear reactor controlled through various means in which require constant observation and upkeep.
+**QSERF** is a co-op [simulation video game](https://en.wikipedia.org/wiki/Simulation_video_game) in which players assume the role of employees within the [Madison Research Center](/wiki/locations/mrc). The primary objective is to operate and maintain the [Dark Matter Reactor 01](/wiki/reactors/dmr_01), a nuclear reactor controlled through various means in which require constant observation and upkeep.
 
 (unfinished)
 
 ## Plot
-The game takes place on the night of August 18th 1985 within the [Madison Research Center](/wiki/locations/mrc), an underground research facility that primarily houses the [Dark Matter Reactor 01](/wiki/reactors/dmr_01.md) prototype nuclear reactor.
+The game takes place on the night of August 18th 1985 within the [Madison Research Center](/wiki/locations/mrc), an underground research facility that primarily houses the [Dark Matter Reactor 01](/wiki/reactors/dmr_01) prototype nuclear reactor.
 
 (unfinished)
 

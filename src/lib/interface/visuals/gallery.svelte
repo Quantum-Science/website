@@ -11,7 +11,10 @@
 		
 		const gallery: GalleryItem[] = [];
 		for (const element of container.querySelectorAll('li')) {
-			const image = element.querySelector('img')!;
+			const image = element.querySelector('img');
+			if (!image)
+				continue;
+			
 			const text = element.querySelector('p');
 			
 			const index = gallery.push({

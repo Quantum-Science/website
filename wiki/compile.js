@@ -300,7 +300,13 @@ export function setup_markdown() {
 			
 			let html = '<Gallery>\n';
 			for (const image of token.images) {
+				if (!existsSync(`static/${image.path}`)) {
+					console.warn(`Image does not exist: ${image.path}`);
+					html += '<li>Image does not exist.</li>';
+					continue;
+				}
 				console.log(image.path);
+				
 				const [blur, width, height, hash, images] = await get_blur(`static/${image.path}`, [128, 256]);
 				
 				html += `<li><div class="image_wrapper"><Image image={IMAGES["${hash}"]} width="128" height="128"/></div>`;

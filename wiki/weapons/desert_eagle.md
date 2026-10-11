@@ -18,8 +18,8 @@ The **Desert Eagle** is a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF]
 
 |              |Shortest Distance|Longest Distance|Null Distance|
 |--------------|-----------------|----------------|-------------|
-|Bullet Damage |50 damage        |26 damage       |0 damage     |
-|Bullet Falloff|60 studs         |90 studs        |200 studs    |
+|Bullet Damage |56 damage        |26 damage       |0 damage     |
+|Bullet Falloff|30 studs         |60 studs        |200 studs    |
 
 |Body Part|Damage Multiplier|
 |---------|-----------------|

@@ -13,11 +13,11 @@ The **KRISS Vector** is a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF]
 ## Statistics
 |Ammunition|Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate (RPM)|
 |----------|-----------------|-------------------|-----------|---------------|
-|33        |20               |35                 |1.0s       |1200           |
+|33        |22               |42                 |1.0s       |1200           |
 
 |              |Shortest Distance|Longest Distance|Null Distance|
 |--------------|-----------------|----------------|-------------|
-|Bullet Damage |14 damage        |6 damage        |0 damage     |
+|Bullet Damage |12 damage        |6 damage        |0 damage     |
 |Bullet Falloff|30 studs         |55 studs        |150 studs    |
 
 |Body Part|Damage Multiplier|

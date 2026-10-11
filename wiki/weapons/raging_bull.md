@@ -17,8 +17,8 @@ The **Raging Bull .44 (RG Bull .44)** is a type of [Weapon](/wiki/games/qserf/we
 
 |              |Shortest Distance|Longest Distance|Null Distance|
 |--------------|-----------------|----------------|-------------|
-|Bullet Damage |55 damage        |30 damage       |0 damage     |
-|Bullet Falloff|60 studs         |90 studs        |150 studs    |
+|Bullet Damage |55 damage        |25 damage       |0 damage     |
+|Bullet Falloff|25 studs         |50 studs        |150 studs    |
 
 |Body Part|Damage Multiplier|
 |---------|-----------------|

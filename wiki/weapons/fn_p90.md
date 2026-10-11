@@ -17,8 +17,8 @@ The **FN P90** is a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF](/wiki
 
 |              |Shortest Distance|Longest Distance|Null Distance|
 |--------------|-----------------|----------------|-------------|
-|Bullet Damage |19 damage        |10 damage       |0 damage     |
-|Bullet Falloff|35 studs         |50 studs        |150 studs    |
+|Bullet Damage |14 damage        |8 damage       |0 damage     |
+|Bullet Falloff|25 studs         |50 studs        |150 studs    |
 
 |Body Part|Damage Multiplier|
 |---------|-----------------|

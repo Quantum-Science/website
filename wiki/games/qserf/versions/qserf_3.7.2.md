@@ -1,0 +1,26 @@
+---
+title: QSERF Release 3.7.2
+---
+
+{{infobox
+|image=asset/image/wiki/games/qserf/updates/v3.7.0/v3.7.0_thumbnail.jpeg
+|text=Christmas Update 2025
+|release=November 28th, 2025
+|prev=/wiki/qserf_3.7.1|3.7.1
+|curr=v3.7.2
+|next=/wiki/qserf_3.7.3|3.7.3
+}}
+QSERF v3.7.2 is the second patch following [v3.7.0](/wiki/qserf_3.7.0), fixing various issues.
+
+## Fixes
+* Fixed a bug where weapons could bypass the riot shield by facing the same direction the opponent is facing.
+* Fixed a bug where the flinging power of explosions was uncapped.
+* Fixed a bug where a fling from an explosion could transfer to chairs, resulting in them flinging people when touched. ([#0715](<https://discord.com/channels/939956361977020449/1442696311894708245>))
+* Fixed a bug where players could emote while seated or ragdolled.
+* Fixed a bug where the play button had the wrong colour.
+* Updated the QCOD Director text chat tag, sorry former director dark!
+* Updated the long sleeve security uniform inside the DMRCR armoury.
+* Removed a tiny floating piece of snow inside the DMRCR security bypass.
+
+## Contributors
+* @katsumisoda — Building, Programming

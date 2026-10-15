@@ -1,0 +1,21 @@
+---
+title: QSERF Release 3.6.15
+---
+
+{{infobox
+|image=asset/image/wiki/games/qserf/updates/v3.6.13/v3.6.13_thumbnail.jpeg
+|text=Halloween Update 2025
+|release=October 2nd, 2025
+|prev=/wiki/qserf_3.6.14|3.6.14
+|curr=v3.6.15
+|next=/wiki/qserf_3.6.16|3.6.16
+}}
+QSERF v3.6.15 is the fifteenth patch following [v3.6.0](/wiki/qserf_3.6.0), which fixes various issues.
+
+## Fixes
+* Fixed a bug where the DMR maintenance button was unusable.
+* Fixed the DMR's internal `StartMaintenance` event not doing anything, which didn't actually affect gameplay but it's good for debugging.
+* Fixed certain "Serving" segment displays having a visual inconsistency.
+
+## Contributors
+* @katsumisoda — Building, Programming

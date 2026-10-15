@@ -1,0 +1,19 @@
+---
+title: QSERF Release 3.6.19
+---
+
+{{infobox
+|image=asset/image/wiki/games/qserf/updates/v3.6.13/v3.6.13_thumbnail.jpeg
+|text=Halloween Update 2025
+|release=October 27th, 2025
+|prev=/wiki/qserf_3.6.18|3.6.18
+|curr=v3.6.19
+|next=/wiki/qserf_3.6.20|3.6.20
+}}
+QSERF v3.6.19 is the nineteenth patch following [v3.6.0](/wiki/qserf_3.6.0), which fixes several issues.
+
+## Fixes
+* Applied an update to the Guardsman configuration following an update that should resolve an issue where it infinitely builds up lag, we're also restarting all servers to push this update.
+
+## Contributors
+* @katsumisoda — Programming

@@ -19,7 +19,7 @@
 	export const last_updated_at = {{updatedate}};
 </script>
 
-<div class="header">
+<div class="header" hidden>
 	<div>
 		<h1>{{title}}</h1>
 		<p>

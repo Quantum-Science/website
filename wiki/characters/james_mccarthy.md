@@ -8,7 +8,7 @@ title: James McCarthy
 }}
 {{incomplete}}
 
-**James Ryder McCarthy** (March 23rd, 1928 — February 13th, 2008) was an American entrepreneur and co-founder of the [Quantum Corporation](/wiki/lore_companies/qc).
+**James Ryder McCarthy** (March 23rd, 1928 — February 13th, 2008) was an American entrepreneur and co-founder of the [Quantum Corporation](/wiki/qc).
 
 ## Early life and education
 James McCarthy was born at Kenmore Mercy Hospital on March 23rd 1928 to Elizabeth and Russel McCarthy, a teacher and store manager respectively. The elementary years of his life were quiet: James grew up in his home town of Buffalo, New York, as an above-average, imaginative child. It was clear from a very young age that James wanted to go into science as a career. At this time, his peers described him as talkative, but friendly and caring to everyone he met.

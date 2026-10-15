@@ -31,7 +31,7 @@ export function incomplete_tokenizer(str) {
 	return { type: 'incomplete', raw: match[0] };
 }
 export function incomplete_renderer() {
-	return `<div class="message"><b>This article is incomplete and may not be accurate.</b><p>You can help by expanding it and making suggestions.</p></div>`;
+	return `<div class="message"><b>This article is incomplete and may not be accurate.</b><p hidden>You can help by expanding it and making suggestions.</p></div>`;
 }
 
 export function infobox_start(src) {
@@ -67,14 +67,14 @@ export function infobox_renderer(infobox) {
 		html += `<p>${infobox.text}</p>`;
 	if (infobox.release)
 		html += `<p>Release date: ${infobox.release}</p>`;
-	if (infobox.curr || infobox.prev) {
+	if (infobox.curr || infobox.prev || infobox.next) {
 		html += '<div>';
 		if (infobox.prev)
-			html += `<a href="/wiki/${infobox.prev}">← ${infobox.prev.split('/').at(-1)}</a>`;
+			html += `<a href="${infobox.prev.split('|')[0]}">← ${infobox.prev.split('|').at(-1)}</a>`;
 		if (infobox.curr)
 			html += `${infobox.prev ? ' • ' : ''}${infobox.curr}${infobox.next ? ' • ' : ''}`;
 		if (infobox.next)
-			html += `<a href="/wiki/${infobox.next}">${infobox.next.split('/').at(-1)} →</a>`;
+			html += `<a href="${infobox.next.split('|')[0]}">${infobox.next.split('|').at(-1)} →</a>`;
 		html += '</div>';
 	}
 	
@@ -100,7 +100,7 @@ export function removed_tokenizer(str) {
 	return { type: 'removed', raw: match[0] };
 }
 export function removed_renderer() {
-	return `<div class="message message-red"><b>This article describes content that was removed from <a href="/wiki/games/qserf">QSERF</a>.</b><p>This feature was present in earlier versions of <a href="/wiki/games/qserf">QSERF</a>, but has since been removed.</p></div>`;
+	return `<div class="message message-red"><b>This article describes content that was removed from <a href="/wiki/qserf">QSERF</a>.</b><p hidden>This feature was present in earlier versions of <a href="/wiki/qserf">QSERF</a>, but has since been removed.</p></div>`;
 }
 
 export function stub_tokenizer(str) {
@@ -111,5 +111,5 @@ export function stub_tokenizer(str) {
 	return { type: 'stub', raw: match[0] };
 }
 export function stub_renderer() {
-	return `<div class="message"><b>This article is a stub.</b><p>You can help by expanding it and making suggestions.</p></div>`;
+	return `<div class="message"><b>This article is a stub.</b><p hidden>You can help by expanding it and making suggestions.</p></div>`;
 }

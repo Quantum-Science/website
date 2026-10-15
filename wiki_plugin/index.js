@@ -42,7 +42,7 @@ export default function wiki_plugin() {
 					compile_route(slug, wiki_path, routes_path, base_page, base_load);
 				else if (event === 'unlink') {
 					const name = basename(slug, extname(slug));
-					const parent = dirname(`${routes_path}/${slug}`);
+					const parent = dirname(`${routes_path}/${slug.split('/').at(-1)}`);
 					
 					const dir_path = `${parent}/${name}`;
 					rmSync(dir_path, { recursive: true });

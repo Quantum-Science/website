@@ -23,7 +23,7 @@ Moving onto QDF squadrons there have been three in the past, those being **Defen
 
 These squadrons have since been superseded by **Control & Intervention Unit or CIU** and **Suppression & Enforcement Unit or SEU** which are further explained below.
 
-You can join QDF through attending a tryout, which are hosted whenever instructors feel like it, they are currently hosted at Futuretops but will in the future be hosted at the QDF Headquarters that is currently being developed by [QSST](/wiki/groups/qsst).<br/>
+You can join QDF through attending a tryout, which are hosted whenever instructors feel like it, they are currently hosted at Futuretops but will in the future be hosted at the QDF Headquarters that is currently being developed by [QSST](/wiki/qsst).<br/>
 After completing the tryout, you will be given OiT or Operative in training and from there will move up the ranks, and if you are active enough you may climb the ranks enough to get into QDF Command.<br/>
 It is worth noting that QDF has a quota of 2 patrols with a combined time of 70 minutes over 2 weeks, you can take LoA's if you are unable to meet this quota, if you are inactive for too long you may be removed from the group.<br/>
 You can read more about QDF in the QDF handbook (link later).

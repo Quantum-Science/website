@@ -9,7 +9,7 @@ title: QS Multipurpose Laboratories 3
 {{incomplete}}
 
 **Quantum Science Multipurpose Laboratories 3 (QSML3)** was a string of games starting in 2018, with QSML3 Pre Alpha and went on to recieve 7 different iterations over the years that followed.<br/>
-All of these versions are owned and have at some point be developed by [Quantum Structural Science Team](/wiki/groups/qsst).<br/>
+All of these versions are owned and have at some point be developed by [Quantum Structural Science Team](/wiki/qsst).<br/>
 QSML3 in lore is the home of the 2nd Generation Dark Matter Reactor and goes on to be commercially available to the world, it is regarded as the safest nuclear fusion reactor.
 <div style="clear: both;"></div>
 
@@ -20,7 +20,7 @@ QSML3 in lore is the home of the 2nd Generation Dark Matter Reactor and goes on 
 |text=DMR Control Room
 }}
 
-QSML3 Pre-Alpha was made by Wild, iXev, Bree, and Sbeve in Early 2018 after [QSML2](/wiki/games/qsml2). It did originally have the QSML2 DMR or the DMR1 in the game, but was soon replaced by the DMR2 based on concept art from Fan Zhang on ArtStation, there are only videos of this version on the Quantum Science YouTube Channel, with an archive under the QASST group, as of writing this archive currently isnt public.
+QSML3 Pre-Alpha was made by Wild, iXev, Bree, and Sbeve in Early 2018 after [QSML2](/wiki/qsml2). It did originally have the QSML2 DMR or the DMR1 in the game, but was soon replaced by the DMR2 based on concept art from Fan Zhang on ArtStation, there are only videos of this version on the Quantum Science YouTube Channel, with an archive under the QASST group, as of writing this archive currently isnt public.
 <div style="clear: both;"></div>
 
 ### Alpha (V2)
@@ -79,7 +79,7 @@ As of writing this version currently isnt public or under any official archive, 
 |text=SNL's Inner DMR Chamber
 }}
 
-{{main|/wiki/games/snl|Sitka National Laboratory}}
+{{main|/wiki/snl|Sitka National Laboratory}}
 
 **Sitka National Laboratory (SNL)** was announced in late 2020 and was being built by Wild, but has since been taken over by a brand new development team. SNL has had a bumpy development process since it was announced and has been through many iterations already, with the original building being scrapped, but the ideas kept and iterated on, as of writing we finally have a layout set in stone and have begun building it out, there is no release date for this project yet but we are working on it almost daily at this point.
 <div style="clear: both;"></div>

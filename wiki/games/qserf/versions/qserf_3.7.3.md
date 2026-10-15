@@ -1,0 +1,26 @@
+---
+title: QSERF Release 3.7.3
+---
+
+{{infobox
+|image=asset/image/wiki/games/qserf/updates/v3.7.0/v3.7.0_thumbnail.jpeg
+|text=Christmas Update 2025
+|release=December 2nd, 2025
+|prev=/wiki/qserf_3.7.2|3.7.2
+|curr=v3.7.3
+|next=/wiki/qserf_3.7.4|3.7.4
+}}
+QSERF v3.7.3 is the third patch following [v3.7.0](/wiki/qserf_3.7.0), fixing various issues.
+
+## Additions
+* Added christmas variants of security squadron uniforms.
+* Added one of the security squadron uniforms to the DMRCR armoury.
+
+## Changes
+* Updated the clothing used for security armour givers.
+
+## Fixes
+* Fixed a bug where the models for the `brazil`, `detroit`, and `shamecube` emotes would persist if the player despawned during the emote.
+
+## Contributors
+* @katsumisoda — Programming

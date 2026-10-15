@@ -1,0 +1,35 @@
+---
+title: QSERF April Fools 2025
+---
+
+{{infobox
+|image=asset/image/wiki/games/qserf/updates/v3.6.2-deluxe/v3.6.2-deluxe_thumbnail.jpeg
+|text=v3.6.2: Deluxe
+|release=April 1st, 2025
+|prev=/wiki/qserf_3.6.2|3.6.2
+|curr=v3.6.2-deluxe
+|next=/wiki/qserf_3.6.3|3.6.3
+}}
+QSERF v3.6.2: Deluxe is a re-release of v3.6.2, fixing previous issues, and introducing the year's April Fools event.
+
+## Additions
+* added subspace tripmine to the shop
+
+## Changes
+* attempted to rename the game but it wouldn't let me
+* improved the combat experience
+* the intro thinks you have a chance
+
+## Fixes
+* fixed character walking sounds... and replaced them with squidward walking
+
+## Contributors
+* @katsumisoda — Marketing, Programming
+
+## Gallery
+{{gallery
+|asset/image/wiki/games/qserf/updates/v3.6.2-deluxe/v3.6.2-deluxe_thumbnail.jpeg
+}}
+
+## External Links
+* ["QS Energy Research Facility — v3.6.2 Patch"](https://devforum.roblox.com/t/3586988) — Roblox DevForum.

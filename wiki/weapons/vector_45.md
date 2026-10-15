@@ -8,7 +8,7 @@ title: Vector-45
 }}
 {{stub}}
 
-The **Vector-45** is a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF](/wiki/games/qserf). It is an automatic submachine gun wielded by [QDF](/wiki/groups/qdf)'s Warrant Officers and CIU's Senior Operators.
+The **Vector-45** is a type of [Weapon](/wiki/qserf_weapons) in [QSERF](/wiki/qserf). It is an automatic submachine gun wielded by [QDF](/wiki/qdf)'s Warrant Officers and CIU's Senior Operators.
 
 ## Statistics
 |Ammunition|Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate (RPM)|
@@ -26,7 +26,7 @@ The **Vector-45** is a type of [Weapon](/wiki/games/qserf/weapons) in [QSERF](/w
 |Limbs    |0.9x             |
 
 ## Trivia
-* While the weapon's name is purely fictional and does not exist in the real world, it's functionally a [KRISS Vector](/wiki/weapons/kriss_vector) with a .45 ACP cartridge.
+* While the weapon's name is purely fictional and does not exist in the real world, it's functionally a [KRISS Vector](/wiki/kriss_vector) with a .45 ACP cartridge.
 
 ## External Links
 * ["KRISS Vector"](https://en.wikipedia.org/wiki/KRISS_Vector) — Wikipedia.

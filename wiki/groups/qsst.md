@@ -9,7 +9,7 @@ title: Quantum Structural Science Team
 }}
 {{incomplete}}
 
-**Quantum Structural Science Team (QSST)** is the department which handles all game development and creative content within [Quantum Science](/wiki/groups/qs). It houses multiple subdepartments including Quality Assurance, Weapon Analytics, Archival, and Media departments.<br/>
+**Quantum Structural Science Team (QSST)** is the department which handles all game development and creative content within [Quantum Science](/wiki/qs). It houses multiple subdepartments including Quality Assurance, Weapon Analytics, Archival, and Media departments.<br/>
 
 The department was historically known as **Quantum Advanced Structural Science Team (QASST)**, which was created on the 12 of January 2018, and has since been replaced by the QSST group, made on the 25th of February 2020.
 QASST had multiple owners, first being AdjacentPhoenix in 2018, then to JustSimplyWild on the 6th of September 2018, then to iXev on the 17th of February 2020, then back to Wild on the 19th of April 2020, and then to MrSpxxds on the 13th of January 2023.<br/>
@@ -51,14 +51,14 @@ QSST currently has **19 staff members**, below is a list.<br/><br/>
 The department is home to several subdepartments (or subdivisions) that split various development-related jobs into dedicated groups of people.
 
 ### Archival Department
-{{main|/wiki/groups/qad|Quantum Archival Department}}
-The **Quantum Archival Department (QAD)** is one of the larger subdepartments and works closely with the [Quantum Broadcasting Corporation](/wiki/groups/qbc).
+{{main|/wiki/qad|Quantum Archival Department}}
+The **Quantum Archival Department (QAD)** is one of the larger subdepartments and works closely with the [Quantum Broadcasting Corporation](/wiki/qbc).
 The subdepartment mainly focuses on writing the lore for the Quantum Universe, and assisting QBC with their productions to ensure they fit into the canonical universe. While QBC in turn helps QAD with creating lore material for the community to use, such as posters, magazines, videos, etc.
 
 The subdepartment is currently closed at the time of writing.
 
 ### Broadcasting Corporation
-{{main|/wiki/groups/qbc|Quantum Broadcasting Corporation}}
+{{main|/wiki/qbc|Quantum Broadcasting Corporation}}
 The **Quantum Broadcasting Corporation (QBC)** is yet another large subdepartment under SST, as mentioned before it works closely with QAD with creating lore and video productions. The subdepartment mainly focuses on creating video productions for the [Quantum Science YouTube](https://www.youtube.com/@QuantumScience).
 
 The subdepartment is an open volunteer program, and routinely puts out interest forms when necessary in [Quantum Science Public](/discord).

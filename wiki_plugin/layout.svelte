@@ -40,8 +40,8 @@
 	};
 </script>
 
-<div class="wiki_content">
+<article class="wiki_content">
 	{@render children()}
-</div>
+</article>
 
 <GalleryOverlay/>

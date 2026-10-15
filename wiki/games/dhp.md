@@ -9,13 +9,13 @@ title: Donovan Hydroelectric Plant
 }}
 {{incomplete}}
 
-**Donovan Hydroelectric Plant (DHP)** is an upcoming [simulation video game](https://en.wikipedia.org/wiki/Simulation_video_game) developed by the [Quantum Structural Science Team](/wiki/groups/qsst). It currently has no release date and is on hold.
+**Donovan Hydroelectric Plant (DHP)** is an upcoming [simulation video game](https://en.wikipedia.org/wiki/Simulation_video_game) developed by the [Quantum Structural Science Team](/wiki/qsst). It currently has no release date and is on hold.
 
 ## Synopsis
 The game takes place in the early 2000s and is located at Gore Creek, Colorado, the facility has some wear but is still fully operational, providing energy to the surrounding area.
 
 ## Plot
-Following the nuclear disaster in 1985 of the [Madison Research Center](/wiki/locations/mrc), and soon after the nuclear ban, QSCorp branched out into other forms of energy generation in order to prevent the company collapsing (quite a while after QSERF ill have to look this up) and served the company up until the late 2000s. Employees have to manage all parts of the plant, water levels, energy generation, and maintenance, the site is also prone to severe storms and flooding. 
+Following the nuclear disaster in 1985 of the [Madison Research Center](/wiki/madison_research_center), and soon after the nuclear ban, QSCorp branched out into other forms of energy generation in order to prevent the company collapsing (quite a while after QSERF ill have to look this up) and served the company up until the late 2000s. Employees have to manage all parts of the plant, water levels, energy generation, and maintenance, the site is also prone to severe storms and flooding. 
 
 ## Gameplay
 The game aims to be a realistic simulation of a regular hydroelectric power plant, as 1:1 as we can get it while also making gameplay fun, planning for this hasn't been set in stone, so gameplay will not be disclosed here just yet.

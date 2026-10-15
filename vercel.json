@@ -1,0 +1,16 @@
+{
+	"$schema": "https://openapi.vercel.sh/vercel.json",
+	"redirects": [
+		{ "source": "/wiki/characters/:path", "destination": "/wiki/:path", "permanent": true },
+		{ "source": "/wiki/games/:path", "destination": "/wiki/:path", "permanent": true },
+		{ "source": "/wiki/groups/:path", "destination": "/wiki/:path", "permanent": true },
+		{ "source": "/wiki/lore_companies/:path", "destination": "/wiki/:path", "permanent": true },
+		{ "source": "/wiki/reactors/:path", "destination": "/wiki/:path", "permanent": true },
+		{ "source": "/wiki/updates/qserf/v:path", "destination": "/wiki/qserf_:path", "permanent": true },
+		{ "source": "/wiki/weapons/:path", "destination": "/wiki/:path", "permanent": true },
+		
+		{ "source": "/wiki/games/qserf/mgks", "destination": "/wiki/modular_gun_kit_system", "permanent": true },
+		{ "source": "/wiki/games/qserf/weapons", "destination": "/wiki/qserf_weapons", "permanent": true },
+		{ "source": "/wiki/locations/mrc", "destination": "/wiki/madison_research_center", "permanent": true }
+	]
+}

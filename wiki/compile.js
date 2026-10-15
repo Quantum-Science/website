@@ -169,7 +169,7 @@ export async function compile_route(slug, wiki_path, routes_path, base_page, bas
 	const compiled_page = base_page
 		.replaceAll('{{title}}', metadata.title)
 		.replace('{{category}}', CATEGORIES[slug.split('/')[0]] || 'Unknown Category')
-		.replace('{{href}}', `/wiki/${slug.substring(0, slug.length - 3)}`)
+		.replace('{{href}}', `/wiki/${slug.substring(0, slug.length - 3).split('/').at(-1)}`)
 		.replace('{{update}}', timestamp ? new Intl.DateTimeFormat('en-US', { day: 'numeric', month: 'long', weekday: 'long', year: 'numeric' }).format(new Date(timestamp)) : 'Uncommitted file')
 		.replace('{{updatedate}}', timestamp ? `'${timestamp.substring(0, 10)}'` : 'null')
 		.replace('{{images}}', images)
@@ -184,7 +184,7 @@ export async function compile_route(slug, wiki_path, routes_path, base_page, bas
 	route_image = null;
 	
 	const name = basename(slug, extname(slug));
-	const parent = dirname(`${routes_path}/${slug}`);
+	const parent = dirname(`${routes_path}/${slug.split('/').at(-1)}`);
 	
 	const dir_path = `${parent}/${name}`;
 	mkdirSync(dir_path, { recursive: true });
@@ -327,6 +327,13 @@ export function setup() {
 	mkdirSync(routes_path, { recursive: true });
 	copyFileSync(layout_path, `${routes_path}/+layout.svelte`);
 	
+	const page_files = new Set();
+	for (const entry of readdirSync(wiki_path, { recursive: true })) {
+		if (!entry.endsWith('.md'))
+			continue;
+		page_files.add(entry.split('/').at(-1).replace('.md', ''));
+	}
+	
 	for (const entry of readdirSync(routes_path, { recursive: true })) {
 		const path = `${routes_path}/${entry}`;
 		try {
@@ -336,7 +343,7 @@ export function setup() {
 			continue;
 		}
 		
-		if (!existsSync(`${wiki_path}/${entry}.md`) && !existsSync(`${wiki_path}/${entry}`))
+		if (!page_files.has(entry))
 			rmSync(path, { recursive: true });
 	}
 	

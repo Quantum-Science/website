@@ -8,10 +8,10 @@ title: Quantuplex
 }}
 {{incomplete}}
 
-**Quantuplex** is the canonical Headquarters of the [Quantum Corporation](/wiki/lore_companies/qc). In lore, this facility was built in the Early 2000s after QDF relinquished its power over the company to Quantum Corp, it facilitiates a museum dedicated to the history of Quantum Corp, and its string of companies, including [Quantum Atomic Energy Corporation](/wiki/lore_companies/qaec), and [Quantum Light Fixtures](/wiki/lore_companies/qlf).
+**Quantuplex** is the canonical Headquarters of the [Quantum Corporation](/wiki/qc). In lore, this facility was built in the Early 2000s after QDF relinquished its power over the company to Quantum Corp, it facilitiates a museum dedicated to the history of Quantum Corp, and its string of companies, including [Quantum Atomic Energy Corporation](/wiki/qaec), and [Quantum Light Fixtures](/wiki/qlf).
 
 ## Development
-Quantuplex has remained largely the same since its introduction in early 2019, it has only had areas removed and readded over its lifetime, including developer offices, datacenter buildings and a security training area which was underground and connected up to the security building in the middle of the complex. This was however removed as tryouts moved to the [QDFHQ](/wiki/games/qdfhq).<br/>
+Quantuplex has remained largely the same since its introduction in early 2019, it has only had areas removed and readded over its lifetime, including developer offices, datacenter buildings and a security training area which was underground and connected up to the security building in the middle of the complex. This was however removed as tryouts moved to the [QDFHQ](/wiki/qdfhq).<br/>
 Nowerdays Quantuplex is used for community events and big announcements, it is almost always used for the end of year community picture which as the name suggests, takes place at the end of every year.<br/>
 
 Quantuplex does however have a remake in development as of mid 2025, this is not being actively developed as it is typically something that new SST developers work on when they are first hired, due to this, there is no release date planned.

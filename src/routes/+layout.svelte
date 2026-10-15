@@ -41,9 +41,6 @@
 			<a href="https://www.roblox.com/catalog?CreatorName=Quantum+Science+Inc.&CreatorType=Group&salesTypeFilter=1&SortType=3">
 				Roblox Store
 			</a>
-			<a href={PUBLIC_SOCIAL_LINK_KOFI}>
-				Support Us
-			</a>
 		</div>
 	</div>
 </nav>
@@ -82,7 +79,27 @@
 			</div>
 		</div>
 		<div class="more">
-			<ThemeButton/>
+			<div class="more_upper">
+				<ThemeButton/>
+				<div>
+					<p class="links_title">
+						{#if wiki}Wiki Links{:else}Links{/if}
+					</p>
+					<div class="links">
+						{#if wiki}
+							<a href="/wiki">Wiki Home</a>
+							<div class="separator">•</div>
+							<a href="/wiki/pages">All Pages</a>
+						{:else}
+							<a href="/about">About Us</a>
+							<div class="separator">•</div>
+							<a href="/wiki">Official Wiki</a>
+							<div class="separator">•</div>
+							<a href="https://roblox.com/communities/2847031">Roblox Group</a>
+						{/if}
+					</div>
+				</div>
+			</div>
 			<p class="legal" aria-hidden="true">
 				{#if wiki}
 					The text on this wiki is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" target="_blank">CC BY-NC-SA 4.0</a>.<br/>
@@ -176,56 +193,71 @@
 		overflow: hidden;
 		position: relative;
 		.footer_contents {
-			align-items: center;
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;
 			margin: auto auto 0 auto;
 			max-width: 1200px;
+			min-height: 230px;
 			padding: 32px 16px;
 			width: 100%;
+			@media (max-width: 480px) {
+				gap: 32px;
+				justify-content: center;
+			}
 		}
-		.brand_logo {
-			color: inherit;
-			line-height: 0;
-		}
-		.lower_section {
-			align-items: center;
-			display: flex;
-			gap: 12px;
-			margin-top: 16px;
-			.social_logo {
+		.brand {
+			margin: auto 0;
+			.brand_logo {
 				color: inherit;
 				line-height: 0;
+			}
+			.lower_section {
+				align-items: center;
+				display: flex;
+				gap: 12px;
+				margin-top: 16px;
+				.social_logo {
+					color: inherit;
+					line-height: 0;
+				}
 			}
 		}
 		.more {
 			align-items: flex-end;
 			display: flex;
 			flex-direction: column;
-			/*.links_title {
-				color: hsl(0 0% 50%);
-				font-size: 13px;
-				font-weight: 550;
-				margin: 0 0 8px;
-				text-transform: uppercase;
-			}
-			.links {
+			gap: 24px;
+			.more_upper {
+				align-items: flex-end;
 				display: flex;
-				gap: 32px;
-				a {
-					color: inherit;
-					font-size: .9em;
-					font-weight: 450;
-					text-decoration: none;
-					transition: color .5s;
+				gap: 24px;
+				.links_title {
+					color: var(--color-secondary);
+					font-size: 13px;
+					font-weight: 550;
+					margin: 0 0 8px;
+					text-transform: uppercase;
 				}
-			}*/
+				.links {
+					display: flex;
+					.separator {
+						color: var(--color-secondary);
+						line-height: 1;
+						margin: 0 8px;
+					}
+					a {
+						color: inherit;
+						font-size: .9em;
+						font-weight: 600;
+					}
+				}
+			}
 			.legal {
 				font-family: var(--font-secondary);
 				font-size: .9em;
 				font-weight: 500;
-				margin-top: 96px;
+				margin-top: auto;
 				text-align: right;
 				a {
 					color: inherit;

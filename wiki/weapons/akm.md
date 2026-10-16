@@ -2,7 +2,7 @@
 title: AKM
 ---
 
-{{infobox
+{{infobox character
 |image=asset/image/wiki/weapons/akm.png
 |text=AKM Render
 }}
@@ -13,9 +13,9 @@ The **AKM** is a type of [Weapon](/wiki/qserf_weapons) in [QSERF](/wiki/qserf). 
 Added in the [May 2026 Combat Update](/wiki/qserf_3.12.0), it functions similarly to the now-removed AK-47, with some minor differences.
 
 ## Statistics
-|Ammunition|Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate (RPM)|
-|----------|-----------------|-------------------|-----------|---------------|
-|30        |17               |50                 |1.0s       |600            |
+|Ammunition|Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate     |
+|----------|-----------------|-------------------|-----------|--------------|
+|30        |17               |45                 |1.0s       |600 rounds/min|
 
 |              |Shortest Distance|Longest Distance|Null Distance|
 |--------------|-----------------|----------------|-------------|

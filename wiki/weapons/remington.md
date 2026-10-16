@@ -2,7 +2,7 @@
 title: Remington 870
 ---
 
-{{infobox
+{{infobox character
 |image=asset/image/wiki/weapons/remington.png
 |text=R870 Original Icon
 }}
@@ -11,9 +11,9 @@ title: Remington 870
 The **Remington 870 (R870)** is a type of [Weapon](/wiki/qserf_weapons) in [QSERF](/wiki/qserf). It is a pump-action shotgun wielded by Tier 1 Raiders and [QDF](/wiki/qdf)'s Junior Field Operatives.
 
 ## Statistics
-|Ammunition          |Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate (RPM)|
-|--------------------|-----------------|-------------------|-----------|---------------|
-|8 shells, 8 pellets |50               |65                 |1.0s       |65             |
+|Ammunition          |Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate    |
+|--------------------|-----------------|-------------------|-----------|-------------|
+|8 rounds, 8 pellets |50               |65                 |1.0s       |65 rounds/min|
 
 |              |Shortest Distance|Longest Distance|Null Distance|
 |--------------|-----------------|----------------|-------------|

@@ -2,7 +2,7 @@
 title: GLOCK 18
 ---
 
-{{infobox
+{{infobox character
 |image=asset/image/wiki/weapons/glock_17.png
 |text=GLOCK 18 Original Icon
 }}
@@ -11,9 +11,9 @@ title: GLOCK 18
 The **GLOCK 18 (G-18)** is a type of [Weapon](/wiki/qserf_weapons) in [QSERF](/wiki/qserf). It is an automatic pistol wielded by Tier 2 Raiders and [QDF](/wiki/qdf)'s Junior Specialists.
 
 ## Statistics
-|Ammunition|Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate (RPM)|
-|----------|-----------------|-------------------|-----------|---------------|
-|18        |32               |45                 |0.7s       |800            |
+|Ammunition|Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate     |
+|----------|-----------------|-------------------|-----------|--------------|
+|18        |32               |45                 |0.7s       |800 rounds/min|
 
 |              |Shortest Distance|Longest Distance|Null Distance|
 |--------------|-----------------|----------------|-------------|

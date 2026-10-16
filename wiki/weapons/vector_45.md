@@ -2,7 +2,7 @@
 title: Vector-45
 ---
 
-{{infobox
+{{infobox character
 |image=asset/image/wiki/weapons/vector_45.png
 |text=Vector-45 Render
 }}
@@ -11,9 +11,9 @@ title: Vector-45
 The **Vector-45** is a type of [Weapon](/wiki/qserf_weapons) in [QSERF](/wiki/qserf). It is an automatic submachine gun wielded by [QDF](/wiki/qdf)'s Warrant Officers and CIU's Senior Operators.
 
 ## Statistics
-|Ammunition|Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate (RPM)|
+|Ammunition|Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate      |
 |----------|-----------------|-------------------|-----------|---------------|
-|25        |16               |30                 |1.0s       |1200           |
+|25        |16               |30                 |1.0s       |1200 rounds/min|
 
 |              |Shortest Distance|Longest Distance|Null Distance|
 |--------------|-----------------|----------------|-------------|

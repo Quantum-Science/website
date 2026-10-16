@@ -2,7 +2,7 @@
 title: RPD
 ---
 
-{{infobox
+{{infobox character
 |image=asset/image/wiki/weapons/rpd.png
 |text=RPD Render
 }}
@@ -11,9 +11,9 @@ title: RPD
 The **RPD** is a type of [Weapon](/wiki/qserf_weapons) in [QSERF](/wiki/qserf). It is an automatic machine gun wielded by Tier 4 Raiders.
 
 ## Statistics
-|Ammunition|Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate (RPM)|
-|----------|-----------------|-------------------|-----------|---------------|
-|75        |24               |100                |2.0s       |675            |
+|Ammunition|Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate     |Movement debuff|
+|----------|-----------------|-------------------|-----------|--------------|---------------|
+|75        |24               |100                |2.0s       |675 rounds/min|28%            |
 
 |              |Shortest Distance|Longest Distance|Null Distance|
 |--------------|-----------------|----------------|-------------|

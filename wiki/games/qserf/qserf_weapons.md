@@ -7,6 +7,8 @@ title: Weapons (QSERF)
 
 The various types of weapons include basic firearms, melee weapons, explosives, and more.
 
+Combatives are able to utilise [Armor](/wiki/qserf_armor) to protect themselves against weapons, with damage reduction varying across tiers.
+
 ## Firearms
 All bullet damage has a gradual distance-based falloff, usually the closer you are means more damage, but this can also be inversed for certain weapons. Any bullets past the null distance have no effect.
 

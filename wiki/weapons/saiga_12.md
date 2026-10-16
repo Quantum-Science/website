@@ -2,7 +2,7 @@
 title: Saiga-12
 ---
 
-{{infobox
+{{infobox character
 |image=asset/image/wiki/weapons/saiga_12.png
 |text=Saiga-12 Original Icon
 }}
@@ -11,9 +11,9 @@ title: Saiga-12
 The **Saiga-12** is a type of [Weapon](/wiki/qserf_weapons) in [QSERF](/wiki/qserf). It is a semi-automatic shotgun wielded by Tier 3 Raiders.
 
 ## Statistics
-|Ammunition          |Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate (RPM)|
-|--------------------|-----------------|-------------------|-----------|---------------|
-|16 shells, 8 pellets|60               |72                 |1.0s       |350            |
+|Ammunition          |Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate     |
+|--------------------|-----------------|-------------------|-----------|--------------|
+|16 shells, 8 pellets|60               |72                 |1.0s       |350 rounds/min|
 
 |              |Shortest Distance|Longest Distance|Null Distance|
 |--------------|-----------------|----------------|-------------|

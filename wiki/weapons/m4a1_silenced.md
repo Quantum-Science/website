@@ -2,7 +2,7 @@
 title: M4A1 Silenced
 ---
 
-{{infobox
+{{infobox character
 |image=asset/image/wiki/weapons/m4a1_silenced.png
 |text=M4A1-S Render
 }}
@@ -13,9 +13,9 @@ The **M4A1 Silenced (M4A1-S)** is a type of [Weapon](/wiki/qserf_weapons) in [QS
 Added in the [May 2026 Combat Update](/wiki/qserf_3.12.0), it serves as a variant of the [M4A1](/wiki/m4a1) that provides improved precision alongside an added holographic sight.
 
 ## Statistics
-|Ammunition|Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate (RPM)|
-|----------|-----------------|-------------------|-----------|---------------|
-|30        |17               |45                 |1.2s       |750            |
+|Ammunition|Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate     |
+|----------|-----------------|-------------------|-----------|--------------|
+|30        |17               |45                 |1.2s       |750 rounds/min|
 
 |              |Shortest Distance|Longest Distance|Null Distance|
 |--------------|-----------------|----------------|-------------|

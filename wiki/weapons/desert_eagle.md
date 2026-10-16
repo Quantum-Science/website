@@ -2,7 +2,7 @@
 title: Desert Eagle
 ---
 
-{{infobox
+{{infobox character
 |image=asset/image/wiki/weapons/desert_eagle.png
 |text=Desert Eagle Original Icon
 }}
@@ -12,9 +12,9 @@ The **Desert Eagle** is a type of [Weapon](/wiki/qserf_weapons) in [QSERF](/wiki
 
 
 ## Statistics
-|Ammunition|Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate (RPM)|
-|----------|-----------------|-------------------|-----------|---------------|
-|8         |16               |28                 |1.0s       |370            |
+|Ammunition|Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate     |
+|----------|-----------------|-------------------|-----------|--------------|
+|8         |16               |28                 |1.0s       |370 rounds/min|
 
 |              |Shortest Distance|Longest Distance|Null Distance|
 |--------------|-----------------|----------------|-------------|

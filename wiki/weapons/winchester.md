@@ -2,7 +2,7 @@
 title: Winchester M70
 ---
 
-{{infobox
+{{infobox character
 |image=asset/image/wiki/weapons/winchester.png
 |text=Winchester M70 Render
 }}
@@ -13,9 +13,9 @@ The **Winchester M70** is a type of [Weapon](/wiki/qserf_weapons) in [QSERF](/wi
 ## Statistics
 The weapon is intended for long-range usage, and has an inversed damage falloff.
 
-|Ammunition|Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate (RPM)|
-|----------|-----------------|-------------------|-----------|---------------|
-|5         |0                |100                |0.5s       |40             |
+|Ammunition|Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate    |
+|----------|-----------------|-------------------|-----------|-------------|
+|5         |0                |100                |0.5s       |40 rounds/min|
 
 |              |Shortest Distance|Longest Distance|Null Distance|
 |--------------|-----------------|----------------|-------------|

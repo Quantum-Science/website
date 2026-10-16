@@ -2,7 +2,7 @@
 title: RPG-7
 ---
 
-{{infobox
+{{infobox character
 |image=asset/image/wiki/weapons/rpg.png
 |text=RPG-7 Original Icon
 }}
@@ -12,9 +12,9 @@ The **RPG-7** is a type of [Weapon](/wiki/qserf_weapons) in [QSERF](/wiki/qserf)
 
 ## Statistics
 Technically the explosive damage leads up to infinity with a theoretical perfect hit, but the intended maximum is 600 damage at a distance of 1 stud.
-|Ammunition   |Equip Delay|Rocket Speed|
-|-------------|-----------|------------|
-|4 rounds/life|2.0s       |125 studs/s |
+|Ammunition   |Equip Delay|Rocket Speed|Movement debuff|
+|-------------|-----------|------------|---------------|
+|4 rounds/life|3.0s       |125 studs/s |30%            |
 
 |                 |Shortest Distance |Longest Distance|
 |-----------------|------------------|----------------|

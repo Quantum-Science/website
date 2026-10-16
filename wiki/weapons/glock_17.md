@@ -2,7 +2,7 @@
 title: GLOCK 17
 ---
 
-{{infobox
+{{infobox character
 |image=asset/image/wiki/weapons/glock_17.png
 |text=GLOCK 17 Original Icon
 }}
@@ -11,9 +11,9 @@ title: GLOCK 17
 The **GLOCK 17 (G-17)** is a type of [Weapon](/wiki/qserf_weapons) in [QSERF](/wiki/qserf). It is a semi-automatic pistol wielded by Tier 1 Raiders and [QDF](/wiki/qdf)'s Operatives in Training.
 
 ## Statistics
-|Ammunition|Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate (RPM)|
-|----------|-----------------|-------------------|-----------|---------------|
-|17        |20               |35                 |0.5s       |650            |
+|Ammunition|Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate     |
+|----------|-----------------|-------------------|-----------|--------------|
+|17        |20               |35                 |0.5s       |650 rounds/min|
 
 |              |Shortest Distance|Longest Distance|Null Distance|
 |--------------|-----------------|----------------|-------------|

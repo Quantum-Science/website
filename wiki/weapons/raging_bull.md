@@ -2,7 +2,7 @@
 title: Raging Bull .44
 ---
 
-{{infobox
+{{infobox character
 |image=asset/image/wiki/weapons/raging_bull.png
 |text=RG Bull .44 Original Icon
 }}
@@ -11,9 +11,9 @@ title: Raging Bull .44
 The **Raging Bull .44 (RG Bull .44)** is a type of [Weapon](/wiki/qserf_weapons) in [QSERF](/wiki/qserf). It is a semi-automatic revolver wielded by Tier 3 Raiders.
 
 ## Statistics
-|Ammunition|Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate (RPM)|
-|----------|-----------------|-------------------|-----------|---------------|
-|6         |16               |32                 |1.0s       |275            |
+|Ammunition|Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate     |
+|----------|-----------------|-------------------|-----------|--------------|
+|6         |16               |32                 |1.0s       |275 rounds/min|
 
 |              |Shortest Distance|Longest Distance|Null Distance|
 |--------------|-----------------|----------------|-------------|

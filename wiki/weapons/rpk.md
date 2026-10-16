@@ -2,7 +2,7 @@
 title: RPK
 ---
 
-{{infobox
+{{infobox character
 |image=asset/image/wiki/weapons/rpk.png
 |text=RPK Render
 }}
@@ -11,13 +11,13 @@ title: RPK
 The **RPK** is a type of [Weapon](/wiki/qserf_weapons) in [QSERF](/wiki/qserf). It is an automatic machine gun wielded by Tier 3 Raiders.
 
 ## Statistics
-|Ammunition|Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate (RPM)|
-|----------|-----------------|-------------------|-----------|---------------|
-|45        |22               |75                 |1.5s       |600            |
+|Ammunition|Accuracy (Aiming)|Accuracy (Hip Fire)|Equip Delay|Fire Rate     |Movement debuff|
+|----------|-----------------|-------------------|-----------|--------------|---------------|
+|45        |22               |75                 |1.5s       |600 rounds/min|16%            |
 
 |              |Shortest Distance|Longest Distance|Null Distance|
 |--------------|-----------------|----------------|-------------|
-|Bullet Damage |24 damage        |17 damage       |0 damage     |
+|Bullet Damage |25 damage        |18 damage       |0 damage     |
 |Bullet Falloff|50 studs         |80 studs        |250 studs    |
 
 |Body Part|Damage Multiplier|

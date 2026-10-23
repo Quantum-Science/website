@@ -4,7 +4,7 @@ This document describes the methods and means through which we enforce our intel
 When we say “Quantum Science”, “us”, “we”, and “our” in this document, we are referring to Quantum Science and its related entities, such as the Quantum Structural Science Team.
 
 ### Authorized Representatives
-ATTG Studios (**“All The Time Gaming”**, **“All The Time Gaming SCP”**, **“ATTGSCP”**) and any employees of ATTG Studios are authorized to act as our authorized representative for the purpose of protecting, enforcing, and administering 
+ATTG Studios (**“All The Time Gaming”**, **“All The Time Gaming SCP”**, **“ATTG”**, **“ATTGSCP”**) and any employees of ATTG Studios are authorized to act as our authorized representative for the purpose of protecting, enforcing, and administering 
 copyrights and other intellectual property rights belonging to, created for, commissioned by, owned by, 
 licensed to, or otherwise lawfully controlled by Quantum Science.
 

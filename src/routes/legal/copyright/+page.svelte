@@ -1,0 +1,1 @@
+<wiki:markdown src=".legal/copyright.md"></wiki:markdown>

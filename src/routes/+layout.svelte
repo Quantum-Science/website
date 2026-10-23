@@ -93,6 +93,8 @@
 						{:else}
 							<a href="/about">About Us</a>
 							<div class="separator">•</div>
+							<a href="/legal">Legal</a>
+							<div class="separator">•</div>
 							<a href="/wiki">Official Wiki</a>
 							<div class="separator">•</div>
 							<a href="https://roblox.com/communities/2847031">Roblox Group</a>

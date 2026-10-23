@@ -14,27 +14,3 @@ by, published by, or owned by Quantum Science, on any platform or service.
 
 https://www.roblox.com/communities/34057124/ATTG-Studios
 https://www.roblox.com/users/81598010/profile
-
-### Covered Materials
-* Games and game assets
-* Source code and scripts
-* 3D models and meshes
-* Textures and materials
-* Images and graphics
-* Logos and branding
-* User interfaces
-* Maps and level designs
-* Audio and sound effects
-* Music
-* Videos and animations
-* Written documentation
-* Website content
-* Artwork
-* Thumbnails and promotional materials
-* Databases and data compilations
-* Original characters and other copyrightable creative works
-* Any other copyrightable material owned or controlled by us
-
-These authorizations apply to unauthorized copies, reproductions, distributions, uploads, publications, 
-modifications, derivative copies, reuploads, mirrors, archives, repositories, or other unauthorized uses of 
-such material. 
